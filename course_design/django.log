@@ -1,0 +1,1633 @@
+INFO 2024-12-06 03:28:13,747 autoreload 2764 5792 Watching for file changes with StatReloader
+WARNING 2024-12-06 03:28:26,034 log 2764 14984 Method Not Allowed: /api/auth/register/
+WARNING 2024-12-06 03:28:26,034 basehttp 2764 14984 "GET /api/auth/register/ HTTP/1.1" 405 5631
+WARNING 2024-12-06 03:28:41,855 log 2764 14984 Method Not Allowed: /api/auth/register/
+WARNING 2024-12-06 03:28:41,855 basehttp 2764 14984 "GET /api/auth/register/ HTTP/1.1" 405 5631
+INFO 2024-12-06 03:29:12,537 auth 2764 17012 Received registration request with data: {'username': 'wangziyu', 'password': 'wzy832279'}
+WARNING 2024-12-06 03:29:12,537 auth 2764 17012 Username already exists: wangziyu
+WARNING 2024-12-06 03:29:12,541 log 2764 17012 Bad Request: /api/auth/register/
+WARNING 2024-12-06 03:29:12,543 basehttp 2764 17012 "POST /api/auth/register/ HTTP/1.1" 400 35
+INFO 2024-12-06 03:29:17,491 auth 2764 17012 Received registration request with data: {'username': 'wang1234', 'password': 'wzy832279'}
+INFO 2024-12-06 03:29:17,850 auth 2764 17012 Successfully created user: wang1234
+ERROR 2024-12-06 03:29:17,852 auth 2764 17012 Unexpected error during registration: 'str' object has no attribute 'decode'
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Desktop\WWW\course_design\myapp\auth.py", line 70, in register
+    'refresh': str(refresh),
+  File "D:\Anaconda3\envs\web\lib\site-packages\rest_framework_simplejwt\tokens.py", line 82, in __str__
+    return token_backend.encode(self.payload)
+  File "D:\Anaconda3\envs\web\lib\site-packages\rest_framework_simplejwt\backends.py", line 43, in encode
+    return token.decode('utf-8')
+AttributeError: 'str' object has no attribute 'decode'
+ERROR 2024-12-06 03:29:17,853 log 2764 17012 Internal Server Error: /api/auth/register/
+ERROR 2024-12-06 03:29:17,853 basehttp 2764 17012 "POST /api/auth/register/ HTTP/1.1" 500 43
+WARNING 2024-12-06 03:29:39,287 log 2764 14984 Method Not Allowed: /api/auth/register/
+WARNING 2024-12-06 03:29:39,288 basehttp 2764 14984 "GET /api/auth/register/ HTTP/1.1" 405 5631
+INFO 2024-12-06 03:31:24,460 auth 2764 2640 Received registration request with data: {'username': 'testuser', 'password': 'testpass123'}
+INFO 2024-12-06 03:31:24,806 auth 2764 2640 Successfully created user: testuser
+ERROR 2024-12-06 03:31:24,806 auth 2764 2640 Unexpected error during registration: 'str' object has no attribute 'decode'
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Desktop\WWW\course_design\myapp\auth.py", line 70, in register
+    'refresh': str(refresh),
+  File "D:\Anaconda3\envs\web\lib\site-packages\rest_framework_simplejwt\tokens.py", line 82, in __str__
+    return token_backend.encode(self.payload)
+  File "D:\Anaconda3\envs\web\lib\site-packages\rest_framework_simplejwt\backends.py", line 43, in encode
+    return token.decode('utf-8')
+AttributeError: 'str' object has no attribute 'decode'
+ERROR 2024-12-06 03:31:24,806 log 2764 2640 Internal Server Error: /api/auth/register/
+ERROR 2024-12-06 03:31:24,806 basehttp 2764 2640 "POST /api/auth/register/ HTTP/1.1" 500 43
+INFO 2024-12-06 03:32:17,576 autoreload 2764 5792 C:\Users\ASUS\Desktop\WWW\course_design\myapp\auth.py changed, reloading.
+INFO 2024-12-06 03:32:18,219 autoreload 31408 3876 Watching for file changes with StatReloader
+WARNING 2024-12-06 03:32:32,957 log 31408 8988 Not Found: /
+WARNING 2024-12-06 03:32:32,958 basehttp 31408 8988 "GET / HTTP/1.1" 404 2170
+INFO 2024-12-06 03:32:55,956 autoreload 26556 34940 Watching for file changes with StatReloader
+INFO 2024-12-06 03:33:07,791 auth 26556 35184 Received registration request with data: {'username': 'testuser', 'password': 'testpass123'}
+WARNING 2024-12-06 03:33:07,795 auth 26556 35184 Username already exists: testuser
+WARNING 2024-12-06 03:33:07,796 log 26556 35184 Bad Request: /api/auth/register/
+WARNING 2024-12-06 03:33:07,796 basehttp 26556 35184 "POST /api/auth/register/ HTTP/1.1" 400 30
+INFO 2024-12-06 03:33:20,330 basehttp 26556 12704 "GET /api/auth/register/ HTTP/1.1" 200 7449
+INFO 2024-12-06 03:33:29,906 basehttp 26556 12704 "OPTIONS /api/auth/register/ HTTP/1.1" 200 7233
+INFO 2024-12-06 03:33:30,784 basehttp 26556 12704 "OPTIONS /api/auth/register/ HTTP/1.1" 200 7233
+INFO 2024-12-06 03:33:31,407 basehttp 26556 12704 "GET /api/auth/register/ HTTP/1.1" 200 7449
+INFO 2024-12-06 03:33:32,933 basehttp 26556 12704 "GET /api/auth/register/?format=json HTTP/1.1" 200 287
+INFO 2024-12-06 03:33:35,965 basehttp 26556 12704 "GET /api/auth/register/?format=api HTTP/1.1" 200 7504
+INFO 2024-12-06 03:34:04,400 auth 26556 35180 Received registration request with data: {'username': 'wzy832279', 'password': 'wzy@832279'}
+INFO 2024-12-06 03:34:04,571 auth 26556 35180 Successfully created user: wzy832279
+ERROR 2024-12-06 03:34:04,571 auth 26556 35180 Unexpected error during registration: 'str' object has no attribute 'decode'
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Desktop\WWW\course_design\myapp\auth.py", line 90, in register
+    'refresh': str(refresh),
+  File "D:\Anaconda3\envs\web\lib\site-packages\rest_framework_simplejwt\tokens.py", line 82, in __str__
+    return token_backend.encode(self.payload)
+  File "D:\Anaconda3\envs\web\lib\site-packages\rest_framework_simplejwt\backends.py", line 43, in encode
+    return token.decode('utf-8')
+AttributeError: 'str' object has no attribute 'decode'
+ERROR 2024-12-06 03:34:04,574 log 26556 35180 Internal Server Error: /api/auth/register/
+ERROR 2024-12-06 03:34:04,575 basehttp 26556 35180 "POST /api/auth/register/ HTTP/1.1" 500 42
+INFO 2024-12-06 03:38:21,756 autoreload 35108 15484 Watching for file changes with StatReloader
+INFO 2024-12-06 03:38:31,922 basehttp 35108 6528 "GET /admin/ HTTP/1.1" 200 3289
+INFO 2024-12-06 03:38:35,591 basehttp 35108 6528 "GET /admin/auth/user/ HTTP/1.1" 200 10179
+INFO 2024-12-06 03:38:35,638 basehttp 35108 6528 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-12-06 03:38:45,475 basehttp 35108 6528 "GET /admin/auth/user/3/change/ HTTP/1.1" 200 16133
+INFO 2024-12-06 03:38:45,522 basehttp 35108 28020 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-12-06 03:38:45,524 basehttp 35108 6528 "GET /static/admin/css/forms.css HTTP/1.1" 200 8804
+INFO 2024-12-06 03:38:45,540 basehttp 35108 8368 "GET /static/admin/js/calendar.js HTTP/1.1" 200 8466
+INFO 2024-12-06 03:38:45,547 basehttp 35108 14412 "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 200 12350
+INFO 2024-12-06 03:38:45,550 basehttp 35108 30536 "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19634
+INFO 2024-12-06 03:38:45,552 basehttp 35108 35560 "GET /static/admin/js/SelectBox.js HTTP/1.1" 200 4360
+INFO 2024-12-06 03:38:45,561 basehttp 35108 14412 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 492
+INFO 2024-12-06 03:38:45,636 basehttp 35108 14412 "GET /static/admin/css/widgets.css HTTP/1.1" 200 11097
+INFO 2024-12-06 03:38:45,637 basehttp 35108 35560 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2024-12-06 03:38:45,753 basehttp 35108 30536 "GET /static/admin/img/icon-unknown-alt.svg HTTP/1.1" 200 655
+INFO 2024-12-06 03:38:45,754 basehttp 35108 6528 "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+INFO 2024-12-06 03:38:45,755 basehttp 35108 35560 "GET /static/admin/img/icon-unknown.svg HTTP/1.1" 200 655
+INFO 2024-12-06 03:38:45,757 basehttp 35108 8368 "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+INFO 2024-12-06 03:38:45,757 basehttp 35108 14412 "GET /static/admin/img/selector-icons.svg HTTP/1.1" 200 3291
+INFO 2024-12-06 03:39:02,831 basehttp 35108 14412 "GET /admin/auth/user/ HTTP/1.1" 200 10179
+WARNING 2024-12-06 03:39:30,295 log 35108 35728 Unauthorized: /api/auth/login/
+WARNING 2024-12-06 03:39:30,295 basehttp 35108 35728 "POST /api/auth/login/ HTTP/1.1" 401 63
+WARNING 2024-12-06 03:40:10,525 log 35108 35728 Unauthorized: /api/auth/login/
+WARNING 2024-12-06 03:40:10,529 basehttp 35108 35728 "POST /api/auth/login/ HTTP/1.1" 401 63
+INFO 2024-12-06 03:40:55,752 autoreload 35108 15484 C:\Users\ASUS\Desktop\WWW\course_design\myapp\auth.py changed, reloading.
+INFO 2024-12-06 03:40:56,477 autoreload 7932 15916 Watching for file changes with StatReloader
+INFO 2024-12-06 03:41:04,993 autoreload 7932 15916 C:\Users\ASUS\Desktop\WWW\course_design\myapp\urls.py changed, reloading.
+INFO 2024-12-06 03:41:05,613 autoreload 32816 34960 Watching for file changes with StatReloader
+INFO 2024-12-06 03:42:06,609 auth 32816 34888 Login attempt for user: wangziyu
+INFO 2024-12-06 03:42:06,696 auth 32816 34888 Login successful for user: wangziyu
+ERROR 2024-12-06 03:42:06,696 auth 32816 34888 Login error: 'str' object has no attribute 'decode'
+ERROR 2024-12-06 03:42:06,696 auth 32816 34888 Traceback (most recent call last):
+  File "C:\Users\ASUS\Desktop\WWW\course_design\myapp\auth.py", line 35, in login
+    'refresh': str(refresh),
+  File "D:\Anaconda3\envs\web\lib\site-packages\rest_framework_simplejwt\tokens.py", line 82, in __str__
+    return token_backend.encode(self.payload)
+  File "D:\Anaconda3\envs\web\lib\site-packages\rest_framework_simplejwt\backends.py", line 43, in encode
+    return token.decode('utf-8')
+AttributeError: 'str' object has no attribute 'decode'
+
+ERROR 2024-12-06 03:42:06,700 log 32816 34888 Internal Server Error: /api/auth/login/
+ERROR 2024-12-06 03:42:06,700 basehttp 32816 34888 "POST /api/auth/login/ HTTP/1.1" 500 42
+INFO 2024-12-06 03:42:09,820 auth 32816 34888 Login attempt for user: wangziyu
+INFO 2024-12-06 03:42:09,914 auth 32816 34888 Login successful for user: wangziyu
+ERROR 2024-12-06 03:42:09,915 auth 32816 34888 Login error: 'str' object has no attribute 'decode'
+ERROR 2024-12-06 03:42:09,916 auth 32816 34888 Traceback (most recent call last):
+  File "C:\Users\ASUS\Desktop\WWW\course_design\myapp\auth.py", line 35, in login
+    'refresh': str(refresh),
+  File "D:\Anaconda3\envs\web\lib\site-packages\rest_framework_simplejwt\tokens.py", line 82, in __str__
+    return token_backend.encode(self.payload)
+  File "D:\Anaconda3\envs\web\lib\site-packages\rest_framework_simplejwt\backends.py", line 43, in encode
+    return token.decode('utf-8')
+AttributeError: 'str' object has no attribute 'decode'
+
+ERROR 2024-12-06 03:42:09,917 log 32816 34888 Internal Server Error: /api/auth/login/
+ERROR 2024-12-06 03:42:09,918 basehttp 32816 34888 "POST /api/auth/login/ HTTP/1.1" 500 42
+INFO 2024-12-06 03:42:17,633 auth 32816 34888 Login attempt for user: wangziyu
+INFO 2024-12-06 03:42:17,956 auth 32816 34888 Login successful for user: wangziyu
+ERROR 2024-12-06 03:42:17,956 auth 32816 34888 Login error: 'str' object has no attribute 'decode'
+ERROR 2024-12-06 03:42:17,958 auth 32816 34888 Traceback (most recent call last):
+  File "C:\Users\ASUS\Desktop\WWW\course_design\myapp\auth.py", line 35, in login
+    'refresh': str(refresh),
+  File "D:\Anaconda3\envs\web\lib\site-packages\rest_framework_simplejwt\tokens.py", line 82, in __str__
+    return token_backend.encode(self.payload)
+  File "D:\Anaconda3\envs\web\lib\site-packages\rest_framework_simplejwt\backends.py", line 43, in encode
+    return token.decode('utf-8')
+AttributeError: 'str' object has no attribute 'decode'
+
+ERROR 2024-12-06 03:42:17,959 log 32816 34888 Internal Server Error: /api/auth/login/
+ERROR 2024-12-06 03:42:17,959 basehttp 32816 34888 "POST /api/auth/login/ HTTP/1.1" 500 42
+INFO 2024-12-06 03:42:42,424 auth 32816 34888 Received registration request with data: {'username': 'wang111', 'password': '******'}
+INFO 2024-12-06 03:42:42,425 auth 32816 34888 Validating username: wang111
+INFO 2024-12-06 03:42:42,425 auth 32816 34888 Validating password
+INFO 2024-12-06 03:42:42,428 auth 32816 34888 Creating user in transaction
+INFO 2024-12-06 03:42:42,750 auth 32816 34888 Successfully created user: wang111
+ERROR 2024-12-06 03:42:42,753 auth 32816 34888 Unexpected error during registration: 'str' object has no attribute 'decode'
+ERROR 2024-12-06 03:42:42,753 auth 32816 34888 Traceback (most recent call last):
+  File "C:\Users\ASUS\Desktop\WWW\course_design\myapp\auth.py", line 158, in register
+    'refresh': str(refresh),
+  File "D:\Anaconda3\envs\web\lib\site-packages\rest_framework_simplejwt\tokens.py", line 82, in __str__
+    return token_backend.encode(self.payload)
+  File "D:\Anaconda3\envs\web\lib\site-packages\rest_framework_simplejwt\backends.py", line 43, in encode
+    return token.decode('utf-8')
+AttributeError: 'str' object has no attribute 'decode'
+
+ERROR 2024-12-06 03:42:42,753 log 32816 34888 Internal Server Error: /api/auth/register/
+ERROR 2024-12-06 03:42:42,753 basehttp 32816 34888 "POST /api/auth/register/ HTTP/1.1" 500 64
+INFO 2024-12-06 03:43:25,778 autoreload 29784 29176 Watching for file changes with StatReloader
+INFO 2024-12-06 03:43:28,802 auth 29784 32816 Received registration request with data: {'username': 'wang111', 'password': '******'}
+INFO 2024-12-06 03:43:28,802 auth 29784 32816 Validating username: wang111
+INFO 2024-12-06 03:43:28,802 auth 29784 32816 Validating password
+INFO 2024-12-06 03:43:28,806 auth 29784 32816 Creating user in transaction
+INFO 2024-12-06 03:43:29,105 auth 29784 32816 Successfully created user: wang111
+ERROR 2024-12-06 03:43:29,108 auth 29784 32816 Unexpected error during registration: 'str' object has no attribute 'decode'
+ERROR 2024-12-06 03:43:29,108 auth 29784 32816 Traceback (most recent call last):
+  File "C:\Users\ASUS\Desktop\WWW\course_design\myapp\auth.py", line 158, in register
+    'refresh': str(refresh),
+  File "D:\Anaconda3\envs\web\lib\site-packages\rest_framework_simplejwt\tokens.py", line 82, in __str__
+    return token_backend.encode(self.payload)
+  File "D:\Anaconda3\envs\web\lib\site-packages\rest_framework_simplejwt\backends.py", line 43, in encode
+    return token.decode('utf-8')
+AttributeError: 'str' object has no attribute 'decode'
+
+ERROR 2024-12-06 03:43:29,112 log 29784 32816 Internal Server Error: /api/auth/register/
+ERROR 2024-12-06 03:43:29,112 basehttp 29784 32816 "POST /api/auth/register/ HTTP/1.1" 500 64
+INFO 2024-12-06 03:45:29,964 autoreload 29784 29176 C:\Users\ASUS\Desktop\WWW\course_design\myapp\auth.py changed, reloading.
+INFO 2024-12-06 03:45:30,589 autoreload 1412 1752 Watching for file changes with StatReloader
+INFO 2024-12-06 03:45:43,264 auth 1412 7232 Received registration request with data: {'username': 'wang111', 'password': '******'}
+INFO 2024-12-06 03:45:43,265 auth 1412 7232 Validating username: wang111
+INFO 2024-12-06 03:45:43,265 auth 1412 7232 Validating password
+INFO 2024-12-06 03:45:43,267 auth 1412 7232 Creating user in transaction
+INFO 2024-12-06 03:45:43,352 auth 1412 7232 Successfully created user: wang111
+ERROR 2024-12-06 03:45:43,352 auth 1412 7232 Unexpected error during registration: 'str' object has no attribute 'decode'
+ERROR 2024-12-06 03:45:43,356 auth 1412 7232 Traceback (most recent call last):
+  File "C:\Users\ASUS\Desktop\WWW\course_design\myapp\auth.py", line 158, in register
+    tokens = get_tokens_for_user(user)
+  File "C:\Users\ASUS\Desktop\WWW\course_design\myapp\auth.py", line 19, in get_tokens_for_user
+    'refresh': str(refresh),
+  File "D:\Anaconda3\envs\web\lib\site-packages\rest_framework_simplejwt\tokens.py", line 82, in __str__
+    return token_backend.encode(self.payload)
+  File "D:\Anaconda3\envs\web\lib\site-packages\rest_framework_simplejwt\backends.py", line 43, in encode
+    return token.decode('utf-8')
+AttributeError: 'str' object has no attribute 'decode'
+
+ERROR 2024-12-06 03:45:43,357 log 1412 7232 Internal Server Error: /api/auth/register/
+ERROR 2024-12-06 03:45:43,357 basehttp 1412 7232 "POST /api/auth/register/ HTTP/1.1" 500 64
+INFO 2024-12-06 03:46:32,628 autoreload 2500 1424 Watching for file changes with StatReloader
+INFO 2024-12-06 03:47:39,556 auth 2500 35820 Received registration request with data: {'username': 'wzy66666', 'password': '******'}
+INFO 2024-12-06 03:47:39,560 auth 2500 35820 Validating username: wzy66666
+INFO 2024-12-06 03:47:39,560 auth 2500 35820 Validating password
+INFO 2024-12-06 03:47:39,563 auth 2500 35820 Creating user in transaction
+INFO 2024-12-06 03:47:39,647 auth 2500 35820 Successfully created user: wzy66666
+ERROR 2024-12-06 03:47:39,647 auth 2500 35820 Unexpected error during registration: 'str' object has no attribute 'decode'
+ERROR 2024-12-06 03:47:39,647 auth 2500 35820 Traceback (most recent call last):
+  File "C:\Users\ASUS\Desktop\WWW\course_design\myapp\auth.py", line 158, in register
+    tokens = get_tokens_for_user(user)
+  File "C:\Users\ASUS\Desktop\WWW\course_design\myapp\auth.py", line 19, in get_tokens_for_user
+    'refresh': str(refresh),
+  File "D:\Anaconda3\envs\web\lib\site-packages\rest_framework_simplejwt\tokens.py", line 82, in __str__
+    return token_backend.encode(self.payload)
+  File "D:\Anaconda3\envs\web\lib\site-packages\rest_framework_simplejwt\backends.py", line 43, in encode
+    return token.decode('utf-8')
+AttributeError: 'str' object has no attribute 'decode'
+
+ERROR 2024-12-06 03:47:39,650 log 2500 35820 Internal Server Error: /api/auth/register/
+ERROR 2024-12-06 03:47:39,650 basehttp 2500 35820 "POST /api/auth/register/ HTTP/1.1" 500 64
+INFO 2024-12-06 03:51:17,300 autoreload 2500 1424 C:\Users\ASUS\Desktop\WWW\course_design\myapp\auth.py changed, reloading.
+INFO 2024-12-06 03:51:17,930 autoreload 30008 15776 Watching for file changes with StatReloader
+INFO 2024-12-06 03:52:10,435 autoreload 35336 18288 Watching for file changes with StatReloader
+INFO 2024-12-06 03:56:42,524 autoreload 30008 15776 C:\Users\ASUS\Desktop\WWW\course_design\myapp\urls.py changed, reloading.
+INFO 2024-12-06 03:56:43,135 autoreload 3004 22604 Watching for file changes with StatReloader
+INFO 2024-12-06 03:57:01,630 autoreload 34504 16200 Watching for file changes with StatReloader
+INFO 2024-12-06 03:57:38,750 autoreload 34504 16200 C:\Users\ASUS\Desktop\WWW\course_design\course_design\settings.py changed, reloading.
+INFO 2024-12-06 03:57:38,756 autoreload 3004 22604 C:\Users\ASUS\Desktop\WWW\course_design\course_design\settings.py changed, reloading.
+INFO 2024-12-06 03:57:39,568 autoreload 4364 34956 Watching for file changes with StatReloader
+INFO 2024-12-06 03:57:39,568 autoreload 3876 13824 Watching for file changes with StatReloader
+INFO 2024-12-06 03:57:47,584 basehttp 4364 35636 "POST /api/auth/register/ HTTP/1.1" 201 64
+INFO 2024-12-06 03:57:47,664 basehttp 4364 35636 "OPTIONS /api/auth/user-info/ HTTP/1.1" 200 0
+WARNING 2024-12-06 03:57:47,668 log 4364 35636 Forbidden: /api/auth/user-info/
+WARNING 2024-12-06 03:57:47,669 basehttp 4364 35636 "GET /api/auth/user-info/ HTTP/1.1" 403 43
+WARNING 2024-12-06 03:57:53,305 log 4364 35636 Forbidden: /api/auth/user-info/
+WARNING 2024-12-06 03:57:53,306 basehttp 4364 35636 "GET /api/auth/user-info/ HTTP/1.1" 403 43
+INFO 2024-12-06 03:57:54,117 basehttp 4364 35636 "OPTIONS /api/projects/?page=1&page_size=12 HTTP/1.1" 200 0
+WARNING 2024-12-06 03:57:54,122 log 4364 35636 Forbidden: /api/projects/
+WARNING 2024-12-06 03:57:54,125 basehttp 4364 35636 "GET /api/projects/?page=1&page_size=12 HTTP/1.1" 403 43
+WARNING 2024-12-06 03:57:55,576 log 4364 35636 Forbidden: /api/auth/user-info/
+WARNING 2024-12-06 03:57:55,576 basehttp 4364 35636 "GET /api/auth/user-info/ HTTP/1.1" 403 43
+WARNING 2024-12-06 04:01:48,170 log 4364 35636 Forbidden: /api/projects/
+WARNING 2024-12-06 04:01:48,170 basehttp 4364 35636 "GET /api/projects/?page=1&page_size=12 HTTP/1.1" 403 43
+WARNING 2024-12-06 04:01:48,795 log 4364 35636 Forbidden: /api/projects/
+WARNING 2024-12-06 04:01:48,796 basehttp 4364 35636 "GET /api/projects/?page=1&page_size=12 HTTP/1.1" 403 43
+WARNING 2024-12-06 04:02:01,196 log 4364 35636 Forbidden: /api/projects/
+WARNING 2024-12-06 04:02:01,196 basehttp 4364 35636 "GET /api/projects/?page=1&page_size=12 HTTP/1.1" 403 43
+WARNING 2024-12-06 04:02:05,531 log 4364 35636 Forbidden: /api/projects/
+WARNING 2024-12-06 04:02:05,532 basehttp 4364 35636 "GET /api/projects/?page=1&page_size=12 HTTP/1.1" 403 43
+WARNING 2024-12-06 04:02:11,882 log 4364 35636 Forbidden: /api/projects/
+WARNING 2024-12-06 04:02:11,882 basehttp 4364 35636 "GET /api/projects/?page=1&page_size=12 HTTP/1.1" 403 43
+WARNING 2024-12-06 04:02:15,545 log 4364 35636 Forbidden: /api/projects/
+WARNING 2024-12-06 04:02:15,545 basehttp 4364 35636 "GET /api/projects/?page=1&page_size=12 HTTP/1.1" 403 43
+WARNING 2024-12-06 04:02:15,553 log 4364 35636 Forbidden: /api/projects/
+WARNING 2024-12-06 04:02:15,553 basehttp 4364 35636 "GET /api/projects/?page=1&page_size=12 HTTP/1.1" 403 43
+WARNING 2024-12-06 04:02:15,721 log 4364 35636 Forbidden: /api/projects/
+WARNING 2024-12-06 04:02:15,721 basehttp 4364 35636 "GET /api/projects/?page=1&page_size=12 HTTP/1.1" 403 43
+WARNING 2024-12-06 04:02:16,776 log 4364 35636 Forbidden: /api/projects/
+WARNING 2024-12-06 04:02:16,777 basehttp 4364 35636 "GET /api/projects/?page=1&page_size=12 HTTP/1.1" 403 43
+WARNING 2024-12-06 04:02:16,789 log 4364 35636 Forbidden: /api/projects/
+WARNING 2024-12-06 04:02:16,789 basehttp 4364 35636 "GET /api/projects/?page=1&page_size=12 HTTP/1.1" 403 43
+WARNING 2024-12-06 04:02:16,793 log 4364 35636 Forbidden: /api/projects/
+WARNING 2024-12-06 04:02:16,793 basehttp 4364 35636 "GET /api/projects/?page=1&page_size=12 HTTP/1.1" 403 43
+WARNING 2024-12-06 04:02:16,955 log 4364 35636 Forbidden: /api/projects/
+WARNING 2024-12-06 04:02:16,955 basehttp 4364 35636 "GET /api/projects/?page=1&page_size=12 HTTP/1.1" 403 43
+INFO 2024-12-06 04:04:14,627 autoreload 3876 13824 C:\Users\ASUS\Desktop\WWW\course_design\myapp\views.py changed, reloading.
+INFO 2024-12-06 04:04:14,629 autoreload 4364 34956 C:\Users\ASUS\Desktop\WWW\course_design\myapp\views.py changed, reloading.
+INFO 2024-12-06 04:04:15,392 autoreload 16480 6244 Watching for file changes with StatReloader
+INFO 2024-12-06 04:04:15,392 autoreload 2640 208 Watching for file changes with StatReloader
+WARNING 2024-12-06 04:04:39,124 log 2640 30016 Bad Request: /api/auth/register/
+WARNING 2024-12-06 04:04:39,124 basehttp 2640 30016 "POST /api/auth/register/ HTTP/1.1" 400 30
+WARNING 2024-12-06 04:04:49,855 log 2640 30016 Unauthorized: /api/auth/login/
+WARNING 2024-12-06 04:04:49,855 basehttp 2640 30016 "POST /api/auth/login/ HTTP/1.1" 401 36
+INFO 2024-12-06 04:04:49,863 basehttp 2640 30016 "OPTIONS /api/auth/token/refresh/ HTTP/1.1" 200 0
+WARNING 2024-12-06 04:04:49,871 log 2640 30016 Not Found: /api/auth/token/refresh/
+WARNING 2024-12-06 04:04:49,872 basehttp 2640 30016 "POST /api/auth/token/refresh/ HTTP/1.1" 404 3652
+INFO 2024-12-06 04:05:03,461 basehttp 2640 30016 "POST /api/auth/register/ HTTP/1.1" 201 66
+WARNING 2024-12-06 04:05:31,625 log 2640 30016 Unauthorized: /api/auth/login/
+WARNING 2024-12-06 04:05:31,627 basehttp 2640 30016 "POST /api/auth/login/ HTTP/1.1" 401 36
+WARNING 2024-12-06 04:05:31,634 log 2640 30016 Not Found: /api/auth/token/refresh/
+WARNING 2024-12-06 04:05:31,634 basehttp 2640 30016 "POST /api/auth/token/refresh/ HTTP/1.1" 404 3652
+INFO 2024-12-06 04:06:26,521 autoreload 2640 208 C:\Users\ASUS\Desktop\WWW\course_design\course_design\settings.py changed, reloading.
+INFO 2024-12-06 04:06:26,529 autoreload 16480 6244 C:\Users\ASUS\Desktop\WWW\course_design\course_design\settings.py changed, reloading.
+INFO 2024-12-06 04:06:27,266 autoreload 35380 6552 Watching for file changes with StatReloader
+INFO 2024-12-06 04:06:27,292 autoreload 4048 480 Watching for file changes with StatReloader
+INFO 2024-12-06 04:06:46,253 basehttp 35380 33576 "OPTIONS /api/auth/register/ HTTP/1.1" 200 0
+INFO 2024-12-06 04:10:44,820 autoreload 4048 480 C:\Users\ASUS\Desktop\WWW\course_design\myapp\serializers.py changed, reloading.
+INFO 2024-12-06 04:10:44,822 autoreload 35380 6552 C:\Users\ASUS\Desktop\WWW\course_design\myapp\auth.py changed, reloading.
+INFO 2024-12-06 04:10:45,653 autoreload 32812 35728 Watching for file changes with StatReloader
+INFO 2024-12-06 04:10:45,653 autoreload 13028 16444 Watching for file changes with StatReloader
+INFO 2024-12-06 04:13:31,813 autoreload 13028 16444 C:\Users\ASUS\Desktop\WWW\course_design\myapp\auth.py changed, reloading.
+INFO 2024-12-06 04:13:31,815 autoreload 32812 35728 C:\Users\ASUS\Desktop\WWW\course_design\myapp\auth.py changed, reloading.
+INFO 2024-12-06 04:13:32,620 autoreload 14940 4800 Watching for file changes with StatReloader
+INFO 2024-12-06 04:13:32,620 autoreload 27268 11704 Watching for file changes with StatReloader
+INFO 2024-12-06 04:15:19,891 basehttp 27268 8044 "OPTIONS /api/auth/register/ HTTP/1.1" 200 0
+INFO 2024-12-06 04:15:50,153 basehttp 27268 8044 "OPTIONS /api/auth/register/ HTTP/1.1" 200 0
+INFO 2024-12-06 04:16:21,583 autoreload 35776 8772 Watching for file changes with StatReloader
+INFO 2024-12-06 04:16:25,530 basehttp 35776 31784 "OPTIONS /api/auth/register/ HTTP/1.1" 200 0
+WARNING 2024-12-06 04:16:47,892 log 35776 6236 Not Found: /
+WARNING 2024-12-06 04:16:47,894 basehttp 35776 6236 "GET / HTTP/1.1" 404 2170
+WARNING 2024-12-06 04:16:56,554 log 35776 6236 Not Found: /api/v1/docs/
+WARNING 2024-12-06 04:16:56,554 basehttp 35776 6236 "GET /api/v1/docs/ HTTP/1.1" 404 3618
+WARNING 2024-12-06 04:17:42,740 log 35776 6236 Not Found: /api/v1
+WARNING 2024-12-06 04:17:42,742 basehttp 35776 6236 "GET /api/v1 HTTP/1.1" 404 3600
+WARNING 2024-12-06 04:17:46,612 log 35776 6236 Not Found: /api
+WARNING 2024-12-06 04:17:46,612 basehttp 35776 6236 "GET /api HTTP/1.1" 404 2197
+INFO 2024-12-06 04:18:14,415 autoreload 35776 8772 C:\Users\ASUS\Desktop\WWW\course_design\myapp\auth.py changed, reloading.
+INFO 2024-12-06 04:18:15,173 autoreload 29392 24488 Watching for file changes with StatReloader
+INFO 2024-12-06 04:18:51,168 autoreload 31004 29528 Watching for file changes with StatReloader
+INFO 2024-12-06 04:19:16,476 basehttp 31004 12400 "OPTIONS /api/auth/register/ HTTP/1.1" 200 0
+INFO 2024-12-06 04:20:16,935 autoreload 31004 29528 C:\Users\ASUS\Desktop\WWW\course_design\course_design\settings.py changed, reloading.
+INFO 2024-12-06 04:20:17,617 autoreload 1592 28264 Watching for file changes with StatReloader
+INFO 2024-12-06 04:20:57,890 basehttp 1592 35716 "OPTIONS /api/auth/register/ HTTP/1.1" 200 0
+INFO 2024-12-06 04:21:49,695 autoreload 1592 28264 C:\Users\ASUS\Desktop\WWW\course_design\course_design\settings.py changed, reloading.
+INFO 2024-12-06 04:21:50,450 autoreload 13124 19876 Watching for file changes with StatReloader
+INFO 2024-12-06 04:22:34,279 autoreload 13124 19876 C:\Users\ASUS\Desktop\WWW\course_design\course_design\urls.py changed, reloading.
+INFO 2024-12-06 04:22:35,088 autoreload 20884 21964 Watching for file changes with StatReloader
+INFO 2024-12-06 04:22:42,569 autoreload 20884 21964 C:\Users\ASUS\Desktop\WWW\course_design\myapp\auth.py changed, reloading.
+INFO 2024-12-06 04:22:43,264 autoreload 20272 34052 Watching for file changes with StatReloader
+INFO 2024-12-06 04:23:01,529 basehttp 20272 12048 "GET /swagger/ HTTP/1.1" 200 1621
+INFO 2024-12-06 04:23:01,581 basehttp 20272 12048 "GET /static/drf-yasg/style.css HTTP/1.1" 200 1047
+INFO 2024-12-06 04:23:01,588 basehttp 20272 31436 "GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 200 145206
+INFO 2024-12-06 04:23:01,811 basehttp 20272 32868 "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 200 2093
+INFO 2024-12-06 04:23:01,866 basehttp 20272 32868 "GET /static/drf-yasg/immutable.min.js HTTP/1.1" 200 56904
+INFO 2024-12-06 04:23:01,896 basehttp 20272 32868 "GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 200 15480
+INFO 2024-12-06 04:23:02,316 basehttp 20272 31436 "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 200 322863
+INFO 2024-12-06 04:23:03,064 basehttp 20272 12048 "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 200 1046583
+INFO 2024-12-06 04:23:03,461 basehttp 20272 12048 "GET /swagger/?format=openapi HTTP/1.1" 200 8509
+INFO 2024-12-06 04:23:03,494 basehttp 20272 12048 "GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 200 628
+INFO 2024-12-06 04:23:44,086 basehttp 20272 6552 "OPTIONS /api/auth/register/ HTTP/1.1" 200 0
+INFO 2024-12-06 04:23:45,606 basehttp 20272 6552 "OPTIONS /api/auth/register/ HTTP/1.1" 200 0
+INFO 2024-12-06 04:25:10,068 autoreload 20272 34052 C:\Users\ASUS\Desktop\WWW\course_design\course_design\settings.py changed, reloading.
+INFO 2024-12-06 04:25:10,843 autoreload 35040 2756 Watching for file changes with StatReloader
+INFO 2024-12-06 04:37:37,700 autoreload 21020 15288 Watching for file changes with StatReloader
+INFO 2024-12-06 04:39:03,800 basehttp 21020 22008 "OPTIONS /api/auth/register/ HTTP/1.1" 200 0
+INFO 2024-12-06 04:40:11,437 autoreload 21020 15288 C:\Users\ASUS\Desktop\WWW\course_design\course_design\settings.py changed, reloading.
+INFO 2024-12-06 04:40:12,147 autoreload 17544 8348 Watching for file changes with StatReloader
+INFO 2024-12-06 04:41:25,600 basehttp 17544 4648 "OPTIONS /api/auth/register/ HTTP/1.1" 200 0
+INFO 2024-12-06 04:41:25,607 auth 17544 33220 收到注册请求: {'username': 'wzy832279', 'display_name': 'wzy832279', 'password': '******'}
+INFO 2024-12-06 04:41:25,655 auth 17544 33220 验证用户名: wzy832279
+WARNING 2024-12-06 04:41:25,663 auth 17544 33220 用户名已存在: wzy832279
+WARNING 2024-12-06 04:41:25,663 log 17544 33220 Bad Request: /api/auth/register/
+WARNING 2024-12-06 04:41:25,663 basehttp 17544 33220 "POST /api/auth/register/ HTTP/1.1" 400 30
+INFO 2024-12-06 04:41:30,240 auth 17544 33220 收到注册请求: {'username': 'wzy832211', 'display_name': 'wzy832279', 'password': '******'}
+INFO 2024-12-06 04:41:30,241 auth 17544 33220 验证用户名: wzy832211
+INFO 2024-12-06 04:41:30,243 auth 17544 33220 开始创建用户
+INFO 2024-12-06 04:41:30,337 auth 17544 33220 用户创建成功: wzy832211
+INFO 2024-12-06 04:41:30,343 auth 17544 33220 返回注册成功响应: {'message': '注册成功', 'user': {'id': 10, 'username': 'wzy832211', 'profile': {'display_name': 'wzy832279', 'user_type': 'user'}}}
+INFO 2024-12-06 04:41:30,365 basehttp 17544 33220 "POST /api/auth/register/ HTTP/1.1" 201 124
+INFO 2024-12-06 04:41:37,617 basehttp 17544 4648 "OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+INFO 2024-12-06 04:41:37,744 basehttp 17544 33220 "POST /api/auth/login/ HTTP/1.1" 200 124
+INFO 2024-12-06 04:45:06,467 autoreload 17544 8348 C:\Users\ASUS\Desktop\WWW\course_design\myapp\auth.py changed, reloading.
+INFO 2024-12-06 04:45:07,105 autoreload 31508 20792 Watching for file changes with StatReloader
+INFO 2024-12-06 04:49:17,509 autoreload 2008 35304 Watching for file changes with StatReloader
+WARNING 2024-12-06 04:49:20,809 log 2008 16528 Not Found: /
+WARNING 2024-12-06 04:49:20,810 basehttp 2008 16528 "GET / HTTP/1.1" 404 2591
+INFO 2024-12-06 04:49:31,101 basehttp 2008 16528 "GET /admin HTTP/1.1" 301 0
+INFO 2024-12-06 04:49:31,126 basehttp 2008 16528 "GET /admin/ HTTP/1.1" 302 0
+INFO 2024-12-06 04:49:31,181 basehttp 2008 16528 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2214
+INFO 2024-12-06 04:49:31,223 basehttp 2008 16528 "GET /static/admin/css/login.css HTTP/1.1" 200 939
+INFO 2024-12-06 04:49:38,285 basehttp 2008 16528 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2024-12-06 04:49:38,310 basehttp 2008 16528 "GET /admin/ HTTP/1.1" 200 4477
+INFO 2024-12-06 04:49:45,008 basehttp 2008 16528 "GET /admin/myapp/userprofile/ HTTP/1.1" 200 9121
+INFO 2024-12-06 04:49:45,047 basehttp 2008 16528 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-12-06 04:49:53,161 basehttp 2008 16528 "GET /admin/myapp/fieldworkproject/ HTTP/1.1" 200 5377
+INFO 2024-12-06 04:49:53,196 basehttp 2008 16528 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-12-06 04:49:54,377 basehttp 2008 16528 "GET /admin/myapp/fieldworkfile/ HTTP/1.1" 200 5371
+INFO 2024-12-06 04:49:54,417 basehttp 2008 16528 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-12-06 04:49:56,134 basehttp 2008 16528 "GET /admin/myapp/fieldworkfile/add/ HTTP/1.1" 200 12929
+INFO 2024-12-06 04:49:56,173 basehttp 2008 16528 "GET /static/admin/css/forms.css HTTP/1.1" 200 8804
+INFO 2024-12-06 04:49:56,173 basehttp 2008 21908 "GET /static/admin/js/calendar.js HTTP/1.1" 200 8466
+INFO 2024-12-06 04:49:56,175 basehttp 2008 32968 "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19634
+INFO 2024-12-06 04:49:56,179 basehttp 2008 21908 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 492
+INFO 2024-12-06 04:49:56,179 basehttp 2008 28864 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-12-06 04:49:56,270 basehttp 2008 28864 "GET /static/admin/css/widgets.css HTTP/1.1" 200 11097
+INFO 2024-12-06 04:49:56,276 basehttp 2008 21908 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2024-12-06 04:49:56,282 basehttp 2008 28864 "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+INFO 2024-12-06 04:49:56,368 basehttp 2008 21908 "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+INFO 2024-12-06 04:49:56,369 basehttp 2008 28864 "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+INFO 2024-12-06 04:50:00,704 basehttp 2008 28864 "GET /admin/myapp/fieldworkfile/ HTTP/1.1" 200 5371
+INFO 2024-12-06 04:50:02,141 basehttp 2008 28864 "GET /admin/myapp/fieldworkproject/ HTTP/1.1" 200 5377
+INFO 2024-12-06 04:50:02,181 basehttp 2008 28864 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-12-06 04:50:03,655 basehttp 2008 28864 "GET /admin/myapp/fieldworkproject/add/ HTTP/1.1" 200 12067
+INFO 2024-12-06 04:50:03,689 basehttp 2008 28864 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-12-06 04:50:06,200 basehttp 2008 28864 "GET /admin/myapp/fieldworkproject/ HTTP/1.1" 200 5377
+INFO 2024-12-06 04:50:06,780 basehttp 2008 28864 "GET /admin/myapp/fieldworkfile/ HTTP/1.1" 200 5371
+INFO 2024-12-06 04:50:19,271 basehttp 2008 5428 "POST /api/auth/login/ HTTP/1.1" 200 110
+INFO 2024-12-06 04:50:50,941 basehttp 2008 28864 "GET /admin/myapp/fieldworkproject/ HTTP/1.1" 200 5377
+INFO 2024-12-06 04:50:50,977 basehttp 2008 28864 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-12-06 04:50:53,121 basehttp 2008 28864 "GET /admin/myapp/userprofile/ HTTP/1.1" 200 9121
+INFO 2024-12-06 04:50:53,157 basehttp 2008 28864 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-12-06 04:50:56,495 basehttp 2008 28864 "GET /admin/myapp/userprofile/?user_type__exact=user HTTP/1.1" 200 7871
+INFO 2024-12-06 04:50:56,532 basehttp 2008 28864 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-12-06 04:50:57,943 basehttp 2008 28864 "GET /admin/myapp/userprofile/?user_type__exact=admin HTTP/1.1" 200 9805
+INFO 2024-12-06 04:50:57,981 basehttp 2008 28864 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-12-06 04:51:01,799 basehttp 2008 28864 "GET /admin/myapp/userprofile/?user_type__exact=user HTTP/1.1" 200 7871
+INFO 2024-12-06 04:51:01,840 basehttp 2008 28864 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-12-06 04:51:02,533 basehttp 2008 28864 "GET /admin/myapp/userprofile/?user_type__exact=admin HTTP/1.1" 200 9805
+INFO 2024-12-06 04:51:02,572 basehttp 2008 28864 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-12-06 04:51:05,008 basehttp 2008 28864 "GET /admin/myapp/userprofile/?user_type__exact=user HTTP/1.1" 200 7871
+INFO 2024-12-06 04:51:05,046 basehttp 2008 28864 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-12-06 04:51:06,154 basehttp 2008 28864 "GET /admin/myapp/userprofile/?user_type__exact=admin HTTP/1.1" 200 9805
+INFO 2024-12-06 04:51:06,199 basehttp 2008 28864 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-12-06 04:51:07,677 basehttp 2008 28864 "GET /admin/myapp/userprofile/?user_type__exact=user HTTP/1.1" 200 7871
+INFO 2024-12-06 04:51:07,718 basehttp 2008 28864 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-12-06 04:51:08,732 basehttp 2008 28864 "GET /admin/myapp/userprofile/?user_type__exact=admin HTTP/1.1" 200 9805
+INFO 2024-12-06 04:51:08,772 basehttp 2008 28864 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-12-06 04:51:09,307 basehttp 2008 28864 "GET /admin/myapp/userprofile/? HTTP/1.1" 200 9121
+INFO 2024-12-06 04:51:09,358 basehttp 2008 28864 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-12-06 04:51:11,656 basehttp 2008 28864 "GET /admin/myapp/userprofile/? HTTP/1.1" 200 9121
+INFO 2024-12-06 04:51:11,692 basehttp 2008 28864 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-12-06 04:51:15,354 basehttp 2008 28864 "GET /admin/myapp/fieldworkproject/ HTTP/1.1" 200 5377
+INFO 2024-12-06 04:51:15,394 basehttp 2008 28864 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-12-06 04:51:16,796 basehttp 2008 28864 "GET /admin/myapp/fieldworkfile/ HTTP/1.1" 200 5371
+INFO 2024-12-06 04:51:16,834 basehttp 2008 28864 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-12-06 04:51:17,776 basehttp 2008 28864 "GET /admin/myapp/fieldworkproject/ HTTP/1.1" 200 5377
+INFO 2024-12-06 04:51:17,822 basehttp 2008 28864 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-12-06 04:51:19,175 basehttp 2008 28864 "GET /admin/myapp/fieldworkfile/ HTTP/1.1" 200 5371
+INFO 2024-12-06 04:51:19,216 basehttp 2008 28864 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-12-06 04:51:19,814 basehttp 2008 28864 "GET /admin/myapp/fieldworkproject/ HTTP/1.1" 200 5377
+INFO 2024-12-06 04:51:19,849 basehttp 2008 28864 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-12-06 04:52:13,331 basehttp 2008 5428 "POST /api/auth/login/ HTTP/1.1" 200 110
+INFO 2024-12-06 04:52:13,879 basehttp 2008 5116 "OPTIONS /api/auth/user-info/ HTTP/1.1" 200 0
+WARNING 2024-12-06 04:52:13,882 log 2008 5428 Forbidden: /api/auth/user-info/
+WARNING 2024-12-06 04:52:13,882 basehttp 2008 5428 "GET /api/auth/user-info/ HTTP/1.1" 403 43
+WARNING 2024-12-06 04:52:33,114 log 2008 5428 Forbidden: /api/auth/user-info/
+WARNING 2024-12-06 04:52:33,114 basehttp 2008 5428 "GET /api/auth/user-info/ HTTP/1.1" 403 43
+INFO 2024-12-06 04:52:34,091 basehttp 2008 5116 "OPTIONS /api/projects/?page=1&page_size=12 HTTP/1.1" 200 0
+INFO 2024-12-06 04:52:34,100 basehttp 2008 5428 "GET /api/projects/?page=1&page_size=12 HTTP/1.1" 200 2
+INFO 2024-12-06 04:52:34,109 basehttp 2008 5428 "GET /api/projects/?page=1&page_size=12 HTTP/1.1" 200 2
+WARNING 2024-12-06 04:52:36,001 log 2008 5428 Forbidden: /api/auth/user-info/
+WARNING 2024-12-06 04:52:36,001 basehttp 2008 5428 "GET /api/auth/user-info/ HTTP/1.1" 403 43
+INFO 2024-12-06 04:52:37,275 basehttp 2008 5428 "GET /api/projects/?page=1&page_size=12 HTTP/1.1" 200 2
+INFO 2024-12-06 04:52:37,283 basehttp 2008 5428 "GET /api/projects/?page=1&page_size=12 HTTP/1.1" 200 2
+WARNING 2024-12-06 04:52:38,307 log 2008 5428 Forbidden: /api/auth/user-info/
+WARNING 2024-12-06 04:52:38,307 basehttp 2008 5428 "GET /api/auth/user-info/ HTTP/1.1" 403 43
+INFO 2024-12-06 04:52:38,906 basehttp 2008 5428 "GET /api/projects/?page=1&page_size=12 HTTP/1.1" 200 2
+INFO 2024-12-06 04:52:38,914 basehttp 2008 5428 "GET /api/projects/?page=1&page_size=12 HTTP/1.1" 200 2
+WARNING 2024-12-06 04:52:39,676 log 2008 5428 Forbidden: /api/auth/user-info/
+WARNING 2024-12-06 04:52:39,677 basehttp 2008 5428 "GET /api/auth/user-info/ HTTP/1.1" 403 43
+INFO 2024-12-06 04:52:40,218 basehttp 2008 5428 "GET /api/projects/?page=1&page_size=12 HTTP/1.1" 200 2
+INFO 2024-12-06 04:52:40,227 basehttp 2008 5428 "GET /api/projects/?page=1&page_size=12 HTTP/1.1" 200 2
+WARNING 2024-12-06 04:52:41,074 log 2008 5428 Forbidden: /api/auth/user-info/
+WARNING 2024-12-06 04:52:41,074 basehttp 2008 5428 "GET /api/auth/user-info/ HTTP/1.1" 403 43
+INFO 2024-12-06 15:29:23,252 basehttp 2008 30932 "OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+INFO 2024-12-06 15:29:23,392 basehttp 2008 35104 "POST /api/auth/login/ HTTP/1.1" 200 110
+INFO 2024-12-06 15:29:23,932 basehttp 2008 30932 "OPTIONS /api/auth/user-info/ HTTP/1.1" 200 0
+WARNING 2024-12-06 15:29:23,944 log 2008 35104 Forbidden: /api/auth/user-info/
+WARNING 2024-12-06 15:29:23,945 basehttp 2008 35104 "GET /api/auth/user-info/ HTTP/1.1" 403 43
+WARNING 2024-12-06 15:29:26,383 log 2008 35104 Forbidden: /api/auth/user-info/
+WARNING 2024-12-06 15:29:26,383 basehttp 2008 35104 "GET /api/auth/user-info/ HTTP/1.1" 403 43
+WARNING 2024-12-06 15:29:39,838 log 2008 35104 Forbidden: /api/auth/user-info/
+WARNING 2024-12-06 15:29:39,838 basehttp 2008 35104 "GET /api/auth/user-info/ HTTP/1.1" 403 43
+INFO 2024-12-06 15:29:54,265 basehttp 2008 35104 "POST /api/auth/login/ HTTP/1.1" 200 110
+WARNING 2024-12-06 15:29:54,810 log 2008 35104 Forbidden: /api/auth/user-info/
+WARNING 2024-12-06 15:29:54,810 basehttp 2008 35104 "GET /api/auth/user-info/ HTTP/1.1" 403 43
+WARNING 2024-12-06 15:29:56,743 log 2008 35104 Forbidden: /api/auth/user-info/
+WARNING 2024-12-06 15:29:56,744 basehttp 2008 35104 "GET /api/auth/user-info/ HTTP/1.1" 403 43
+INFO 2024-12-06 15:32:29,531 autoreload 2008 35304 C:\Users\ASUS\Desktop\WWW\course_design\myapp\urls.py changed, reloading.
+INFO 2024-12-06 15:32:33,743 autoreload 35108 20196 Watching for file changes with StatReloader
+INFO 2024-12-06 15:32:43,495 basehttp 35108 35432 "POST /api/auth/login/ HTTP/1.1" 200 110
+WARNING 2024-12-06 15:32:44,043 log 35108 18160 Forbidden: /api/auth/user-info/
+WARNING 2024-12-06 15:32:44,045 basehttp 35108 18160 "GET /api/auth/user-info/ HTTP/1.1" 403 43
+WARNING 2024-12-06 15:32:45,838 log 35108 18160 Forbidden: /api/auth/user-info/
+WARNING 2024-12-06 15:32:45,839 basehttp 35108 18160 "GET /api/auth/user-info/ HTTP/1.1" 403 43
+INFO 2024-12-06 15:33:11,819 autoreload 15512 3424 Watching for file changes with StatReloader
+INFO 2024-12-06 15:33:30,959 basehttp 15512 29292 "POST /api/auth/login/ HTTP/1.1" 200 110
+WARNING 2024-12-06 15:33:31,507 log 15512 29292 Forbidden: /api/auth/user-info/
+WARNING 2024-12-06 15:33:31,508 basehttp 15512 29292 "GET /api/auth/user-info/ HTTP/1.1" 403 43
+WARNING 2024-12-06 15:33:33,888 log 15512 29292 Forbidden: /api/auth/user-info/
+WARNING 2024-12-06 15:33:33,888 basehttp 15512 29292 "GET /api/auth/user-info/ HTTP/1.1" 403 43
+INFO 2024-12-06 15:33:34,556 basehttp 15512 15800 "OPTIONS /api/projects/?page=1&page_size=12 HTTP/1.1" 200 0
+INFO 2024-12-06 15:33:34,566 basehttp 15512 29292 "GET /api/projects/?page=1&page_size=12 HTTP/1.1" 200 2
+INFO 2024-12-06 15:33:34,575 basehttp 15512 29292 "GET /api/projects/?page=1&page_size=12 HTTP/1.1" 200 2
+WARNING 2024-12-06 15:33:35,095 log 15512 29292 Forbidden: /api/auth/user-info/
+WARNING 2024-12-06 15:33:35,096 basehttp 15512 29292 "GET /api/auth/user-info/ HTTP/1.1" 403 43
+INFO 2024-12-06 15:33:35,723 basehttp 15512 29292 "GET /api/projects/?page=1&page_size=12 HTTP/1.1" 200 2
+INFO 2024-12-06 15:33:35,732 basehttp 15512 29292 "GET /api/projects/?page=1&page_size=12 HTTP/1.1" 200 2
+WARNING 2024-12-06 15:33:36,510 log 15512 29292 Forbidden: /api/auth/user-info/
+WARNING 2024-12-06 15:33:36,511 basehttp 15512 29292 "GET /api/auth/user-info/ HTTP/1.1" 403 43
+WARNING 2024-12-06 15:33:37,936 log 15512 29292 Forbidden: /api/auth/user-info/
+WARNING 2024-12-06 15:33:37,936 basehttp 15512 29292 "GET /api/auth/user-info/ HTTP/1.1" 403 43
+INFO 2024-12-06 15:36:36,063 basehttp 15512 15828 "OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+INFO 2024-12-06 15:36:36,198 basehttp 15512 35440 "POST /api/auth/login/ HTTP/1.1" 200 110
+INFO 2024-12-06 15:36:36,768 basehttp 15512 15828 "OPTIONS /api/auth/user-info/ HTTP/1.1" 200 0
+WARNING 2024-12-06 15:36:36,772 log 15512 35440 Forbidden: /api/auth/user-info/
+WARNING 2024-12-06 15:36:36,772 basehttp 15512 35440 "GET /api/auth/user-info/ HTTP/1.1" 403 43
+WARNING 2024-12-06 15:36:38,433 log 15512 35440 Forbidden: /api/auth/user-info/
+WARNING 2024-12-06 15:36:38,434 basehttp 15512 35440 "GET /api/auth/user-info/ HTTP/1.1" 403 43
+WARNING 2024-12-06 15:36:39,751 log 15512 35440 Forbidden: /api/auth/user-info/
+WARNING 2024-12-06 15:36:39,752 basehttp 15512 35440 "GET /api/auth/user-info/ HTTP/1.1" 403 43
+INFO 2024-12-06 15:39:31,296 autoreload 15512 3424 C:\Users\ASUS\Desktop\WWW\course_design\myapp\auth.py changed, reloading.
+INFO 2024-12-06 15:39:32,055 autoreload 3164 27540 Watching for file changes with StatReloader
+INFO 2024-12-06 15:39:42,751 basehttp 3164 35080 "POST /api/auth/login/ HTTP/1.1" 200 110
+WARNING 2024-12-06 15:39:43,328 log 3164 35080 Forbidden: /api/auth/user-info/
+WARNING 2024-12-06 15:39:43,329 basehttp 3164 35080 "GET /api/auth/user-info/ HTTP/1.1" 403 43
+INFO 2024-12-06 15:39:51,344 basehttp 3164 35080 "POST /api/auth/login/ HTTP/1.1" 200 110
+WARNING 2024-12-06 15:39:51,901 log 3164 35080 Forbidden: /api/auth/user-info/
+WARNING 2024-12-06 15:39:51,901 basehttp 3164 35080 "GET /api/auth/user-info/ HTTP/1.1" 403 43
+INFO 2024-12-06 15:40:55,107 basehttp 3164 7712 "OPTIONS /api/auth/register/ HTTP/1.1" 200 0
+INFO 2024-12-06 15:40:55,111 auth 3164 35080 收到注册请求: {'username': 'test00001', 'display_name': '测试11111', 'password': '******'}
+INFO 2024-12-06 15:40:55,556 auth 3164 35080 用户注册成功: test00001
+INFO 2024-12-06 15:40:55,569 basehttp 3164 35080 "POST /api/auth/register/ HTTP/1.1" 201 113
+WARNING 2024-12-06 15:40:56,132 log 3164 35080 Forbidden: /api/auth/user-info/
+WARNING 2024-12-06 15:40:56,132 basehttp 3164 35080 "GET /api/auth/user-info/ HTTP/1.1" 403 43
+WARNING 2024-12-06 15:41:06,728 log 3164 35080 Unauthorized: /api/auth/login/
+WARNING 2024-12-06 15:41:06,728 basehttp 3164 35080 "POST /api/auth/login/ HTTP/1.1" 401 36
+INFO 2024-12-06 15:41:10,033 basehttp 3164 35080 "POST /api/auth/login/ HTTP/1.1" 200 113
+WARNING 2024-12-06 15:41:10,596 log 3164 35080 Forbidden: /api/auth/user-info/
+WARNING 2024-12-06 15:41:10,599 basehttp 3164 35080 "GET /api/auth/user-info/ HTTP/1.1" 403 43
+INFO 2024-12-06 15:41:49,009 basehttp 3164 35080 "POST /api/auth/login/ HTTP/1.1" 200 110
+WARNING 2024-12-06 15:41:49,066 log 3164 35080 Forbidden: /api/auth/user-info/
+WARNING 2024-12-06 15:41:49,066 basehttp 3164 35080 "GET /api/auth/user-info/ HTTP/1.1" 403 43
+INFO 2024-12-06 15:44:15,080 autoreload 3164 27540 C:\Users\ASUS\Desktop\WWW\course_design\course_design\settings.py changed, reloading.
+INFO 2024-12-06 15:44:15,806 autoreload 23964 19056 Watching for file changes with StatReloader
+INFO 2024-12-06 15:44:29,003 basehttp 23964 22252 "POST /api/auth/login/ HTTP/1.1" 200 110
+WARNING 2024-12-06 15:44:29,007 log 23964 22252 Unauthorized: /api/auth/user-info/
+WARNING 2024-12-06 15:44:29,007 basehttp 23964 22252 "GET /api/auth/user-info/ HTTP/1.1" 401 21
+INFO 2024-12-06 15:44:31,347 basehttp 23964 22252 "POST /api/auth/login/ HTTP/1.1" 200 110
+WARNING 2024-12-06 15:44:31,353 log 23964 22252 Unauthorized: /api/auth/user-info/
+WARNING 2024-12-06 15:44:31,353 basehttp 23964 22252 "GET /api/auth/user-info/ HTTP/1.1" 401 21
+INFO 2024-12-06 15:44:32,191 basehttp 23964 22252 "POST /api/auth/login/ HTTP/1.1" 200 110
+WARNING 2024-12-06 15:44:32,195 log 23964 22252 Unauthorized: /api/auth/user-info/
+WARNING 2024-12-06 15:44:32,195 basehttp 23964 22252 "GET /api/auth/user-info/ HTTP/1.1" 401 21
+INFO 2024-12-06 15:44:57,951 autoreload 22392 2876 Watching for file changes with StatReloader
+WARNING 2024-12-06 15:45:02,167 log 22392 28056 Not Found: /
+WARNING 2024-12-06 15:45:02,167 basehttp 22392 28056 "GET / HTTP/1.1" 404 2591
+WARNING 2024-12-06 15:45:14,712 log 22392 28056 Not Found: /api
+WARNING 2024-12-06 15:45:14,714 basehttp 22392 28056 "GET /api HTTP/1.1" 404 2618
+WARNING 2024-12-06 15:45:18,669 log 22392 28056 Not Found: /apis
+WARNING 2024-12-06 15:45:18,669 basehttp 22392 28056 "GET /apis HTTP/1.1" 404 2621
+INFO 2024-12-06 15:45:25,525 basehttp 22392 28056 "GET /swagger HTTP/1.1" 301 0
+INFO 2024-12-06 15:45:25,555 basehttp 22392 28056 "GET /swagger/ HTTP/1.1" 200 1621
+INFO 2024-12-06 15:45:25,600 basehttp 22392 28056 "GET /static/drf-yasg/style.css HTTP/1.1" 200 1047
+INFO 2024-12-06 15:45:25,606 basehttp 22392 30908 "GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 200 145206
+INFO 2024-12-06 15:45:25,632 basehttp 22392 28056 "GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 200 15480
+INFO 2024-12-06 15:45:25,640 basehttp 22392 35780 "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 200 2093
+INFO 2024-12-06 15:45:25,739 basehttp 22392 22628 "GET /static/drf-yasg/immutable.min.js HTTP/1.1" 200 56904
+INFO 2024-12-06 15:45:26,982 basehttp 22392 5972 "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 200 1046583
+INFO 2024-12-06 15:45:28,337 basehttp 22392 35740 "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 200 322863
+INFO 2024-12-06 15:45:28,474 basehttp 22392 35740 "GET /swagger/?format=openapi HTTP/1.1" 200 8480
+INFO 2024-12-06 15:45:28,492 basehttp 22392 35740 "GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 200 628
+INFO 2024-12-06 15:45:39,639 basehttp 22392 35740 "GET /admin/ HTTP/1.1" 302 0
+INFO 2024-12-06 15:45:43,607 basehttp 22392 35740 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2214
+INFO 2024-12-06 15:45:43,647 basehttp 22392 22628 "GET /static/admin/css/login.css HTTP/1.1" 200 939
+INFO 2024-12-06 15:45:43,648 basehttp 22392 5972 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2271
+INFO 2024-12-06 15:45:43,650 basehttp 22392 35780 "GET /static/admin/css/responsive.css HTTP/1.1" 200 18545
+INFO 2024-12-06 15:45:43,650 basehttp 22392 35740 "GET /static/admin/css/base.css HTTP/1.1" 200 19513
+INFO 2024-12-06 15:45:43,761 basehttp 22392 35780 "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+INFO 2024-12-06 15:45:43,770 basehttp 22392 35740 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 1360
+INFO 2024-12-06 15:45:43,804 basehttp 22392 35780 "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+INFO 2024-12-06 15:45:43,805 basehttp 22392 35740 "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+INFO 2024-12-06 15:45:49,845 basehttp 22392 35740 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2024-12-06 15:45:49,888 basehttp 22392 35740 "GET /admin/ HTTP/1.1" 200 4477
+INFO 2024-12-06 15:45:49,927 basehttp 22392 35740 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 380
+INFO 2024-12-06 15:45:50,039 basehttp 22392 35740 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2024-12-06 15:45:50,039 basehttp 22392 35780 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2024-12-06 15:45:50,056 basehttp 22392 35780 "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+INFO 2024-12-06 15:45:52,474 basehttp 22392 35780 "GET /admin/myapp/userprofile/ HTTP/1.1" 200 9576
+INFO 2024-12-06 15:45:52,520 basehttp 22392 35780 "GET /static/admin/css/changelists.css HTTP/1.1" 200 6874
+INFO 2024-12-06 15:45:52,528 basehttp 22392 22628 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2024-12-06 15:45:52,533 basehttp 22392 30908 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 5984
+INFO 2024-12-06 15:45:52,533 basehttp 22392 28056 "GET /static/admin/js/core.js HTTP/1.1" 200 5698
+INFO 2024-12-06 15:45:52,537 basehttp 22392 35740 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-12-06 15:45:52,546 basehttp 22392 22628 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7902
+INFO 2024-12-06 15:45:52,549 basehttp 22392 35780 "GET /static/admin/js/actions.js HTTP/1.1" 200 7867
+INFO 2024-12-06 15:45:52,552 basehttp 22392 30908 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2024-12-06 15:45:52,562 basehttp 22392 35780 "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+INFO 2024-12-06 15:45:52,562 basehttp 22392 30908 "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2024-12-06 15:45:52,569 basehttp 22392 5972 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 287630
+INFO 2024-12-06 15:45:52,588 basehttp 22392 28056 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+INFO 2024-12-06 15:45:52,628 basehttp 22392 28056 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2024-12-06 15:45:52,645 basehttp 22392 28056 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2024-12-06 15:45:52,645 basehttp 22392 5972 "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+INFO 2024-12-06 15:46:02,819 basehttp 22392 5972 "GET /admin/myapp/userprofile/?o=5 HTTP/1.1" 200 9772
+INFO 2024-12-06 15:46:02,870 basehttp 22392 5972 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-12-06 15:46:03,501 basehttp 22392 5972 "GET /admin/myapp/userprofile/?o=-5 HTTP/1.1" 200 9792
+INFO 2024-12-06 15:46:03,557 basehttp 22392 5972 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-12-06 15:46:19,643 basehttp 22392 26540 "POST /api/auth/login/ HTTP/1.1" 200 110
+WARNING 2024-12-06 15:46:19,649 log 22392 26540 Unauthorized: /api/auth/user-info/
+WARNING 2024-12-06 15:46:19,649 basehttp 22392 26540 "GET /api/auth/user-info/ HTTP/1.1" 401 21
+INFO 2024-12-06 15:46:51,626 basehttp 22392 30044 "OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+INFO 2024-12-06 15:46:51,976 basehttp 22392 24404 "POST /api/auth/login/ HTTP/1.1" 200 110
+WARNING 2024-12-06 15:46:51,978 log 22392 24404 Unauthorized: /api/auth/user-info/
+WARNING 2024-12-06 15:46:51,982 basehttp 22392 24404 "GET /api/auth/user-info/ HTTP/1.1" 401 21
+INFO 2024-12-06 15:48:39,174 autoreload 22392 2876 C:\Users\ASUS\Desktop\WWW\course_design\myapp\auth.py changed, reloading.
+INFO 2024-12-06 15:48:39,991 autoreload 10512 32228 Watching for file changes with StatReloader
+INFO 2024-12-06 15:48:54,585 basehttp 10512 21844 "POST /api/auth/login/ HTTP/1.1" 200 110
+WARNING 2024-12-06 15:48:54,638 log 10512 21844 Unauthorized: /api/auth/user-info/
+WARNING 2024-12-06 15:48:54,638 basehttp 10512 21844 "GET /api/auth/user-info/ HTTP/1.1" 401 21
+INFO 2024-12-06 15:49:46,869 autoreload 32672 21636 Watching for file changes with StatReloader
+INFO 2024-12-06 15:50:01,603 basehttp 32672 23340 "POST /api/auth/login/ HTTP/1.1" 200 110
+WARNING 2024-12-06 15:50:01,654 log 32672 23340 Unauthorized: /api/auth/user-info/
+WARNING 2024-12-06 15:50:01,655 basehttp 32672 23340 "GET /api/auth/user-info/ HTTP/1.1" 401 21
+INFO 2024-12-06 15:50:28,978 basehttp 32672 28968 "OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+INFO 2024-12-06 15:50:29,349 basehttp 32672 2832 "POST /api/auth/login/ HTTP/1.1" 200 110
+WARNING 2024-12-06 15:50:29,415 log 32672 2832 Unauthorized: /api/auth/user-info/
+WARNING 2024-12-06 15:50:29,415 basehttp 32672 2832 "GET /api/auth/user-info/ HTTP/1.1" 401 21
+INFO 2024-12-06 15:52:17,777 autoreload 32672 21636 C:\Users\ASUS\Desktop\WWW\course_design\myapp\auth.py changed, reloading.
+INFO 2024-12-06 15:52:18,532 autoreload 23016 35384 Watching for file changes with StatReloader
+INFO 2024-12-06 15:52:38,200 auth 23016 34348 尝试登录用户: wangziyu
+INFO 2024-12-06 15:52:38,313 auth 23016 34348 用户登录成功: wangziyu, 响应数据: {'message': '登录成功', 'user': {'id': 1, 'username': 'wangziyu', 'display_name': 'wangziyu', 'user_type': 'admin'}}
+INFO 2024-12-06 15:52:38,323 basehttp 23016 34348 "POST /api/auth/login/ HTTP/1.1" 200 110
+WARNING 2024-12-06 15:52:38,366 log 23016 34348 Unauthorized: /api/auth/user-info/
+WARNING 2024-12-06 15:52:38,366 basehttp 23016 34348 "GET /api/auth/user-info/ HTTP/1.1" 401 21
+INFO 2024-12-06 15:54:40,894 auth 23016 34348 尝试登录用户: wangziyu
+INFO 2024-12-06 15:54:41,024 auth 23016 34348 用户登录成功: wangziyu, 响应数据: {'message': '登录成功', 'user': {'id': 1, 'username': 'wangziyu', 'display_name': 'wangziyu', 'user_type': 'admin'}}
+INFO 2024-12-06 15:54:41,038 basehttp 23016 34348 "POST /api/auth/login/ HTTP/1.1" 200 110
+INFO 2024-12-06 16:00:00,987 basehttp 23016 13248 "GET /api/projects/?page=1&page_size=12 HTTP/1.1" 200 2
+INFO 2024-12-06 16:00:00,997 basehttp 23016 13248 "GET /api/projects/?page=1&page_size=12 HTTP/1.1" 200 2
+WARNING 2024-12-06 16:03:21,298 log 23016 13248 Unauthorized: /api/auth/user-info/
+WARNING 2024-12-06 16:03:21,299 basehttp 23016 13248 "GET /api/auth/user-info/ HTTP/1.1" 401 21
+INFO 2024-12-06 16:03:33,177 auth 23016 13248 尝试登录用户: wangziyu
+INFO 2024-12-06 16:03:33,298 auth 23016 13248 用户登录成功: wangziyu, 响应数据: {'message': '登录成功', 'user': {'id': 1, 'username': 'wangziyu', 'display_name': 'wangziyu', 'user_type': 'admin'}}
+INFO 2024-12-06 16:03:33,309 basehttp 23016 13248 "POST /api/auth/login/ HTTP/1.1" 200 110
+INFO 2024-12-06 16:03:34,962 basehttp 23016 13248 "GET /api/projects/?page=1&page_size=12 HTTP/1.1" 200 2
+INFO 2024-12-06 16:03:34,975 basehttp 23016 13248 "GET /api/projects/?page=1&page_size=12 HTTP/1.1" 200 2
+INFO 2024-12-06 16:03:44,542 basehttp 23016 13248 "POST /api/auth/logout/ HTTP/1.1" 200 26
+INFO 2024-12-06 16:03:50,315 auth 23016 13248 尝试登录用户: wangziyu
+INFO 2024-12-06 16:03:50,429 auth 23016 13248 用户登录成功: wangziyu, 响应数据: {'message': '登录成功', 'user': {'id': 1, 'username': 'wangziyu', 'display_name': 'wangziyu', 'user_type': 'admin'}}
+INFO 2024-12-06 16:03:50,511 basehttp 23016 13248 "POST /api/auth/login/ HTTP/1.1" 200 110
+WARNING 2024-12-06 16:07:29,155 log 23016 13248 Unauthorized: /api/auth/user-info/
+WARNING 2024-12-06 16:07:29,157 basehttp 23016 13248 "GET /api/auth/user-info/ HTTP/1.1" 401 21
+INFO 2024-12-06 16:08:50,112 auth 23016 13248 尝试登录用户: wangziyu
+INFO 2024-12-06 16:08:50,230 auth 23016 13248 用户登录成功: wangziyu, 响应数据: {'message': '登录成功', 'user': {'id': 1, 'username': 'wangziyu', 'display_name': 'wangziyu', 'user_type': 'admin'}}
+INFO 2024-12-06 16:08:50,243 basehttp 23016 13248 "POST /api/auth/login/ HTTP/1.1" 200 110
+INFO 2024-12-06 16:09:08,686 basehttp 23016 13248 "GET /api/projects/?page=1&page_size=12 HTTP/1.1" 200 2
+INFO 2024-12-06 16:09:08,698 basehttp 23016 13248 "GET /api/projects/?page=1&page_size=12 HTTP/1.1" 200 2
+INFO 2024-12-06 16:13:28,123 basehttp 23016 23972 "GET /admin/myapp/userprofile/?o=-5 HTTP/1.1" 200 9792
+INFO 2024-12-06 16:13:28,178 basehttp 23016 23972 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-12-06 16:13:29,997 basehttp 23016 23972 "GET /admin/myapp/userprofile/2/change/?_changelist_filters=o%3D-5 HTTP/1.1" 200 16721
+INFO 2024-12-06 16:13:30,043 basehttp 23016 23972 "GET /static/admin/css/forms.css HTTP/1.1" 200 8804
+INFO 2024-12-06 16:13:30,054 basehttp 23016 36564 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-12-06 16:13:30,055 basehttp 23016 33932 "GET /static/admin/js/calendar.js HTTP/1.1" 200 8466
+INFO 2024-12-06 16:13:30,056 basehttp 23016 36116 "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 200 12350
+INFO 2024-12-06 16:13:30,068 basehttp 23016 8136 "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19634
+INFO 2024-12-06 16:13:30,069 basehttp 23016 23656 "GET /static/admin/js/SelectBox.js HTTP/1.1" 200 4360
+INFO 2024-12-06 16:13:30,070 basehttp 23016 36116 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 492
+INFO 2024-12-06 16:13:30,147 basehttp 23016 36116 "GET /static/admin/css/widgets.css HTTP/1.1" 200 11097
+INFO 2024-12-06 16:13:30,150 basehttp 23016 23656 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2024-12-06 16:13:30,269 basehttp 23016 23656 "GET /static/admin/img/icon-unknown.svg HTTP/1.1" 200 655
+INFO 2024-12-06 16:13:30,269 basehttp 23016 8136 "GET /static/admin/img/icon-unknown-alt.svg HTTP/1.1" 200 655
+INFO 2024-12-06 16:13:30,270 basehttp 23016 36564 "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+INFO 2024-12-06 16:13:30,271 basehttp 23016 36116 "GET /static/admin/img/selector-icons.svg HTTP/1.1" 200 3291
+INFO 2024-12-06 16:13:30,271 basehttp 23016 33932 "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+INFO 2024-12-06 16:13:39,793 basehttp 23016 36116 "GET /admin/myapp/userprofile/2/password/ HTTP/1.1" 200 5446
+INFO 2024-12-06 16:13:45,965 basehttp 23016 36116 "GET /admin/myapp/userprofile/2/change/?_changelist_filters=o%3D-5 HTTP/1.1" 200 16721
+INFO 2024-12-06 16:14:15,903 basehttp 23016 36116 "GET /admin/myapp/userprofile/?o=-5 HTTP/1.1" 200 9792
+WARNING 2024-12-06 16:20:34,166 log 23016 30652 Unauthorized: /api/auth/user-info/
+WARNING 2024-12-06 16:20:34,166 basehttp 23016 30652 "GET /api/auth/user-info/ HTTP/1.1" 401 21
+WARNING 2024-12-06 16:20:34,716 log 23016 30652 Unauthorized: /api/auth/user-info/
+WARNING 2024-12-06 16:20:34,717 basehttp 23016 30652 "GET /api/auth/user-info/ HTTP/1.1" 401 21
+INFO 2024-12-06 16:20:43,017 auth 23016 30652 尝试登录用户: wangziyu
+INFO 2024-12-06 16:20:43,126 auth 23016 30652 用户登录成功: wangziyu, 响应数据: {'message': '登录成功', 'user': {'id': 1, 'username': 'wangziyu', 'display_name': 'wangziyu', 'user_type': 'admin'}}
+INFO 2024-12-06 16:20:43,140 basehttp 23016 30652 "POST /api/auth/login/ HTTP/1.1" 200 110
+WARNING 2024-12-06 16:20:55,215 log 23016 30652 Unauthorized: /api/auth/user-info/
+WARNING 2024-12-06 16:20:55,215 basehttp 23016 30652 "GET /api/auth/user-info/ HTTP/1.1" 401 21
+INFO 2024-12-06 16:21:01,301 auth 23016 30652 尝试登录用户: wangziyu
+INFO 2024-12-06 16:21:01,408 auth 23016 30652 用户登录成功: wangziyu, 响应数据: {'message': '登录成功', 'user': {'id': 1, 'username': 'wangziyu', 'display_name': 'wangziyu', 'user_type': 'admin'}}
+INFO 2024-12-06 16:21:01,415 basehttp 23016 30652 "POST /api/auth/login/ HTTP/1.1" 200 110
+WARNING 2024-12-06 16:22:20,681 log 23016 30652 Unauthorized: /api/auth/user-info/
+WARNING 2024-12-06 16:22:20,682 basehttp 23016 30652 "GET /api/auth/user-info/ HTTP/1.1" 401 21
+INFO 2024-12-06 16:22:26,893 auth 23016 30652 尝试登录用户: wangziyu
+INFO 2024-12-06 16:22:27,004 auth 23016 30652 用户登录成功: wangziyu, 响应数据: {'message': '登录成功', 'user': {'id': 1, 'username': 'wangziyu', 'display_name': 'wangziyu', 'user_type': 'admin'}}
+INFO 2024-12-06 16:22:27,014 basehttp 23016 30652 "POST /api/auth/login/ HTTP/1.1" 200 110
+WARNING 2024-12-06 16:24:54,596 log 23016 30652 Unauthorized: /api/auth/user-info/
+WARNING 2024-12-06 16:24:54,596 basehttp 23016 30652 "GET /api/auth/user-info/ HTTP/1.1" 401 21
+INFO 2024-12-06 16:26:15,737 auth 23016 30652 尝试登录用户: wangziyu
+INFO 2024-12-06 16:26:15,841 auth 23016 30652 用户登录成功: wangziyu, 响应数据: {'message': '登录成功', 'user': {'id': 1, 'username': 'wangziyu', 'display_name': 'wangziyu', 'user_type': 'admin'}}
+INFO 2024-12-06 16:26:15,852 basehttp 23016 30652 "POST /api/auth/login/ HTTP/1.1" 200 110
+WARNING 2024-12-06 16:27:15,373 log 23016 30652 Unauthorized: /api/auth/user-info/
+WARNING 2024-12-06 16:27:15,375 basehttp 23016 30652 "GET /api/auth/user-info/ HTTP/1.1" 401 21
+INFO 2024-12-06 16:27:21,627 auth 23016 30652 尝试登录用户: wangziyu
+INFO 2024-12-06 16:27:21,728 auth 23016 30652 用户登录成功: wangziyu, 响应数据: {'message': '登录成功', 'user': {'id': 1, 'username': 'wangziyu', 'display_name': 'wangziyu', 'user_type': 'admin'}}
+INFO 2024-12-06 16:27:21,744 basehttp 23016 30652 "POST /api/auth/login/ HTTP/1.1" 200 110
+WARNING 2024-12-06 16:29:14,067 log 23016 30652 Unauthorized: /api/auth/user-info/
+WARNING 2024-12-06 16:29:14,068 basehttp 23016 30652 "GET /api/auth/user-info/ HTTP/1.1" 401 21
+INFO 2024-12-06 16:29:21,629 auth 23016 30652 尝试登录用户: wangziyu
+INFO 2024-12-06 16:29:21,742 auth 23016 30652 用户登录成功: wangziyu, 响应数据: {'message': '登录成功', 'user': {'id': 1, 'username': 'wangziyu', 'display_name': 'wangziyu', 'user_type': 'admin'}}
+INFO 2024-12-06 16:29:21,754 basehttp 23016 30652 "POST /api/auth/login/ HTTP/1.1" 200 110
+WARNING 2024-12-06 16:30:05,765 log 23016 30652 Unauthorized: /api/auth/user-info/
+WARNING 2024-12-06 16:30:05,765 basehttp 23016 30652 "GET /api/auth/user-info/ HTTP/1.1" 401 21
+INFO 2024-12-06 16:30:11,632 auth 23016 30652 尝试登录用户: wangziyu
+INFO 2024-12-06 16:30:11,737 auth 23016 30652 用户登录成功: wangziyu, 响应数据: {'message': '登录成功', 'user': {'id': 1, 'username': 'wangziyu', 'display_name': 'wangziyu', 'user_type': 'admin'}}
+INFO 2024-12-06 16:30:11,750 basehttp 23016 30652 "POST /api/auth/login/ HTTP/1.1" 200 110
+WARNING 2024-12-06 16:39:42,636 log 23016 32424 Unauthorized: /api/auth/user-info/
+WARNING 2024-12-06 16:39:42,637 basehttp 23016 32424 "GET /api/auth/user-info/ HTTP/1.1" 401 21
+INFO 2024-12-06 16:39:49,585 auth 23016 32424 尝试登录用户: wangziyu
+INFO 2024-12-06 16:39:49,707 auth 23016 32424 用户登录成功: wangziyu, 响应数据: {'message': '登录成功', 'user': {'id': 1, 'username': 'wangziyu', 'display_name': 'wangziyu', 'user_type': 'admin'}}
+INFO 2024-12-06 16:39:49,721 basehttp 23016 32424 "POST /api/auth/login/ HTTP/1.1" 200 110
+INFO 2024-12-06 16:40:38,381 auth 23016 30136 尝试登录用户: wangziyu
+INFO 2024-12-06 16:40:38,509 auth 23016 30136 用户登录成功: wangziyu, 响应数据: {'message': '登录成功', 'user': {'id': 1, 'username': 'wangziyu', 'display_name': 'wangziyu', 'user_type': 'admin'}}
+INFO 2024-12-06 16:40:38,520 basehttp 23016 30136 "POST /api/auth/login/ HTTP/1.1" 200 110
+INFO 2024-12-06 18:42:13,400 autoreload 39296 36536 Watching for file changes with StatReloader
+WARNING 2024-12-06 18:44:42,775 log 39296 30412 Unauthorized: /api/auth/user-info/
+WARNING 2024-12-06 18:44:42,776 basehttp 39296 30412 "GET /api/auth/user-info/ HTTP/1.1" 401 21
+INFO 2024-12-06 18:44:49,968 basehttp 39296 17440 "OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+INFO 2024-12-06 18:44:49,970 auth 39296 30412 尝试登录用户: wangziyu
+INFO 2024-12-06 18:44:50,521 auth 39296 30412 用户登录成功: wangziyu, 响应数据: {'message': '登录成功', 'user': {'id': 1, 'username': 'wangziyu', 'display_name': 'wangziyu', 'user_type': 'admin'}}
+INFO 2024-12-06 18:44:50,538 basehttp 39296 30412 "POST /api/auth/login/ HTTP/1.1" 200 110
+INFO 2024-12-06 18:46:54,511 basehttp 39296 30412 "POST /api/auth/logout/ HTTP/1.1" 200 26
+INFO 2024-12-06 18:51:41,901 auth 39296 30412 尝试登录用户: wangziyu
+INFO 2024-12-06 18:51:42,458 auth 39296 30412 用户登录成功: wangziyu, 响应数据: {'message': '登录成功', 'user': {'id': 1, 'username': 'wangziyu', 'display_name': 'wangziyu', 'user_type': 'admin'}}
+INFO 2024-12-06 18:51:42,540 basehttp 39296 30412 "POST /api/auth/login/ HTTP/1.1" 200 110
+WARNING 2024-12-06 18:52:10,028 log 39296 38220 Not Found: /
+WARNING 2024-12-06 18:52:10,029 basehttp 39296 38220 "GET / HTTP/1.1" 404 2591
+INFO 2024-12-06 18:52:21,738 basehttp 39296 38220 "GET /admin/ HTTP/1.1" 200 4477
+INFO 2024-12-06 18:52:27,579 basehttp 39296 38220 "GET /admin/myapp/fieldworkproject/ HTTP/1.1" 200 5377
+INFO 2024-12-06 18:52:27,655 basehttp 39296 38220 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-12-06 18:52:29,147 basehttp 39296 38220 "GET /admin/myapp/fieldworkfile/ HTTP/1.1" 200 5371
+INFO 2024-12-06 18:52:29,214 basehttp 39296 38220 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-12-06 18:52:29,985 basehttp 39296 38220 "GET /admin/myapp/userprofile/ HTTP/1.1" 200 9576
+INFO 2024-12-06 18:52:30,037 basehttp 39296 38220 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+WARNING 2024-12-06 18:52:36,842 log 39296 38220 Not Found: /api
+WARNING 2024-12-06 18:52:36,842 basehttp 39296 38220 "GET /api HTTP/1.1" 404 2618
+INFO 2024-12-06 18:52:41,283 basehttp 39296 38220 "GET /swagger/ HTTP/1.1" 200 1621
+INFO 2024-12-06 18:52:41,324 basehttp 39296 37032 "GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 304 0
+INFO 2024-12-06 18:52:41,325 basehttp 39296 38220 "GET /static/drf-yasg/style.css HTTP/1.1" 304 0
+INFO 2024-12-06 18:52:41,327 basehttp 39296 37032 "GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 304 0
+INFO 2024-12-06 18:52:41,330 basehttp 39296 10080 "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 304 0
+INFO 2024-12-06 18:52:41,332 basehttp 39296 37792 "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 304 0
+INFO 2024-12-06 18:52:41,332 basehttp 39296 38792 "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 304 0
+INFO 2024-12-06 18:52:41,338 basehttp 39296 11688 "GET /static/drf-yasg/immutable.min.js HTTP/1.1" 304 0
+INFO 2024-12-06 18:52:41,613 basehttp 39296 11688 "GET /swagger/?format=openapi HTTP/1.1" 200 8480
+INFO 2024-12-06 19:09:17,512 basehttp 39296 39292 "POST /api/auth/logout/ HTTP/1.1" 200 26
+INFO 2024-12-06 19:14:14,633 auth 39296 40176 尝试登录用户: wangziyu
+INFO 2024-12-06 19:14:15,155 auth 39296 40176 用户登录成功: wangziyu, 响应数据: {'message': '登录成功', 'user': {'id': 1, 'username': 'wangziyu', 'display_name': 'wangziyu', 'user_type': 'admin'}}
+INFO 2024-12-06 19:14:15,202 basehttp 39296 40176 "POST /api/auth/login/ HTTP/1.1" 200 110
+INFO 2024-12-06 19:14:20,587 basehttp 39296 40176 "POST /api/auth/logout/ HTTP/1.1" 200 26
+INFO 2024-12-06 19:20:24,620 auth 39296 2804 尝试登录用户: wangziyu
+INFO 2024-12-06 19:20:25,137 auth 39296 2804 用户登录成功: wangziyu, 响应数据: {'message': '登录成功', 'user': {'id': 1, 'username': 'wangziyu', 'display_name': 'wangziyu', 'user_type': 'admin'}}
+INFO 2024-12-06 19:20:25,154 basehttp 39296 2804 "POST /api/auth/login/ HTTP/1.1" 200 110
+WARNING 2024-12-06 19:24:04,582 log 39296 31468 Unauthorized: /api/auth/user-info/
+WARNING 2024-12-06 19:24:04,583 basehttp 39296 31468 "GET /api/auth/user-info/ HTTP/1.1" 401 21
+INFO 2024-12-06 19:26:41,100 auth 39296 24796 尝试登录用户: wangziyu
+INFO 2024-12-06 19:26:41,735 auth 39296 24796 用户登录成功: wangziyu, 响应数据: {'message': '登录成功', 'user': {'id': 1, 'username': 'wangziyu', 'display_name': 'wangziyu', 'user_type': 'admin'}}
+INFO 2024-12-06 19:26:41,756 basehttp 39296 24796 "POST /api/auth/login/ HTTP/1.1" 200 110
+INFO 2024-12-06 19:26:50,326 basehttp 39296 24796 "POST /api/auth/logout/ HTTP/1.1" 200 26
+INFO 2024-12-06 19:27:44,015 auth 39296 24796 尝试登录用户: wangziyu
+INFO 2024-12-06 19:27:44,589 auth 39296 24796 用户登录成功: wangziyu, 响应数据: {'message': '登录成功', 'user': {'id': 1, 'username': 'wangziyu', 'display_name': 'wangziyu', 'user_type': 'admin'}}
+INFO 2024-12-06 19:27:44,614 basehttp 39296 24796 "POST /api/auth/login/ HTTP/1.1" 200 110
+WARNING 2024-12-06 19:30:08,236 log 39296 40536 Unauthorized: /api/auth/user-info/
+WARNING 2024-12-06 19:30:08,238 basehttp 39296 40536 "GET /api/auth/user-info/ HTTP/1.1" 401 21
+INFO 2024-12-06 19:30:14,331 auth 39296 40536 尝试登录用户: wangziyu
+INFO 2024-12-06 19:30:14,904 auth 39296 40536 用户登录成功: wangziyu, 响应数据: {'message': '登录成功', 'user': {'id': 1, 'username': 'wangziyu', 'display_name': 'wangziyu', 'user_type': 'admin'}}
+INFO 2024-12-06 19:30:14,925 basehttp 39296 40536 "POST /api/auth/login/ HTTP/1.1" 200 110
+WARNING 2024-12-06 19:35:45,601 log 39296 39640 Unauthorized: /api/auth/user-info/
+WARNING 2024-12-06 19:35:45,602 basehttp 39296 39640 "GET /api/auth/user-info/ HTTP/1.1" 401 21
+INFO 2024-12-06 19:36:26,107 auth 39296 39640 尝试登录用户: wangziyu
+INFO 2024-12-06 19:36:26,696 auth 39296 39640 用户登录成功: wangziyu, 响应数据: {'message': '登录成功', 'user': {'id': 1, 'username': 'wangziyu', 'display_name': 'wangziyu', 'user_type': 'admin'}}
+INFO 2024-12-06 19:36:26,724 basehttp 39296 39640 "POST /api/auth/login/ HTTP/1.1" 200 110
+INFO 2024-12-06 19:37:44,880 basehttp 39296 39640 "POST /api/auth/logout/ HTTP/1.1" 200 26
+INFO 2024-12-06 19:39:20,028 auth 39296 39640 尝试登录用户: wangziyu
+INFO 2024-12-06 19:39:20,552 auth 39296 39640 用户登录成功: wangziyu, 响应数据: {'message': '登录成功', 'user': {'id': 1, 'username': 'wangziyu', 'display_name': 'wangziyu', 'user_type': 'admin'}}
+INFO 2024-12-06 19:39:20,571 basehttp 39296 39640 "POST /api/auth/login/ HTTP/1.1" 200 110
+WARNING 2024-12-06 19:41:45,337 log 39296 39640 Not Found: /api/user/info/
+WARNING 2024-12-06 19:41:45,337 basehttp 39296 39640 "GET /api/user/info/ HTTP/1.1" 404 4223
+INFO 2024-12-06 19:48:15,667 basehttp 39296 16256 "OPTIONS /api/login/ HTTP/1.1" 200 0
+WARNING 2024-12-06 19:48:15,682 log 39296 17708 Not Found: /api/login/
+WARNING 2024-12-06 19:48:15,682 basehttp 39296 17708 "POST /api/login/ HTTP/1.1" 404 4212
+WARNING 2024-12-06 19:48:37,087 log 39296 17708 Not Found: /api/login/
+WARNING 2024-12-06 19:48:37,087 basehttp 39296 17708 "POST /api/login/ HTTP/1.1" 404 4212
+WARNING 2024-12-06 19:48:48,466 log 39296 17708 Not Found: /api/login/
+WARNING 2024-12-06 19:48:48,467 basehttp 39296 17708 "POST /api/login/ HTTP/1.1" 404 4212
+INFO 2024-12-06 19:50:20,913 auth 39296 17708 尝试登录用户: wangziyu
+INFO 2024-12-06 19:50:21,440 auth 39296 17708 用户登录成功: wangziyu, 响应数据: {'message': '登录成功', 'user': {'id': 1, 'username': 'wangziyu', 'display_name': 'wangziyu', 'user_type': 'admin'}}
+INFO 2024-12-06 19:50:21,454 basehttp 39296 17708 "POST /api/auth/login/ HTTP/1.1" 200 110
+INFO 2024-12-06 19:50:28,525 basehttp 39296 17708 "POST /api/auth/logout/ HTTP/1.1" 200 26
+INFO 2024-12-06 20:02:11,701 auth 39296 36788 尝试登录用户: wangziyu
+INFO 2024-12-06 20:02:12,240 auth 39296 36788 用户登录成功: wangziyu, 响应数据: {'message': '登录成功', 'user': {'id': 1, 'username': 'wangziyu', 'display_name': 'wangziyu', 'user_type': 'admin'}}
+INFO 2024-12-06 20:02:12,273 basehttp 39296 36788 "POST /api/auth/login/ HTTP/1.1" 200 110
+INFO 2024-12-06 20:02:20,657 basehttp 39296 36788 "POST /api/auth/logout/ HTTP/1.1" 200 26
+INFO 2024-12-06 20:02:26,438 basehttp 39296 36788 "POST /api/auth/logout/ HTTP/1.1" 200 26
+INFO 2024-12-06 20:02:59,584 auth 39296 36788 尝试登录用户: wangziyu
+INFO 2024-12-06 20:03:00,098 auth 39296 36788 用户登录成功: wangziyu, 响应数据: {'message': '登录成功', 'user': {'id': 1, 'username': 'wangziyu', 'display_name': 'wangziyu', 'user_type': 'admin'}}
+INFO 2024-12-06 20:03:00,113 basehttp 39296 36788 "POST /api/auth/login/ HTTP/1.1" 200 110
+INFO 2024-12-06 20:04:51,039 basehttp 39296 36788 "POST /api/auth/logout/ HTTP/1.1" 200 26
+INFO 2024-12-06 20:04:56,162 auth 39296 36788 尝试登录用户: wangziyu
+INFO 2024-12-06 20:04:56,666 auth 39296 36788 用户登录成功: wangziyu, 响应数据: {'message': '登录成功', 'user': {'id': 1, 'username': 'wangziyu', 'display_name': 'wangziyu', 'user_type': 'admin'}}
+INFO 2024-12-06 20:04:56,686 basehttp 39296 36788 "POST /api/auth/login/ HTTP/1.1" 200 110
+WARNING 2024-12-06 20:06:29,320 log 39296 34608 Not Found: /
+WARNING 2024-12-06 20:06:29,321 basehttp 39296 34608 "GET / HTTP/1.1" 404 2591
+INFO 2024-12-06 20:06:35,776 basehttp 39296 34608 "GET /swagger/ HTTP/1.1" 200 1621
+INFO 2024-12-06 20:06:36,121 basehttp 39296 34608 "GET /swagger/?format=openapi HTTP/1.1" 200 8480
+INFO 2024-12-07 14:59:25,223 autoreload 5884 21188 Watching for file changes with StatReloader
+WARNING 2024-12-07 15:02:17,183 log 5884 19936 Unauthorized: /api/auth/user-info/
+WARNING 2024-12-07 15:02:17,184 basehttp 5884 19936 "GET /api/auth/user-info/ HTTP/1.1" 401 21
+INFO 2024-12-07 15:02:25,953 basehttp 5884 26584 "OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+INFO 2024-12-07 15:02:25,962 auth 5884 19936 尝试登录用户: wangziyu
+INFO 2024-12-07 15:02:26,077 auth 5884 19936 用户登录成功: wangziyu, 响应数据: {'message': '登录成功', 'user': {'id': 1, 'username': 'wangziyu', 'display_name': 'wangziyu', 'user_type': 'admin'}}
+INFO 2024-12-07 15:02:26,090 basehttp 5884 19936 "POST /api/auth/login/ HTTP/1.1" 200 110
+WARNING 2024-12-07 15:21:47,829 log 5884 17544 Unauthorized: /api/auth/user-info/
+WARNING 2024-12-07 15:21:47,829 basehttp 5884 17544 "GET /api/auth/user-info/ HTTP/1.1" 401 21
+INFO 2024-12-07 15:22:07,502 auth 5884 17544 尝试登录用户: wangziyu
+INFO 2024-12-07 15:22:07,635 auth 5884 17544 用户登录成功: wangziyu, 响应数据: {'message': '登录成功', 'user': {'id': 1, 'username': 'wangziyu', 'display_name': 'wangziyu', 'user_type': 'admin'}}
+INFO 2024-12-07 15:22:07,649 basehttp 5884 17544 "POST /api/auth/login/ HTTP/1.1" 200 110
+INFO 2024-12-07 15:29:36,048 autoreload 19496 21528 Watching for file changes with StatReloader
+WARNING 2024-12-07 15:29:41,177 log 19496 6572 Unauthorized: /api/auth/user-info/
+WARNING 2024-12-07 15:29:41,178 basehttp 19496 6572 "GET /api/auth/user-info/ HTTP/1.1" 401 21
+INFO 2024-12-07 15:29:50,345 auth 19496 6572 尝试登录用户: wangziyu
+INFO 2024-12-07 15:29:50,728 auth 19496 6572 用户登录成功: wangziyu, 响应数据: {'message': '登录成功', 'user': {'id': 1, 'username': 'wangziyu', 'display_name': 'wangziyu', 'user_type': 'admin'}}
+INFO 2024-12-07 15:29:50,741 basehttp 19496 6572 "POST /api/auth/login/ HTTP/1.1" 200 110
+WARNING 2024-12-07 15:30:32,667 log 19496 6148 Not Found: /
+WARNING 2024-12-07 15:30:32,668 basehttp 19496 6148 "GET / HTTP/1.1" 404 2591
+WARNING 2024-12-07 15:30:33,522 log 19496 6148 Not Found: /favicon.ico
+WARNING 2024-12-07 15:30:33,522 basehttp 19496 6148 "GET /favicon.ico HTTP/1.1" 404 2642
+INFO 2024-12-07 15:30:37,122 basehttp 19496 6148 "GET /swagger/ HTTP/1.1" 200 1621
+INFO 2024-12-07 15:30:37,170 basehttp 19496 6148 "GET /static/drf-yasg/style.css HTTP/1.1" 304 0
+INFO 2024-12-07 15:30:37,170 basehttp 19496 11284 "GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 304 0
+INFO 2024-12-07 15:30:37,171 basehttp 19496 26472 "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 304 0
+INFO 2024-12-07 15:30:37,172 basehttp 19496 13936 "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 304 0
+INFO 2024-12-07 15:30:37,174 basehttp 19496 19968 "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 304 0
+INFO 2024-12-07 15:30:37,176 basehttp 19496 6148 "GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 304 0
+INFO 2024-12-07 15:30:37,177 basehttp 19496 19908 "GET /static/drf-yasg/immutable.min.js HTTP/1.1" 304 0
+INFO 2024-12-07 15:30:37,456 basehttp 19496 19908 "GET /swagger/?format=openapi HTTP/1.1" 200 8480
+INFO 2024-12-07 15:30:55,163 basehttp 19496 19908 "GET /admin/ HTTP/1.1" 200 4477
+INFO 2024-12-07 15:30:55,204 basehttp 19496 6148 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2024-12-07 15:30:55,204 basehttp 19496 13936 "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2024-12-07 15:30:55,204 basehttp 19496 19908 "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2024-12-07 15:30:55,204 basehttp 19496 19968 "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2024-12-07 15:30:55,305 basehttp 19496 19908 "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+INFO 2024-12-07 15:30:55,306 basehttp 19496 19968 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2024-12-07 15:30:55,313 basehttp 19496 19968 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2024-12-07 15:30:55,313 basehttp 19496 19908 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO 2024-12-07 15:30:55,345 basehttp 19496 19968 "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+INFO 2024-12-07 15:30:55,345 basehttp 19496 19908 "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+INFO 2024-12-07 15:30:55,346 basehttp 19496 13936 "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+INFO 2024-12-07 15:30:57,183 basehttp 19496 13936 "GET /admin/myapp/fieldworkproject/ HTTP/1.1" 200 5377
+INFO 2024-12-07 15:30:57,221 basehttp 19496 19968 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2024-12-07 15:30:57,222 basehttp 19496 6148 "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2024-12-07 15:30:57,222 basehttp 19496 26472 "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2024-12-07 15:30:57,222 basehttp 19496 11284 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2024-12-07 15:30:57,223 basehttp 19496 13936 "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2024-12-07 15:30:57,227 basehttp 19496 19968 "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2024-12-07 15:30:57,228 basehttp 19496 26472 "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2024-12-07 15:30:57,228 basehttp 19496 6148 "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2024-12-07 15:30:57,228 basehttp 19496 11284 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2024-12-07 15:30:57,247 basehttp 19496 19908 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-12-07 15:30:57,332 basehttp 19496 19908 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+INFO 2024-12-07 15:30:59,258 basehttp 19496 19908 "GET /admin/myapp/fieldworkproject/add/ HTTP/1.1" 200 12175
+INFO 2024-12-07 15:30:59,301 basehttp 19496 19908 "GET /static/admin/css/forms.css HTTP/1.1" 200 8804
+INFO 2024-12-07 15:30:59,311 basehttp 19496 26472 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-12-07 15:30:59,312 basehttp 19496 11284 "GET /static/admin/js/calendar.js HTTP/1.1" 200 8466
+INFO 2024-12-07 15:30:59,313 basehttp 19496 6148 "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19634
+INFO 2024-12-07 15:30:59,324 basehttp 19496 11284 "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+INFO 2024-12-07 15:30:59,405 basehttp 19496 11284 "GET /static/admin/css/widgets.css HTTP/1.1" 200 11097
+INFO 2024-12-07 15:30:59,405 basehttp 19496 6148 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 492
+INFO 2024-12-07 15:30:59,420 basehttp 19496 6148 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2024-12-07 15:30:59,504 basehttp 19496 6148 "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 304 0
+INFO 2024-12-07 15:30:59,504 basehttp 19496 11284 "GET /static/admin/img/icon-clock.svg HTTP/1.1" 304 0
+INFO 2024-12-07 15:31:04,497 basehttp 19496 11284 "GET /admin/myapp/fieldworkfile/ HTTP/1.1" 200 5371
+INFO 2024-12-07 15:31:04,550 basehttp 19496 11284 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-12-07 15:31:05,907 basehttp 19496 11284 "GET /admin/myapp/fieldworkfile/add/ HTTP/1.1" 200 13037
+INFO 2024-12-07 15:31:06,040 basehttp 19496 11284 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-12-07 15:31:20,161 basehttp 19496 11284 "GET /admin/myapp/fieldworkproject/ HTTP/1.1" 200 5377
+INFO 2024-12-07 15:31:20,208 basehttp 19496 11284 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-12-07 15:31:30,377 basehttp 19496 11284 "GET /admin/myapp/fieldworkproject/add/ HTTP/1.1" 200 12175
+INFO 2024-12-07 15:31:30,422 basehttp 19496 11284 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-12-07 15:31:55,557 basehttp 19496 11284 "POST /admin/myapp/fieldworkproject/add/ HTTP/1.1" 200 12428
+INFO 2024-12-07 15:31:55,608 basehttp 19496 11284 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-12-07 15:31:59,325 basehttp 19496 11284 "POST /admin/myapp/fieldworkproject/add/ HTTP/1.1" 302 0
+INFO 2024-12-07 15:31:59,374 basehttp 19496 11284 "GET /admin/myapp/fieldworkproject/ HTTP/1.1" 200 6777
+INFO 2024-12-07 15:31:59,429 basehttp 19496 11284 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-12-07 15:31:59,524 basehttp 19496 11284 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+WARNING 2024-12-07 15:32:03,762 log 19496 6572 Unauthorized: /api/auth/user-info/
+WARNING 2024-12-07 15:32:03,762 basehttp 19496 6572 "GET /api/auth/user-info/ HTTP/1.1" 401 21
+INFO 2024-12-07 15:32:10,150 auth 19496 6572 尝试登录用户: wangziyu
+INFO 2024-12-07 15:32:10,518 auth 19496 6572 用户登录成功: wangziyu, 响应数据: {'message': '登录成功', 'user': {'id': 1, 'username': 'wangziyu', 'display_name': 'wangziyu', 'user_type': 'admin'}}
+INFO 2024-12-07 15:32:10,530 basehttp 19496 6572 "POST /api/auth/login/ HTTP/1.1" 200 110
+INFO 2024-12-07 15:32:21,726 basehttp 19496 11284 "GET /admin/myapp/fieldworkproject/1/change/ HTTP/1.1" 200 12522
+INFO 2024-12-07 15:32:21,779 basehttp 19496 11284 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-12-07 15:32:27,144 basehttp 19496 11284 "POST /admin/myapp/fieldworkproject/1/change/ HTTP/1.1" 302 0
+INFO 2024-12-07 15:32:27,199 basehttp 19496 11284 "GET /admin/myapp/fieldworkproject/ HTTP/1.1" 200 6777
+INFO 2024-12-07 15:32:27,249 basehttp 19496 11284 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+WARNING 2024-12-07 15:32:30,631 log 19496 6572 Unauthorized: /api/auth/user-info/
+WARNING 2024-12-07 15:32:30,631 basehttp 19496 6572 "GET /api/auth/user-info/ HTTP/1.1" 401 21
+INFO 2024-12-07 15:32:36,417 auth 19496 6572 尝试登录用户: wangziyu
+INFO 2024-12-07 15:32:36,781 auth 19496 6572 用户登录成功: wangziyu, 响应数据: {'message': '登录成功', 'user': {'id': 1, 'username': 'wangziyu', 'display_name': 'wangziyu', 'user_type': 'admin'}}
+INFO 2024-12-07 15:32:36,792 basehttp 19496 6572 "POST /api/auth/login/ HTTP/1.1" 200 110
+INFO 2024-12-07 15:34:33,180 basehttp 19496 11284 "GET /admin/myapp/fieldworkfile/ HTTP/1.1" 200 5371
+INFO 2024-12-07 15:34:33,230 basehttp 19496 11284 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-12-07 15:34:34,563 basehttp 19496 11284 "GET /admin/myapp/fieldworkfile/add/ HTTP/1.1" 200 13077
+INFO 2024-12-07 15:34:34,616 basehttp 19496 11284 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+WARNING 2024-12-07 15:43:29,234 log 19496 26112 Not Found: /api/fieldwork-projects/
+WARNING 2024-12-07 15:43:29,234 basehttp 19496 26112 "GET /api/fieldwork-projects/ HTTP/1.1" 404 4250
+INFO 2024-12-07 15:49:12,389 autoreload 19496 21528 C:\Users\ASUS\Desktop\WWW\course_design\myapp\views.py changed, reloading.
+INFO 2024-12-07 15:49:13,118 autoreload 21348 4764 Watching for file changes with StatReloader
+WARNING 2024-12-07 15:49:55,850 log 21348 2964 Not Found: /api/fieldwork-projects/
+WARNING 2024-12-07 15:49:55,850 basehttp 21348 2964 "GET /api/fieldwork-projects/ HTTP/1.1" 404 4250
+WARNING 2024-12-07 15:49:58,192 log 21348 2964 Not Found: /api/fieldwork-projects/
+WARNING 2024-12-07 15:49:58,193 basehttp 21348 2964 "GET /api/fieldwork-projects/ HTTP/1.1" 404 4250
+WARNING 2024-12-07 15:50:01,559 log 21348 2964 Not Found: /api/fieldwork-projects/
+WARNING 2024-12-07 15:50:01,560 basehttp 21348 2964 "GET /api/fieldwork-projects/ HTTP/1.1" 404 4250
+INFO 2024-12-07 15:54:58,091 autoreload 25480 15724 Watching for file changes with StatReloader
+WARNING 2024-12-07 15:58:55,952 log 25480 25060 Unauthorized: /api/auth/user-info/
+WARNING 2024-12-07 15:58:55,953 basehttp 25480 25060 "GET /api/auth/user-info/ HTTP/1.1" 401 21
+INFO 2024-12-07 15:59:03,324 auth 25480 25060 尝试登录用户: wangziyu
+INFO 2024-12-07 15:59:03,681 auth 25480 25060 用户登录成功: wangziyu, 响应数据: {'message': '登录成功', 'user': {'id': 1, 'username': 'wangziyu', 'display_name': 'wangziyu', 'user_type': 'admin'}}
+INFO 2024-12-07 15:59:03,695 basehttp 25480 25060 "POST /api/auth/login/ HTTP/1.1" 200 110
+WARNING 2024-12-07 15:59:05,392 log 25480 25060 Not Found: /api/fieldwork-projects/
+WARNING 2024-12-07 15:59:05,394 log 25480 9356 Not Found: /api/fieldwork-projects/
+WARNING 2024-12-07 15:59:05,394 basehttp 25480 25060 "GET /api/fieldwork-projects/?view_type=my HTTP/1.1" 404 4263
+WARNING 2024-12-07 15:59:05,394 basehttp 25480 9356 "GET /api/fieldwork-projects/?view_type=liked HTTP/1.1" 404 4266
+WARNING 2024-12-07 15:59:13,231 log 25480 9356 Not Found: /api/fieldwork-projects/
+WARNING 2024-12-07 15:59:13,233 log 25480 25060 Not Found: /api/fieldwork-projects/
+WARNING 2024-12-07 15:59:13,234 basehttp 25480 9356 "GET /api/fieldwork-projects/?view_type=my HTTP/1.1" 404 4263
+WARNING 2024-12-07 15:59:13,234 basehttp 25480 25060 "GET /api/fieldwork-projects/?view_type=liked HTTP/1.1" 404 4266
+WARNING 2024-12-07 15:59:47,060 log 25480 10584 Not Found: /api/fieldwork-projects/
+WARNING 2024-12-07 15:59:47,061 basehttp 25480 10584 "GET /api/fieldwork-projects/ HTTP/1.1" 404 4250
+INFO 2024-12-07 16:01:08,452 basehttp 25480 15888 "GET /admin/ HTTP/1.1" 200 5131
+INFO 2024-12-07 16:01:11,102 basehttp 25480 15888 "GET /admin/myapp/fieldworkproject/ HTTP/1.1" 200 6565
+INFO 2024-12-07 16:01:11,159 basehttp 25480 15888 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-12-07 16:01:12,398 basehttp 25480 15888 "GET /admin/myapp/fieldworkproject/1/change/ HTTP/1.1" 200 12522
+INFO 2024-12-07 16:01:12,444 basehttp 25480 15888 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-12-07 16:01:17,955 basehttp 25480 15888 "GET /admin/myapp/fieldworkproject/ HTTP/1.1" 200 6565
+INFO 2024-12-07 16:01:18,009 basehttp 25480 15888 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-12-07 16:01:19,680 basehttp 25480 15888 "GET /admin/myapp/fieldworkproject/ HTTP/1.1" 200 6565
+INFO 2024-12-07 16:01:19,730 basehttp 25480 15888 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-12-07 16:01:22,238 basehttp 25480 15888 "GET /admin/myapp/ HTTP/1.1" 200 3683
+INFO 2024-12-07 16:01:24,757 basehttp 25480 15888 "GET /admin/myapp/fieldworkproject/ HTTP/1.1" 200 6565
+INFO 2024-12-07 16:01:24,801 basehttp 25480 15888 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-12-07 16:01:26,125 basehttp 25480 15888 "GET /admin/myapp/fieldworkproject/1/change/ HTTP/1.1" 200 12522
+INFO 2024-12-07 16:01:26,175 basehttp 25480 15888 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+WARNING 2024-12-07 16:06:34,843 log 25480 9328 Unauthorized: /api/auth/user-info/
+WARNING 2024-12-07 16:06:34,843 basehttp 25480 9328 "GET /api/auth/user-info/ HTTP/1.1" 401 21
+INFO 2024-12-07 16:06:40,667 auth 25480 9328 尝试登录用户: wangziyu
+INFO 2024-12-07 16:06:41,031 auth 25480 9328 用户登录成功: wangziyu, 响应数据: {'message': '登录成功', 'user': {'id': 1, 'username': 'wangziyu', 'display_name': 'wangziyu', 'user_type': 'admin'}}
+INFO 2024-12-07 16:06:41,042 basehttp 25480 9328 "POST /api/auth/login/ HTTP/1.1" 200 110
+WARNING 2024-12-07 16:07:39,615 log 25480 9328 Unauthorized: /api/auth/user-info/
+WARNING 2024-12-07 16:07:39,616 basehttp 25480 9328 "GET /api/auth/user-info/ HTTP/1.1" 401 21
+INFO 2024-12-07 16:07:48,269 auth 25480 9328 尝试登录用户: wangziyu
+INFO 2024-12-07 16:07:48,641 auth 25480 9328 用户登录成功: wangziyu, 响应数据: {'message': '登录成功', 'user': {'id': 1, 'username': 'wangziyu', 'display_name': 'wangziyu', 'user_type': 'admin'}}
+INFO 2024-12-07 16:07:48,653 basehttp 25480 9328 "POST /api/auth/login/ HTTP/1.1" 200 110
+WARNING 2024-12-07 16:07:49,908 log 25480 9328 Not Found: /api/fieldwork-projects/
+WARNING 2024-12-07 16:07:49,910 log 25480 22028 Not Found: /api/fieldwork-projects/
+WARNING 2024-12-07 16:07:49,911 basehttp 25480 22028 "GET /api/fieldwork-projects/?view_type=liked HTTP/1.1" 404 4266
+WARNING 2024-12-07 16:07:49,911 basehttp 25480 9328 "GET /api/fieldwork-projects/?view_type=my HTTP/1.1" 404 4263
+WARNING 2024-12-07 16:09:32,212 log 25480 22028 Not Found: /api/fieldwork-projects/
+WARNING 2024-12-07 16:09:32,213 log 25480 9328 Not Found: /api/fieldwork-projects/
+WARNING 2024-12-07 16:09:32,214 basehttp 25480 22028 "GET /api/fieldwork-projects/?view_type=liked HTTP/1.1" 404 4266
+WARNING 2024-12-07 16:09:32,214 basehttp 25480 9328 "GET /api/fieldwork-projects/?view_type=my HTTP/1.1" 404 4263
+WARNING 2024-12-07 16:09:38,807 log 25480 9328 Not Found: /api/fieldwork-projects/
+WARNING 2024-12-07 16:09:38,809 log 25480 22028 Not Found: /api/fieldwork-projects/
+WARNING 2024-12-07 16:09:38,809 basehttp 25480 9328 "GET /api/fieldwork-projects/?view_type=my HTTP/1.1" 404 4263
+WARNING 2024-12-07 16:09:38,809 basehttp 25480 22028 "GET /api/fieldwork-projects/?view_type=liked HTTP/1.1" 404 4266
+WARNING 2024-12-07 16:09:41,587 log 25480 22028 Not Found: /api/fieldwork-projects/
+WARNING 2024-12-07 16:09:41,588 log 25480 9328 Not Found: /api/fieldwork-projects/
+WARNING 2024-12-07 16:09:41,589 basehttp 25480 22028 "GET /api/fieldwork-projects/?view_type=my HTTP/1.1" 404 4263
+WARNING 2024-12-07 16:09:41,589 basehttp 25480 9328 "GET /api/fieldwork-projects/?view_type=liked HTTP/1.1" 404 4266
+WARNING 2024-12-07 16:09:59,911 log 25480 22028 Not Found: /api/fieldwork-projects/
+WARNING 2024-12-07 16:09:59,912 log 25480 9328 Not Found: /api/fieldwork-projects/
+WARNING 2024-12-07 16:09:59,913 basehttp 25480 22028 "GET /api/fieldwork-projects/?view_type=my HTTP/1.1" 404 4263
+WARNING 2024-12-07 16:09:59,913 basehttp 25480 9328 "GET /api/fieldwork-projects/?view_type=liked HTTP/1.1" 404 4266
+WARNING 2024-12-07 16:10:10,094 log 25480 9328 Unauthorized: /api/auth/user-info/
+WARNING 2024-12-07 16:10:10,095 basehttp 25480 9328 "GET /api/auth/user-info/ HTTP/1.1" 401 21
+INFO 2024-12-07 16:10:19,074 auth 25480 9328 尝试登录用户: wangziyu
+INFO 2024-12-07 16:10:19,425 auth 25480 9328 用户登录成功: wangziyu, 响应数据: {'message': '登录成功', 'user': {'id': 1, 'username': 'wangziyu', 'display_name': 'wangziyu', 'user_type': 'admin'}}
+INFO 2024-12-07 16:10:19,436 basehttp 25480 9328 "POST /api/auth/login/ HTTP/1.1" 200 110
+WARNING 2024-12-07 16:12:55,298 log 25480 9328 Unauthorized: /api/auth/user-info/
+WARNING 2024-12-07 16:12:55,298 basehttp 25480 9328 "GET /api/auth/user-info/ HTTP/1.1" 401 21
+INFO 2024-12-07 16:13:25,625 auth 25480 9328 尝试登录用户: wangziyu
+INFO 2024-12-07 16:13:25,978 auth 25480 9328 用户登录成功: wangziyu, 响应数据: {'message': '登录成功', 'user': {'id': 1, 'username': 'wangziyu', 'display_name': 'wangziyu', 'user_type': 'admin'}}
+INFO 2024-12-07 16:13:25,992 basehttp 25480 9328 "POST /api/auth/login/ HTTP/1.1" 200 110
+WARNING 2024-12-07 16:13:29,051 log 25480 9328 Unauthorized: /api/auth/user-info/
+WARNING 2024-12-07 16:13:29,052 basehttp 25480 9328 "GET /api/auth/user-info/ HTTP/1.1" 401 21
+INFO 2024-12-07 16:13:35,313 auth 25480 9328 尝试登录用户: wangziyu
+INFO 2024-12-07 16:13:35,688 auth 25480 9328 用户登录成功: wangziyu, 响应数据: {'message': '登录成功', 'user': {'id': 1, 'username': 'wangziyu', 'display_name': 'wangziyu', 'user_type': 'admin'}}
+INFO 2024-12-07 16:13:35,702 basehttp 25480 9328 "POST /api/auth/login/ HTTP/1.1" 200 110
+WARNING 2024-12-07 16:15:40,019 log 25480 9328 Unauthorized: /api/auth/user-info/
+WARNING 2024-12-07 16:15:40,019 basehttp 25480 9328 "GET /api/auth/user-info/ HTTP/1.1" 401 21
+INFO 2024-12-07 16:15:47,440 auth 25480 9328 尝试登录用户: wangziyu
+INFO 2024-12-07 16:15:47,785 auth 25480 9328 用户登录成功: wangziyu, 响应数据: {'message': '登录成功', 'user': {'id': 1, 'username': 'wangziyu', 'display_name': 'wangziyu', 'user_type': 'admin'}}
+INFO 2024-12-07 16:15:47,796 basehttp 25480 9328 "POST /api/auth/login/ HTTP/1.1" 200 110
+WARNING 2024-12-07 16:16:26,865 log 25480 9328 Unauthorized: /api/auth/user-info/
+WARNING 2024-12-07 16:16:26,866 basehttp 25480 9328 "GET /api/auth/user-info/ HTTP/1.1" 401 21
+INFO 2024-12-07 16:16:36,564 auth 25480 9328 尝试登录用户: wangziyu
+INFO 2024-12-07 16:16:36,927 auth 25480 9328 用户登录成功: wangziyu, 响应数据: {'message': '登录成功', 'user': {'id': 1, 'username': 'wangziyu', 'display_name': 'wangziyu', 'user_type': 'admin'}}
+INFO 2024-12-07 16:16:36,939 basehttp 25480 9328 "POST /api/auth/login/ HTTP/1.1" 200 110
+WARNING 2024-12-07 16:17:43,661 log 25480 9328 Unauthorized: /api/auth/user-info/
+WARNING 2024-12-07 16:17:43,662 basehttp 25480 9328 "GET /api/auth/user-info/ HTTP/1.1" 401 21
+INFO 2024-12-07 16:17:50,887 auth 25480 9328 尝试登录用户: wangziyu
+INFO 2024-12-07 16:17:51,258 auth 25480 9328 用户登录成功: wangziyu, 响应数据: {'message': '登录成功', 'user': {'id': 1, 'username': 'wangziyu', 'display_name': 'wangziyu', 'user_type': 'admin'}}
+INFO 2024-12-07 16:17:51,270 basehttp 25480 9328 "POST /api/auth/login/ HTTP/1.1" 200 110
+WARNING 2024-12-07 16:18:48,289 log 25480 9328 Unauthorized: /api/auth/user-info/
+WARNING 2024-12-07 16:18:48,289 basehttp 25480 9328 "GET /api/auth/user-info/ HTTP/1.1" 401 21
+INFO 2024-12-07 16:18:54,469 auth 25480 9328 尝试登录用户: wangziyu
+INFO 2024-12-07 16:18:54,836 auth 25480 9328 用户登录成功: wangziyu, 响应数据: {'message': '登录成功', 'user': {'id': 1, 'username': 'wangziyu', 'display_name': 'wangziyu', 'user_type': 'admin'}}
+INFO 2024-12-07 16:18:54,847 basehttp 25480 9328 "POST /api/auth/login/ HTTP/1.1" 200 110
+WARNING 2024-12-07 16:19:57,668 log 25480 9328 Not Found: /api/fieldwork-projects/
+WARNING 2024-12-07 16:19:57,669 log 25480 24224 Not Found: /api/fieldwork-projects/
+WARNING 2024-12-07 16:19:57,670 basehttp 25480 9328 "GET /api/fieldwork-projects/?view_type=my HTTP/1.1" 404 4263
+WARNING 2024-12-07 16:19:57,670 basehttp 25480 24224 "GET /api/fieldwork-projects/?view_type=liked HTTP/1.1" 404 4266
+WARNING 2024-12-07 16:19:59,425 log 25480 24224 Not Found: /api/fieldwork-projects/
+WARNING 2024-12-07 16:19:59,426 log 25480 9328 Not Found: /api/fieldwork-projects/
+WARNING 2024-12-07 16:19:59,426 basehttp 25480 24224 "GET /api/fieldwork-projects/?view_type=my HTTP/1.1" 404 4263
+WARNING 2024-12-07 16:19:59,426 basehttp 25480 9328 "GET /api/fieldwork-projects/?view_type=liked HTTP/1.1" 404 4266
+INFO 2024-12-07 16:23:15,608 basehttp 25480 23112 "OPTIONS /api/fieldwork-projects/ HTTP/1.1" 200 0
+WARNING 2024-12-07 16:23:15,615 log 25480 9328 Not Found: /api/fieldwork-projects/
+WARNING 2024-12-07 16:23:15,617 basehttp 25480 9328 "POST /api/fieldwork-projects/ HTTP/1.1" 404 4251
+WARNING 2024-12-07 16:23:17,314 log 25480 9328 Not Found: /api/fieldwork-projects/
+WARNING 2024-12-07 16:23:17,315 basehttp 25480 9328 "POST /api/fieldwork-projects/ HTTP/1.1" 404 4251
+WARNING 2024-12-07 16:23:29,650 log 25480 9328 Not Found: /api/fieldwork-projects/
+WARNING 2024-12-07 16:23:29,651 basehttp 25480 9328 "POST /api/fieldwork-projects/ HTTP/1.1" 404 4251
+WARNING 2024-12-07 16:23:42,879 log 25480 9328 Not Found: /api/fieldwork-projects/
+WARNING 2024-12-07 16:23:42,880 basehttp 25480 9328 "POST /api/fieldwork-projects/ HTTP/1.1" 404 4251
+WARNING 2024-12-07 16:24:51,265 log 25480 9328 Not Found: /api/fieldwork-projects/
+WARNING 2024-12-07 16:24:51,265 basehttp 25480 9328 "POST /api/fieldwork-projects/ HTTP/1.1" 404 4251
+WARNING 2024-12-07 16:25:06,059 log 25480 9328 Not Found: /api/fieldwork-projects/
+WARNING 2024-12-07 16:25:06,059 basehttp 25480 9328 "POST /api/fieldwork-projects/ HTTP/1.1" 404 4251
+WARNING 2024-12-07 16:25:29,434 log 25480 9328 Not Found: /api/fieldwork-projects/
+WARNING 2024-12-07 16:25:29,434 basehttp 25480 9328 "POST /api/fieldwork-projects/ HTTP/1.1" 404 4251
+INFO 2024-12-07 16:27:29,942 basehttp 25480 21584 "GET /admin/%EF%BC%9F HTTP/1.1" 302 0
+INFO 2024-12-07 16:27:29,971 basehttp 25480 21584 "GET /admin/login/?next=/admin/%25EF%25BC%259F HTTP/1.1" 200 2238
+INFO 2024-12-07 16:27:30,011 basehttp 25480 20012 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2271
+INFO 2024-12-07 16:27:30,011 basehttp 25480 21584 "GET /static/admin/css/base.css HTTP/1.1" 200 19513
+INFO 2024-12-07 16:27:30,021 basehttp 25480 21584 "GET /static/admin/css/login.css HTTP/1.1" 200 939
+INFO 2024-12-07 16:27:30,023 basehttp 25480 20012 "GET /static/admin/css/responsive.css HTTP/1.1" 200 18545
+INFO 2024-12-07 16:27:30,471 basehttp 25480 21584 "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+INFO 2024-12-07 16:27:30,481 basehttp 25480 20012 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 1360
+INFO 2024-12-07 16:27:30,507 basehttp 25480 20012 "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+INFO 2024-12-07 16:27:30,508 basehttp 25480 21584 "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+WARNING 2024-12-07 16:27:30,830 log 25480 21584 Not Found: /favicon.ico
+WARNING 2024-12-07 16:27:30,830 basehttp 25480 21584 "GET /favicon.ico HTTP/1.1" 404 2642
+INFO 2024-12-07 16:27:36,277 basehttp 25480 21584 "POST /admin/login/?next=/admin/%25EF%25BC%259F HTTP/1.1" 302 0
+WARNING 2024-12-07 16:27:36,299 log 25480 21584 Not Found: /admin/？
+WARNING 2024-12-07 16:27:36,301 basehttp 25480 21584 "GET /admin/%EF%BC%9F HTTP/1.1" 404 4680
+INFO 2024-12-07 16:28:16,091 basehttp 25480 21584 "GET /admin/ HTTP/1.1" 200 5131
+INFO 2024-12-07 16:28:16,132 basehttp 25480 21584 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 380
+INFO 2024-12-07 16:28:16,233 basehttp 25480 21584 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2024-12-07 16:28:16,233 basehttp 25480 20012 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2024-12-07 16:28:16,252 basehttp 25480 20012 "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+INFO 2024-12-07 16:28:19,216 basehttp 25480 20012 "GET /admin/myapp/fieldworkproject/ HTTP/1.1" 200 6565
+INFO 2024-12-07 16:28:19,264 basehttp 25480 20012 "GET /static/admin/css/changelists.css HTTP/1.1" 200 6874
+INFO 2024-12-07 16:28:19,267 basehttp 25480 21644 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2024-12-07 16:28:19,271 basehttp 25480 21584 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-12-07 16:28:19,285 basehttp 25480 20012 "GET /static/admin/js/core.js HTTP/1.1" 200 5698
+INFO 2024-12-07 16:28:19,287 basehttp 25480 21644 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 5984
+INFO 2024-12-07 16:28:19,294 basehttp 25480 21584 "GET /static/admin/js/actions.js HTTP/1.1" 200 7867
+INFO 2024-12-07 16:28:19,300 basehttp 25480 21644 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2024-12-07 16:28:19,300 basehttp 25480 20012 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7902
+INFO 2024-12-07 16:28:19,318 basehttp 25480 19896 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 287630
+INFO 2024-12-07 16:28:19,343 basehttp 25480 21584 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+INFO 2024-12-07 16:28:19,372 basehttp 25480 21584 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+WARNING 2024-12-07 16:28:29,047 log 25480 9328 Unauthorized: /api/auth/user-info/
+WARNING 2024-12-07 16:28:29,048 basehttp 25480 9328 "GET /api/auth/user-info/ HTTP/1.1" 401 21
+INFO 2024-12-07 16:28:35,889 auth 25480 9328 尝试登录用户: wangziyu
+INFO 2024-12-07 16:28:36,275 auth 25480 9328 用户登录成功: wangziyu, 响应数据: {'message': '登录成功', 'user': {'id': 1, 'username': 'wangziyu', 'display_name': 'wangziyu', 'user_type': 'admin'}}
+INFO 2024-12-07 16:28:36,288 basehttp 25480 9328 "POST /api/auth/login/ HTTP/1.1" 200 110
+INFO 2024-12-07 16:29:03,669 basehttp 25480 18556 "OPTIONS /api/fieldwork-projects/ HTTP/1.1" 200 0
+WARNING 2024-12-07 16:29:03,770 log 25480 21584 Not Found: /api/fieldwork-projects/
+WARNING 2024-12-07 16:29:03,771 basehttp 25480 21584 "POST /api/fieldwork-projects/ HTTP/1.1" 404 4251
+WARNING 2024-12-07 16:29:48,154 log 25480 21584 Not Found: /api/fieldwork-projects/
+WARNING 2024-12-07 16:29:48,154 basehttp 25480 21584 "POST /api/fieldwork-projects/ HTTP/1.1" 404 4251
+WARNING 2024-12-07 16:31:40,792 log 25480 21584 Not Found: /api/
+WARNING 2024-12-07 16:31:40,792 basehttp 25480 21584 "GET /api/ HTTP/1.1" 404 4193
+WARNING 2024-12-07 16:31:49,815 log 25480 21584 Not Found: /swaagers/
+WARNING 2024-12-07 16:31:49,816 basehttp 25480 21584 "GET /swaagers/ HTTP/1.1" 404 2636
+WARNING 2024-12-07 16:31:54,206 log 25480 21584 Not Found: /swagers/
+WARNING 2024-12-07 16:31:54,206 basehttp 25480 21584 "GET /swagers/ HTTP/1.1" 404 2633
+WARNING 2024-12-07 16:32:00,504 log 25480 21584 Not Found: /swagers/
+WARNING 2024-12-07 16:32:00,505 basehttp 25480 21584 "GET /swagers/ HTTP/1.1" 404 2633
+INFO 2024-12-07 16:32:26,297 basehttp 25480 11796 "GET /swagger/ HTTP/1.1" 200 1621
+INFO 2024-12-07 16:32:27,254 basehttp 25480 11796 "GET /swagger/?format=openapi HTTP/1.1" 200 8480
+WARNING 2024-12-07 16:33:02,869 log 25480 21584 Not Found: /api/fieldwork-projects/
+WARNING 2024-12-07 16:33:02,869 basehttp 25480 21584 "POST /api/fieldwork-projects/ HTTP/1.1" 404 4251
+WARNING 2024-12-07 16:34:05,613 log 25480 27756 Not Found: /api/fieldwork-projects/
+WARNING 2024-12-07 16:34:05,613 basehttp 25480 27756 "POST /api/fieldwork-projects/ HTTP/1.1" 404 4251
+WARNING 2024-12-07 16:38:08,040 log 25480 20920 Not Found: /fieldwork-projects/
+WARNING 2024-12-07 16:38:08,041 basehttp 25480 20920 "GET /fieldwork-projects/ HTTP/1.1" 404 2666
+WARNING 2024-12-07 16:39:08,219 log 25480 20920 Not Found: /fieldwork-projects/
+WARNING 2024-12-07 16:39:08,219 basehttp 25480 20920 "GET /fieldwork-projects/ HTTP/1.1" 404 2666
+WARNING 2024-12-07 16:39:08,961 log 25480 20920 Not Found: /fieldwork-projects/
+WARNING 2024-12-07 16:39:08,961 basehttp 25480 20920 "GET /fieldwork-projects/ HTTP/1.1" 404 2666
+INFO 2024-12-07 16:39:12,301 basehttp 25480 20920 "GET /swagger/ HTTP/1.1" 200 1621
+INFO 2024-12-07 16:39:12,947 basehttp 25480 20920 "GET /swagger/?format=openapi HTTP/1.1" 200 8480
+INFO 2024-12-07 16:39:12,955 basehttp 25480 24520 "GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 200 628
+INFO 2024-12-07 16:39:35,561 autoreload 27888 15204 Watching for file changes with StatReloader
+WARNING 2024-12-07 16:39:45,328 log 27888 28600 Not Found: /api/fieldwork-projects/
+WARNING 2024-12-07 16:39:45,329 basehttp 27888 28600 "GET /api/fieldwork-projects/ HTTP/1.1" 404 4250
+WARNING 2024-12-07 16:41:38,960 log 27888 28600 Not Found: /api/fieldwork-projects/
+WARNING 2024-12-07 16:41:38,960 basehttp 27888 28600 "GET /api/fieldwork-projects/ HTTP/1.1" 404 4250
+INFO 2024-12-07 16:42:11,936 basehttp 27888 13392 "OPTIONS /api/projects/ HTTP/1.1" 200 0
+WARNING 2024-12-07 16:42:11,945 log 27888 28220 Forbidden: /api/projects/
+WARNING 2024-12-07 16:42:11,946 basehttp 27888 28220 "POST /api/projects/ HTTP/1.1" 403 43
+INFO 2024-12-07 16:42:14,599 autoreload 27888 15204 C:\Users\ASUS\Desktop\WWW\course_design\myapp\views.py changed, reloading.
+INFO 2024-12-07 16:42:15,319 autoreload 1772 23360 Watching for file changes with StatReloader
+INFO 2024-12-07 16:42:35,290 basehttp 1772 28220 "GET /api/projects/ HTTP/1.1" 200 11949
+INFO 2024-12-07 16:42:35,337 basehttp 1772 15204 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2024-12-07 16:42:35,338 basehttp 1772 13392 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3426
+INFO 2024-12-07 16:42:35,339 basehttp 1772 26888 "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+INFO 2024-12-07 16:42:35,341 basehttp 1772 28220 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO 2024-12-07 16:42:35,356 basehttp 1772 28220 "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2024-12-07 16:42:35,357 basehttp 1772 15204 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1793
+INFO 2024-12-07 16:42:35,364 basehttp 1772 4692 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3796
+INFO 2024-12-07 16:42:35,369 basehttp 1772 28220 "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 200 59
+INFO 2024-12-07 16:42:35,373 basehttp 1772 13392 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+INFO 2024-12-07 16:42:35,379 basehttp 1772 26888 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2024-12-07 16:42:35,403 basehttp 1772 14548 "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 200 87533
+INFO 2024-12-07 16:42:35,462 basehttp 1772 14548 "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+ERROR 2024-12-07 16:42:40,801 log 1772 19344 Internal Server Error: /api/projects/
+Traceback (most recent call last):
+  File "D:\Anaconda3\envs\web\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Anaconda3\envs\web\lib\site-packages\django\db\backends\sqlite3\base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: NOT NULL constraint failed: myapp_fieldworkproject.investigator_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Anaconda3\envs\web\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Anaconda3\envs\web\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Anaconda3\envs\web\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\Anaconda3\envs\web\lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\Anaconda3\envs\web\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\Anaconda3\envs\web\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\Anaconda3\envs\web\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\Anaconda3\envs\web\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\Anaconda3\envs\web\lib\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\ASUS\Desktop\WWW\course_design\myapp\views.py", line 37, in perform_create
+    serializer.save()
+  File "D:\Anaconda3\envs\web\lib\site-packages\rest_framework\serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+  File "D:\Anaconda3\envs\web\lib\site-packages\rest_framework\serializers.py", line 989, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "D:\Anaconda3\envs\web\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\Anaconda3\envs\web\lib\site-packages\django\db\models\query.py", line 453, in create
+    obj.save(force_insert=True, using=self.db)
+  File "D:\Anaconda3\envs\web\lib\site-packages\django\db\models\base.py", line 740, in save
+    force_update=force_update, update_fields=update_fields)
+  File "D:\Anaconda3\envs\web\lib\site-packages\django\db\models\base.py", line 778, in save_base
+    force_update, using, update_fields,
+  File "D:\Anaconda3\envs\web\lib\site-packages\django\db\models\base.py", line 881, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "D:\Anaconda3\envs\web\lib\site-packages\django\db\models\base.py", line 921, in _do_insert
+    using=using, raw=raw,
+  File "D:\Anaconda3\envs\web\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\Anaconda3\envs\web\lib\site-packages\django\db\models\query.py", line 1270, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "D:\Anaconda3\envs\web\lib\site-packages\django\db\models\sql\compiler.py", line 1416, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\Anaconda3\envs\web\lib\site-packages\django\db\backends\utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "D:\Anaconda3\envs\web\lib\site-packages\django\db\backends\utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "D:\Anaconda3\envs\web\lib\site-packages\django\db\backends\utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\Anaconda3\envs\web\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Anaconda3\envs\web\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Anaconda3\envs\web\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Anaconda3\envs\web\lib\site-packages\django\db\backends\sqlite3\base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: NOT NULL constraint failed: myapp_fieldworkproject.investigator_id
+ERROR 2024-12-07 16:42:40,808 basehttp 1772 19344 "POST /api/projects/ HTTP/1.1" 500 28305
+INFO 2024-12-07 16:42:51,560 basehttp 1772 14548 "GET /swagger/ HTTP/1.1" 200 1621
+INFO 2024-12-07 16:42:52,487 basehttp 1772 14548 "GET /swagger/?format=openapi HTTP/1.1" 200 8480
+INFO 2024-12-07 16:45:06,375 basehttp 1772 14548 "GET /api/projects/ HTTP/1.1" 200 11949
+INFO 2024-12-07 16:45:08,839 basehttp 1772 14548 "GET /swagger/ HTTP/1.1" 200 1621
+INFO 2024-12-07 16:45:09,489 basehttp 1772 14548 "GET /swagger/?format=openapi HTTP/1.1" 200 8480
+ERROR 2024-12-07 16:45:36,939 log 1772 19344 Internal Server Error: /api/projects/
+Traceback (most recent call last):
+  File "D:\Anaconda3\envs\web\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Anaconda3\envs\web\lib\site-packages\django\db\backends\sqlite3\base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: NOT NULL constraint failed: myapp_fieldworkproject.investigator_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Anaconda3\envs\web\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Anaconda3\envs\web\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Anaconda3\envs\web\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\Anaconda3\envs\web\lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\Anaconda3\envs\web\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\Anaconda3\envs\web\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\Anaconda3\envs\web\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\Anaconda3\envs\web\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\Anaconda3\envs\web\lib\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\ASUS\Desktop\WWW\course_design\myapp\views.py", line 37, in perform_create
+    serializer.save()
+  File "D:\Anaconda3\envs\web\lib\site-packages\rest_framework\serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+  File "D:\Anaconda3\envs\web\lib\site-packages\rest_framework\serializers.py", line 989, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "D:\Anaconda3\envs\web\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\Anaconda3\envs\web\lib\site-packages\django\db\models\query.py", line 453, in create
+    obj.save(force_insert=True, using=self.db)
+  File "D:\Anaconda3\envs\web\lib\site-packages\django\db\models\base.py", line 740, in save
+    force_update=force_update, update_fields=update_fields)
+  File "D:\Anaconda3\envs\web\lib\site-packages\django\db\models\base.py", line 778, in save_base
+    force_update, using, update_fields,
+  File "D:\Anaconda3\envs\web\lib\site-packages\django\db\models\base.py", line 881, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "D:\Anaconda3\envs\web\lib\site-packages\django\db\models\base.py", line 921, in _do_insert
+    using=using, raw=raw,
+  File "D:\Anaconda3\envs\web\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\Anaconda3\envs\web\lib\site-packages\django\db\models\query.py", line 1270, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "D:\Anaconda3\envs\web\lib\site-packages\django\db\models\sql\compiler.py", line 1416, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\Anaconda3\envs\web\lib\site-packages\django\db\backends\utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "D:\Anaconda3\envs\web\lib\site-packages\django\db\backends\utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "D:\Anaconda3\envs\web\lib\site-packages\django\db\backends\utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\Anaconda3\envs\web\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Anaconda3\envs\web\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Anaconda3\envs\web\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Anaconda3\envs\web\lib\site-packages\django\db\backends\sqlite3\base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: NOT NULL constraint failed: myapp_fieldworkproject.investigator_id
+ERROR 2024-12-07 16:45:36,946 basehttp 1772 19344 "POST /api/projects/ HTTP/1.1" 500 28305
+INFO 2024-12-07 16:46:41,872 autoreload 1772 23360 C:\Users\ASUS\Desktop\WWW\course_design\myapp\views.py changed, reloading.
+INFO 2024-12-07 16:46:42,540 autoreload 1580 15724 Watching for file changes with StatReloader
+INFO 2024-12-07 16:46:47,958 autoreload 1580 15724 C:\Users\ASUS\Desktop\WWW\course_design\myapp\views.py changed, reloading.
+INFO 2024-12-07 16:46:48,706 autoreload 13228 27820 Watching for file changes with StatReloader
+INFO 2024-12-07 16:46:49,984 autoreload 13228 27820 C:\Users\ASUS\Desktop\WWW\course_design\myapp\views.py changed, reloading.
+INFO 2024-12-07 16:46:50,895 autoreload 28488 4404 Watching for file changes with StatReloader
+INFO 2024-12-07 16:47:30,799 basehttp 28488 8068 "POST /api/projects/ HTTP/1.1" 201 405
+INFO 2024-12-07 16:47:40,915 basehttp 28488 4440 "OPTIONS /api/files/upload/ HTTP/1.1" 200 0
+WARNING 2024-12-07 16:47:40,924 log 28488 4440 Bad Request: /api/files/upload/
+WARNING 2024-12-07 16:47:40,925 basehttp 28488 4440 "POST /api/files/upload/ HTTP/1.1" 400 85
+WARNING 2024-12-07 16:47:56,397 log 28488 4440 Bad Request: /api/files/upload/
+WARNING 2024-12-07 16:47:56,398 basehttp 28488 4440 "POST /api/files/upload/ HTTP/1.1" 400 85
+WARNING 2024-12-07 16:48:04,510 log 28488 4440 Bad Request: /api/files/upload/
+WARNING 2024-12-07 16:48:04,511 basehttp 28488 4440 "POST /api/files/upload/ HTTP/1.1" 400 85
+INFO 2024-12-07 16:48:53,032 autoreload 28488 4404 C:\Users\ASUS\Desktop\WWW\course_design\myapp\serializers.py changed, reloading.
+INFO 2024-12-07 16:48:53,781 autoreload 15256 25924 Watching for file changes with StatReloader
+INFO 2024-12-07 16:49:02,264 autoreload 15256 25924 C:\Users\ASUS\Desktop\WWW\course_design\myapp\views.py changed, reloading.
+INFO 2024-12-07 16:49:02,921 autoreload 28596 23280 Watching for file changes with StatReloader
+INFO 2024-12-07 16:49:26,827 autoreload 28596 23280 C:\Users\ASUS\Desktop\WWW\course_design\myapp\serializers.py changed, reloading.
+INFO 2024-12-07 16:49:27,531 autoreload 13396 5600 Watching for file changes with StatReloader
+INFO 2024-12-07 16:50:20,059 basehttp 13396 3400 "POST /api/files/upload/ HTTP/1.1" 201 258
+INFO 2024-12-07 16:51:36,974 autoreload 13396 5600 C:\Users\ASUS\Desktop\WWW\course_design\myapp\serializers.py changed, reloading.
+INFO 2024-12-07 16:51:37,615 autoreload 21400 8596 Watching for file changes with StatReloader
+INFO 2024-12-07 16:54:07,089 basehttp 21400 16220 "POST /api/projects/ HTTP/1.1" 201 403
+INFO 2024-12-07 16:55:12,467 basehttp 21400 2000 "POST /api/files/upload/ HTTP/1.1" 201 353
+ERROR 2024-12-07 16:55:45,098 log 21400 2000 Internal Server Error: /api/files/upload/
+Traceback (most recent call last):
+  File "D:\Anaconda3\envs\web\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Anaconda3\envs\web\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Anaconda3\envs\web\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\Anaconda3\envs\web\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\Anaconda3\envs\web\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\Anaconda3\envs\web\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\Anaconda3\envs\web\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\Anaconda3\envs\web\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\ASUS\Desktop\WWW\course_design\myapp\views.py", line 178, in post
+    data = request.data.copy()
+  File "D:\Anaconda3\envs\web\lib\site-packages\django\http\request.py", line 573, in copy
+    return self.__deepcopy__({})
+  File "D:\Anaconda3\envs\web\lib\site-packages\django\http\request.py", line 534, in __deepcopy__
+    result.setlist(copy.deepcopy(key, memo), copy.deepcopy(value, memo))
+  File "D:\Anaconda3\envs\web\lib\copy.py", line 150, in deepcopy
+    y = copier(x, memo)
+  File "D:\Anaconda3\envs\web\lib\copy.py", line 215, in _deepcopy_list
+    append(deepcopy(a, memo))
+  File "D:\Anaconda3\envs\web\lib\copy.py", line 180, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "D:\Anaconda3\envs\web\lib\copy.py", line 280, in _reconstruct
+    state = deepcopy(state, memo)
+  File "D:\Anaconda3\envs\web\lib\copy.py", line 150, in deepcopy
+    y = copier(x, memo)
+  File "D:\Anaconda3\envs\web\lib\copy.py", line 240, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "D:\Anaconda3\envs\web\lib\copy.py", line 180, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "D:\Anaconda3\envs\web\lib\copy.py", line 280, in _reconstruct
+    state = deepcopy(state, memo)
+  File "D:\Anaconda3\envs\web\lib\copy.py", line 150, in deepcopy
+    y = copier(x, memo)
+  File "D:\Anaconda3\envs\web\lib\copy.py", line 240, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "D:\Anaconda3\envs\web\lib\copy.py", line 169, in deepcopy
+    rv = reductor(4)
+TypeError: cannot serialize '_io.BufferedRandom' object
+ERROR 2024-12-07 16:55:45,102 basehttp 21400 2000 "POST /api/files/upload/ HTTP/1.1" 500 169460
+INFO 2024-12-07 16:56:02,158 basehttp 21400 2000 "POST /api/files/upload/ HTTP/1.1" 201 347
+INFO 2024-12-07 16:57:49,217 basehttp 21400 2000 "POST /api/files/upload/ HTTP/1.1" 201 338
+WARNING 2024-12-07 16:57:52,911 log 21400 28972 Not Found: /api/fieldwork-projects/
+WARNING 2024-12-07 16:57:52,914 log 21400 16220 Not Found: /api/fieldwork-projects/
+WARNING 2024-12-07 16:57:52,915 basehttp 21400 28972 "GET /api/fieldwork-projects/?view_type=my HTTP/1.1" 404 4263
+WARNING 2024-12-07 16:57:52,915 basehttp 21400 16220 "GET /api/fieldwork-projects/?view_type=liked HTTP/1.1" 404 4266
+WARNING 2024-12-07 16:57:59,542 log 21400 16220 Not Found: /api/fieldwork-projects/
+WARNING 2024-12-07 16:57:59,544 log 21400 28972 Not Found: /api/fieldwork-projects/
+WARNING 2024-12-07 16:57:59,544 basehttp 21400 16220 "GET /api/fieldwork-projects/?view_type=my HTTP/1.1" 404 4263
+WARNING 2024-12-07 16:57:59,545 basehttp 21400 28972 "GET /api/fieldwork-projects/?view_type=liked HTTP/1.1" 404 4266
+INFO 2024-12-07 16:58:09,390 basehttp 21400 30160 "GET /admin/myapp/fieldworkproject/1/change/ HTTP/1.1" 200 12638
+INFO 2024-12-07 16:58:09,456 basehttp 21400 30160 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-12-07 16:58:10,576 basehttp 21400 30160 "GET /admin/myapp/ HTTP/1.1" 200 3683
+INFO 2024-12-07 16:58:13,856 basehttp 21400 30160 "GET /admin/myapp/fieldworkproject/ HTTP/1.1" 200 6995
+INFO 2024-12-07 16:58:13,914 basehttp 21400 30160 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-12-07 16:58:15,191 basehttp 21400 30160 "GET /admin/myapp/fieldworkproject/3/change/ HTTP/1.1" 200 12589
+INFO 2024-12-07 16:58:15,251 basehttp 21400 30160 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-12-07 16:58:20,702 basehttp 21400 30160 "GET /admin/myapp/fieldworkproject/ HTTP/1.1" 200 6995
+INFO 2024-12-07 16:58:21,742 basehttp 21400 30160 "GET /admin/myapp/fieldworkfile/ HTTP/1.1" 200 7243
+INFO 2024-12-07 16:58:21,805 basehttp 21400 30160 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-12-07 16:58:24,016 basehttp 21400 30160 "GET /admin/myapp/fieldworkfile/4/change/ HTTP/1.1" 200 13575
+INFO 2024-12-07 16:58:24,070 basehttp 21400 30160 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-12-07 16:58:30,953 basehttp 21400 30160 "GET /admin/myapp/fieldworkfile/ HTTP/1.1" 200 7243
+INFO 2024-12-07 16:58:33,476 basehttp 21400 30160 "GET /admin/myapp/fieldworkfile/2/change/ HTTP/1.1" 200 13635
+INFO 2024-12-07 16:58:33,544 basehttp 21400 30160 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-12-07 16:58:40,125 basehttp 21400 30160 "GET /admin/myapp/fieldworkfile/ HTTP/1.1" 200 7243
+INFO 2024-12-07 16:58:44,295 basehttp 21400 30160 "GET /admin/myapp/fieldworkproject/ HTTP/1.1" 200 6995
+INFO 2024-12-07 16:58:44,362 basehttp 21400 30160 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-12-07 17:01:55,914 basehttp 21400 30160 "GET /admin/myapp/fieldworkproject/ HTTP/1.1" 200 6995
+INFO 2024-12-07 17:01:55,961 basehttp 21400 30160 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-12-07 17:03:20,171 autoreload 21400 8596 C:\Users\ASUS\Desktop\WWW\course_design\myapp\models.py changed, reloading.
+INFO 2024-12-07 17:03:20,999 autoreload 29168 29460 Watching for file changes with StatReloader
+INFO 2024-12-07 17:03:35,627 autoreload 29168 29460 C:\Users\ASUS\Desktop\WWW\course_design\myapp\views.py changed, reloading.
+INFO 2024-12-07 17:03:36,307 autoreload 21188 30528 Watching for file changes with StatReloader
+WARNING 2024-12-07 17:04:36,599 log 21188 30224 Unauthorized: /api/auth/user-info/
+WARNING 2024-12-07 17:04:36,600 basehttp 21188 30224 "GET /api/auth/user-info/ HTTP/1.1" 401 21
+INFO 2024-12-07 17:04:43,164 basehttp 21188 24588 "OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+INFO 2024-12-07 17:04:43,169 auth 21188 30224 尝试登录用户: wangziyu
+INFO 2024-12-07 17:04:43,593 auth 21188 30224 用户登录成功: wangziyu, 响应数据: {'message': '登录成功', 'user': {'id': 1, 'username': 'wangziyu', 'display_name': 'wangziyu', 'user_type': 'admin'}}
+INFO 2024-12-07 17:04:43,610 basehttp 21188 30224 "POST /api/auth/login/ HTTP/1.1" 200 110
+INFO 2024-12-07 17:04:45,454 basehttp 21188 30224 "GET /api/projects/?view_type=my HTTP/1.1" 200 2166
+WARNING 2024-12-07 17:04:54,076 log 21188 30224 Not Found: /api/projects/3/files/
+WARNING 2024-12-07 17:04:54,076 basehttp 21188 30224 "GET /api/projects/3/files/ HTTP/1.1" 404 4244
+INFO 2024-12-07 17:05:13,073 basehttp 21188 8684 "GET /admin/myapp/fieldworkproject/ HTTP/1.1" 200 6995
+INFO 2024-12-07 17:05:13,138 basehttp 21188 8684 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-12-07 17:05:13,949 basehttp 21188 8684 "GET /admin/myapp/fieldworkfile/ HTTP/1.1" 200 7243
+INFO 2024-12-07 17:05:14,009 basehttp 21188 8684 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-12-07 17:05:14,871 basehttp 21188 8684 "GET /admin/myapp/fieldworkproject/ HTTP/1.1" 200 6995
+INFO 2024-12-07 17:05:14,924 basehttp 21188 8684 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-12-07 17:05:16,442 basehttp 21188 8684 "GET /admin/myapp/userprofile/ HTTP/1.1" 200 10035
+INFO 2024-12-07 17:05:16,483 basehttp 21188 11580 "GET /static/admin/img/icon-no.svg HTTP/1.1" 304 0
+INFO 2024-12-07 17:05:16,487 basehttp 21188 25968 "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+INFO 2024-12-07 17:05:16,499 basehttp 21188 8684 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-12-07 17:05:16,589 basehttp 21188 8684 "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 304 0
+INFO 2024-12-07 17:05:21,835 basehttp 21188 8684 "GET /admin/myapp/fieldworkproject/ HTTP/1.1" 200 6995
+INFO 2024-12-07 17:05:21,883 basehttp 21188 8684 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-12-07 17:05:23,494 basehttp 21188 8684 "GET /admin/myapp/fieldworkproject/3/change/ HTTP/1.1" 200 12589
+INFO 2024-12-07 17:05:23,544 basehttp 21188 8684 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-12-07 17:05:30,147 basehttp 21188 8684 "POST /admin/myapp/fieldworkproject/3/change/ HTTP/1.1" 302 0
+INFO 2024-12-07 17:05:30,236 basehttp 21188 8684 "GET /admin/myapp/fieldworkproject/ HTTP/1.1" 200 7204
+INFO 2024-12-07 17:05:30,297 basehttp 21188 8684 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-12-07 17:05:34,177 basehttp 21188 30224 "GET /api/projects/?view_type=my HTTP/1.1" 200 2167
+INFO 2024-12-07 17:06:09,049 autoreload 21188 30528 C:\Users\ASUS\Desktop\WWW\course_design\myapp\views.py changed, reloading.
+INFO 2024-12-07 17:06:09,793 autoreload 30356 29500 Watching for file changes with StatReloader
+INFO 2024-12-07 17:10:22,129 basehttp 30356 29868 "GET /api/projects/?view_type=public&search=&file_type=&sort=newest HTTP/1.1" 200 1893
+WARNING 2024-12-07 17:10:44,929 log 30356 29868 Not Found: /api/projects/3/files/
+WARNING 2024-12-07 17:10:44,930 basehttp 30356 29868 "GET /api/projects/3/files/ HTTP/1.1" 404 4244
+WARNING 2024-12-07 17:10:46,199 log 30356 29868 Not Found: /api/projects/1/files/
+WARNING 2024-12-07 17:10:46,199 basehttp 30356 29868 "GET /api/projects/1/files/ HTTP/1.1" 404 4244
+INFO 2024-12-07 17:10:49,702 basehttp 30356 29868 "GET /api/projects/?view_type=public&search=&file_type=&sort=newest HTTP/1.1" 200 1893
+INFO 2024-12-07 17:10:50,410 basehttp 30356 29868 "GET /api/projects/?view_type=my HTTP/1.1" 200 2167
+INFO 2024-12-07 17:10:52,145 basehttp 30356 29868 "GET /api/projects/?view_type=public&search=&file_type=&sort=newest HTTP/1.1" 200 1893
+INFO 2024-12-07 17:11:16,982 basehttp 30356 29868 "GET /api/projects/?view_type=my HTTP/1.1" 200 2167
+INFO 2024-12-07 17:11:19,059 basehttp 30356 29868 "GET /api/projects/?view_type=public&search=&file_type=&sort=newest HTTP/1.1" 200 1893
+INFO 2024-12-07 17:11:20,828 basehttp 30356 29868 "GET /api/projects/?view_type=public&search=&file_type=&sort=newest HTTP/1.1" 200 1893
+INFO 2024-12-07 17:11:23,204 autoreload 30356 29500 C:\Users\ASUS\Desktop\WWW\course_design\myapp\urls.py changed, reloading.
+INFO 2024-12-07 17:11:23,832 autoreload 28688 15744 Watching for file changes with StatReloader
+INFO 2024-12-07 17:11:34,832 basehttp 28688 29040 "GET /api/projects/?view_type=public&search=&file_type=&sort=newest HTTP/1.1" 200 1893
+INFO 2024-12-07 17:11:40,402 basehttp 28688 29040 "GET /api/projects/?view_type=my HTTP/1.1" 200 2167
+INFO 2024-12-07 17:11:49,967 basehttp 28688 29040 "GET /api/projects/?view_type=public&search=&file_type=&sort=newest HTTP/1.1" 200 1893
+INFO 2024-12-07 17:11:50,769 basehttp 28688 29040 "GET /api/projects/3/files/ HTTP/1.1" 200 1042
+INFO 2024-12-07 17:11:52,794 basehttp 28688 29040 "GET /api/projects/1/files/ HTTP/1.1" 200 2
+INFO 2024-12-07 17:11:55,148 basehttp 28688 29040 "GET /api/projects/?view_type=my HTTP/1.1" 200 2167
+INFO 2024-12-07 17:11:56,259 basehttp 28688 29040 "GET /api/projects/3/files/ HTTP/1.1" 200 1042
+INFO 2024-12-07 17:13:15,476 autoreload 28688 15744 C:\Users\ASUS\Desktop\WWW\course_design\myapp\views.py changed, reloading.
+INFO 2024-12-07 17:13:16,271 autoreload 28564 19936 Watching for file changes with StatReloader
+INFO 2024-12-07 17:13:24,632 basehttp 28564 30292 "GET /api/projects/?view_type=public&search=&file_type=&sort=newest HTTP/1.1" 200 1893
+INFO 2024-12-07 17:13:24,947 basehttp 28564 30292 "GET /api/projects/?view_type=my HTTP/1.1" 200 2167
+INFO 2024-12-07 17:13:25,384 basehttp 28564 30292 "GET /api/projects/?view_type=public&search=&file_type=&sort=newest HTTP/1.1" 200 1893
+INFO 2024-12-07 17:13:30,800 basehttp 28564 30292 "GET /api/projects/?view_type=public&search=&file_type=&sort=newest HTTP/1.1" 200 1893
+INFO 2024-12-07 17:13:48,271 basehttp 28564 30292 "GET /api/projects/3/files/ HTTP/1.1" 200 1042
+INFO 2024-12-07 17:13:50,371 basehttp 28564 30292 "GET /api/projects/1/files/ HTTP/1.1" 200 2
+INFO 2024-12-07 17:13:51,783 basehttp 28564 30292 "GET /api/projects/3/files/ HTTP/1.1" 200 1042
+INFO 2024-12-07 17:14:43,535 basehttp 28564 30292 "GET /api/projects/?view_type=public&search=&file_type=&sort=newest HTTP/1.1" 200 1893
+INFO 2024-12-07 17:15:24,645 basehttp 28564 30292 "GET /api/projects/?view_type=public&search=&file_type=&sort=newest HTTP/1.1" 200 1893
+INFO 2024-12-07 17:15:43,872 basehttp 28564 30292 "GET /api/projects/?view_type=my HTTP/1.1" 200 2167
+INFO 2024-12-07 17:15:46,837 basehttp 28564 30292 "GET /api/projects/?view_type=public&search=&file_type=&sort=newest HTTP/1.1" 200 1893
+INFO 2024-12-07 17:15:48,256 basehttp 28564 30292 "GET /api/projects/1/files/ HTTP/1.1" 200 2
+INFO 2024-12-07 17:15:49,488 basehttp 28564 30292 "GET /api/projects/3/files/ HTTP/1.1" 200 1042
+WARNING 2024-12-07 17:15:54,363 log 28564 30292 Unauthorized: /api/auth/user-info/
+WARNING 2024-12-07 17:15:54,364 basehttp 28564 30292 "GET /api/auth/user-info/ HTTP/1.1" 401 21
+INFO 2024-12-07 17:16:40,834 autoreload 28564 19936 C:\Users\ASUS\Desktop\WWW\course_design\myapp\serializers.py changed, reloading.
+INFO 2024-12-07 17:16:41,486 autoreload 30212 2404 Watching for file changes with StatReloader
+INFO 2024-12-07 17:16:51,996 autoreload 30212 2404 C:\Users\ASUS\Desktop\WWW\course_design\myapp\views.py changed, reloading.
+INFO 2024-12-07 17:16:52,661 autoreload 18544 8344 Watching for file changes with StatReloader
+INFO 2024-12-07 17:17:20,497 basehttp 18544 8204 "GET /api/projects/?view_type=public&search=&file_type=&sort=newest HTTP/1.1" 200 1962
+INFO 2024-12-07 17:17:37,055 basehttp 18544 8204 "GET /api/projects/3/files/ HTTP/1.1" 200 1111
+WARNING 2024-12-07 17:17:38,510 log 18544 8204 Not Found: /media/uploads\image\20241207_165512_dcfc2ab0.png
+WARNING 2024-12-07 17:17:38,511 basehttp 18544 8204 "GET /media/uploads%5Cimage%5C20241207_165512_dcfc2ab0.png HTTP/1.1" 404 2757
+WARNING 2024-12-07 17:17:40,340 log 18544 12464 Not Found: /media/uploads\document\20241207_165602_999ec44a.pdf
+WARNING 2024-12-07 17:17:40,341 basehttp 18544 12464 "GET /media/uploads%5Cdocument%5C20241207_165602_999ec44a.pdf HTTP/1.1" 404 2766
+WARNING 2024-12-07 17:17:41,176 log 18544 29992 Not Found: /media/uploads\audio\20241207_165749_5c2caac2.mp3
+WARNING 2024-12-07 17:17:41,177 basehttp 18544 29992 "GET /media/uploads%5Caudio%5C20241207_165749_5c2caac2.mp3 HTTP/1.1" 404 2757
+WARNING 2024-12-07 17:17:42,262 log 18544 8256 Not Found: /media/uploads\image\20241207_165512_dcfc2ab0.png
+WARNING 2024-12-07 17:17:42,264 basehttp 18544 8256 "GET /media/uploads%5Cimage%5C20241207_165512_dcfc2ab0.png HTTP/1.1" 404 2757
+WARNING 2024-12-07 17:17:59,562 log 18544 12464 Not Found: /media/uploads\document\20241207_165602_999ec44a.pdf
+WARNING 2024-12-07 17:17:59,563 basehttp 18544 12464 "GET /media/uploads%5Cdocument%5C20241207_165602_999ec44a.pdf HTTP/1.1" 404 2766
+WARNING 2024-12-07 17:17:59,918 log 18544 15996 Not Found: /media/uploads\audio\20241207_165749_5c2caac2.mp3
+WARNING 2024-12-07 17:17:59,918 basehttp 18544 15996 "GET /media/uploads%5Caudio%5C20241207_165749_5c2caac2.mp3 HTTP/1.1" 404 2757
+WARNING 2024-12-07 17:18:00,296 log 18544 12464 Not Found: /media/uploads\document\20241207_165602_999ec44a.pdf
+WARNING 2024-12-07 17:18:00,298 basehttp 18544 12464 "GET /media/uploads%5Cdocument%5C20241207_165602_999ec44a.pdf HTTP/1.1" 404 2766
+WARNING 2024-12-07 17:18:01,250 log 18544 30632 Not Found: /media/uploads\image\20241207_165512_dcfc2ab0.png
+WARNING 2024-12-07 17:18:01,251 basehttp 18544 30632 "GET /media/uploads%5Cimage%5C20241207_165512_dcfc2ab0.png HTTP/1.1" 404 2757
+WARNING 2024-12-07 17:18:03,072 log 18544 12464 Not Found: /media/uploads\document\20241207_165602_999ec44a.pdf
+WARNING 2024-12-07 17:18:03,072 basehttp 18544 12464 "GET /media/uploads%5Cdocument%5C20241207_165602_999ec44a.pdf HTTP/1.1" 404 2766
+WARNING 2024-12-07 17:18:03,432 log 18544 28492 Not Found: /media/uploads\audio\20241207_165749_5c2caac2.mp3
+WARNING 2024-12-07 17:18:03,432 basehttp 18544 28492 "GET /media/uploads%5Caudio%5C20241207_165749_5c2caac2.mp3 HTTP/1.1" 404 2757
+WARNING 2024-12-07 17:18:03,961 log 18544 12464 Not Found: /media/uploads\document\20241207_165602_999ec44a.pdf
+WARNING 2024-12-07 17:18:03,962 basehttp 18544 12464 "GET /media/uploads%5Cdocument%5C20241207_165602_999ec44a.pdf HTTP/1.1" 404 2766
+WARNING 2024-12-07 17:18:04,222 log 18544 29116 Not Found: /media/uploads\image\20241207_165512_dcfc2ab0.png
+WARNING 2024-12-07 17:18:04,222 basehttp 18544 29116 "GET /media/uploads%5Cimage%5C20241207_165512_dcfc2ab0.png HTTP/1.1" 404 2757
+WARNING 2024-12-07 17:18:09,288 log 18544 1844 Not Found: /media/uploads\image\20241207_165512_dcfc2ab0.png
+WARNING 2024-12-07 17:18:09,290 basehttp 18544 1844 "GET /media/uploads%5Cimage%5C20241207_165512_dcfc2ab0.png HTTP/1.1" 404 2757
+WARNING 2024-12-07 17:18:10,091 log 18544 12464 Not Found: /media/uploads\document\20241207_165602_999ec44a.pdf
+WARNING 2024-12-07 17:18:10,092 basehttp 18544 12464 "GET /media/uploads%5Cdocument%5C20241207_165602_999ec44a.pdf HTTP/1.1" 404 2766
+WARNING 2024-12-07 17:18:11,095 log 18544 30292 Not Found: /media/uploads\image\20241207_165512_dcfc2ab0.png
+WARNING 2024-12-07 17:18:11,096 basehttp 18544 30292 "GET /media/uploads%5Cimage%5C20241207_165512_dcfc2ab0.png HTTP/1.1" 404 2757
+INFO 2024-12-07 17:18:53,724 basehttp 18544 28692 "POST /api/projects/3/like/ HTTP/1.1" 200 18
+INFO 2024-12-07 17:18:54,992 basehttp 18544 28692 "POST /api/projects/3/like/ HTTP/1.1" 200 20
+INFO 2024-12-07 17:19:03,454 basehttp 18544 28692 "GET /api/projects/3/files/ HTTP/1.1" 200 1111
+WARNING 2024-12-07 17:19:05,617 log 18544 28692 Not Found: /media/uploads\audio\20241207_165749_5c2caac2.mp3
+WARNING 2024-12-07 17:19:05,618 basehttp 18544 28692 "GET /media/uploads%5Caudio%5C20241207_165749_5c2caac2.mp3 HTTP/1.1" 404 2757
+WARNING 2024-12-07 17:19:06,054 log 18544 12464 Not Found: /media/uploads\document\20241207_165602_999ec44a.pdf
+WARNING 2024-12-07 17:19:06,055 basehttp 18544 12464 "GET /media/uploads%5Cdocument%5C20241207_165602_999ec44a.pdf HTTP/1.1" 404 2766
+WARNING 2024-12-07 17:19:06,514 log 18544 28908 Not Found: /media/uploads\image\20241207_165512_dcfc2ab0.png
+WARNING 2024-12-07 17:19:06,515 basehttp 18544 28908 "GET /media/uploads%5Cimage%5C20241207_165512_dcfc2ab0.png HTTP/1.1" 404 2757
+WARNING 2024-12-07 17:19:08,066 log 18544 12464 Not Found: /media/uploads\document\20241207_165602_999ec44a.pdf
+WARNING 2024-12-07 17:19:08,067 basehttp 18544 12464 "GET /media/uploads%5Cdocument%5C20241207_165602_999ec44a.pdf HTTP/1.1" 404 2766
+WARNING 2024-12-07 17:19:08,420 log 18544 29596 Not Found: /media/uploads\audio\20241207_165749_5c2caac2.mp3
+WARNING 2024-12-07 17:19:08,421 basehttp 18544 29596 "GET /media/uploads%5Caudio%5C20241207_165749_5c2caac2.mp3 HTTP/1.1" 404 2757
+INFO 2024-12-07 17:19:30,915 autoreload 18544 8344 C:\Users\ASUS\Desktop\WWW\course_design\myapp\serializers.py changed, reloading.
+INFO 2024-12-07 17:19:31,574 autoreload 5808 27652 Watching for file changes with StatReloader
+INFO 2024-12-07 17:19:50,394 basehttp 5808 28692 "GET /api/projects/?view_type=public&search=&file_type=&sort=newest HTTP/1.1" 200 1950
+INFO 2024-12-07 17:20:25,487 basehttp 5808 28692 "GET /api/projects/3/files/ HTTP/1.1" 200 1099
+WARNING 2024-12-07 17:20:26,159 log 5808 13324 Not Found: /media/uploads/document/20241207_165602_999ec44a.pdf
+WARNING 2024-12-07 17:20:26,160 basehttp 5808 13324 "GET /media/uploads/document/20241207_165602_999ec44a.pdf HTTP/1.1" 404 2762
+WARNING 2024-12-07 17:20:28,841 log 5808 28692 Not Found: /media/uploads/image/20241207_165512_dcfc2ab0.png
+WARNING 2024-12-07 17:20:28,841 basehttp 5808 28692 "GET /media/uploads/image/20241207_165512_dcfc2ab0.png HTTP/1.1" 404 2753
+WARNING 2024-12-07 17:20:30,285 log 5808 13324 Not Found: /media/uploads/document/20241207_165602_999ec44a.pdf
+WARNING 2024-12-07 17:20:30,286 basehttp 5808 13324 "GET /media/uploads/document/20241207_165602_999ec44a.pdf HTTP/1.1" 404 2762
+WARNING 2024-12-07 17:20:31,641 log 5808 29900 Not Found: /media/uploads/audio/20241207_165749_5c2caac2.mp3
+WARNING 2024-12-07 17:20:31,642 basehttp 5808 29900 "GET /media/uploads/audio/20241207_165749_5c2caac2.mp3 HTTP/1.1" 404 2753
+INFO 2024-12-07 17:20:39,237 basehttp 5808 28644 "GET /api/projects/?view_type=public&search=&file_type=&sort=newest HTTP/1.1" 200 1950
+INFO 2024-12-07 17:20:59,598 autoreload 27880 13088 Watching for file changes with StatReloader
+INFO 2024-12-07 17:21:04,995 basehttp 27880 3064 "GET /api/projects/?view_type=public&search=&file_type=&sort=newest HTTP/1.1" 200 1950
+INFO 2024-12-07 17:21:06,022 basehttp 27880 3064 "GET /api/projects/3/files/ HTTP/1.1" 200 1099
+WARNING 2024-12-07 17:21:06,792 log 27880 23776 Not Found: /media/uploads/document/20241207_165602_999ec44a.pdf
+WARNING 2024-12-07 17:21:06,793 basehttp 27880 23776 "GET /media/uploads/document/20241207_165602_999ec44a.pdf HTTP/1.1" 404 2762
+WARNING 2024-12-07 17:21:09,145 log 27880 30064 Not Found: /media/uploads/document/20241207_165602_999ec44a.pdf
+WARNING 2024-12-07 17:21:09,146 basehttp 27880 30064 "GET /media/uploads/document/20241207_165602_999ec44a.pdf HTTP/1.1" 404 2762
+INFO 2024-12-07 17:21:20,050 auth 27880 3064 尝试登录用户: wangziyu
+INFO 2024-12-07 17:21:20,426 auth 27880 3064 用户登录成功: wangziyu, 响应数据: {'message': '登录成功', 'user': {'id': 1, 'username': 'wangziyu', 'display_name': 'wangziyu', 'user_type': 'admin'}}
+INFO 2024-12-07 17:21:20,438 basehttp 27880 3064 "POST /api/auth/login/ HTTP/1.1" 200 110
+INFO 2024-12-07 17:21:20,553 basehttp 27880 3064 "GET /api/projects/?view_type=public&search=&file_type=&sort=newest HTTP/1.1" 200 1950
+INFO 2024-12-07 17:21:36,462 basehttp 27880 3064 "GET /api/projects/3/files/ HTTP/1.1" 200 1099
+WARNING 2024-12-07 17:21:37,759 log 27880 3064 Not Found: /media/uploads/image/20241207_165512_dcfc2ab0.png
+WARNING 2024-12-07 17:21:37,760 basehttp 27880 3064 "GET /media/uploads/image/20241207_165512_dcfc2ab0.png HTTP/1.1" 404 2753
+INFO 2024-12-07 17:22:32,556 basehttp 27880 23200 "GET /api/projects/?view_type=public&search=&file_type=&sort=newest HTTP/1.1" 200 1950
+INFO 2024-12-07 17:22:33,526 basehttp 27880 23200 "GET /api/projects/?view_type=public&search=&file_type=&sort=newest HTTP/1.1" 200 1950
+INFO 2024-12-07 17:23:20,202 basehttp 27880 23200 "GET /api/projects/3/files/ HTTP/1.1" 200 1099
+WARNING 2024-12-07 17:23:20,907 log 27880 23776 Not Found: /media/uploads/document/20241207_165602_999ec44a.pdf
+WARNING 2024-12-07 17:23:20,907 basehttp 27880 23776 "GET /media/uploads/document/20241207_165602_999ec44a.pdf HTTP/1.1" 404 2762
+WARNING 2024-12-07 17:23:22,166 log 27880 23200 Not Found: /media/uploads/image/20241207_165512_dcfc2ab0.png
+WARNING 2024-12-07 17:23:22,168 basehttp 27880 23200 "GET /media/uploads/image/20241207_165512_dcfc2ab0.png HTTP/1.1" 404 2753
+WARNING 2024-12-07 17:23:23,184 log 27880 28644 Not Found: /media/uploads/audio/20241207_165749_5c2caac2.mp3
+WARNING 2024-12-07 17:23:23,185 basehttp 27880 28644 "GET /media/uploads/audio/20241207_165749_5c2caac2.mp3 HTTP/1.1" 404 2753
+WARNING 2024-12-07 17:23:23,830 log 27880 17160 Not Found: /media/uploads/image/20241207_165512_dcfc2ab0.png
+WARNING 2024-12-07 17:23:23,831 basehttp 27880 17160 "GET /media/uploads/image/20241207_165512_dcfc2ab0.png HTTP/1.1" 404 2753
+INFO 2024-12-07 17:23:38,451 basehttp 27880 30064 "GET /admin/myapp/fieldworkfile/ HTTP/1.1" 200 7243
+INFO 2024-12-07 17:23:38,502 basehttp 27880 30064 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-12-07 17:23:40,183 basehttp 27880 30064 "GET /admin/myapp/fieldworkfile/2/change/ HTTP/1.1" 200 13635
+INFO 2024-12-07 17:23:40,237 basehttp 27880 30064 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-12-07 17:23:43,811 basehttp 27880 30064 "GET /admin/myapp/fieldworkfile/ HTTP/1.1" 200 7243
+INFO 2024-12-07 17:23:44,810 basehttp 27880 30064 "GET /admin/myapp/fieldworkfile/2/change/ HTTP/1.1" 200 13635
+INFO 2024-12-07 17:23:44,870 basehttp 27880 30064 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-12-07 17:23:49,476 basehttp 27880 30064 "POST /admin/myapp/fieldworkfile/2/change/ HTTP/1.1" 302 0
+INFO 2024-12-07 17:23:49,637 basehttp 27880 30064 "GET /admin/myapp/fieldworkfile/ HTTP/1.1" 200 7470
+INFO 2024-12-07 17:23:49,812 basehttp 27880 30064 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-12-07 17:23:51,020 basehttp 27880 30064 "GET /admin/myapp/fieldworkfile/1/change/ HTTP/1.1" 200 13606
+INFO 2024-12-07 17:23:51,108 basehttp 27880 30064 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-12-07 17:23:53,999 basehttp 27880 30064 "POST /admin/myapp/fieldworkfile/1/change/ HTTP/1.1" 302 0
+INFO 2024-12-07 17:23:54,049 basehttp 27880 30064 "GET /admin/myapp/fieldworkfile/ HTTP/1.1" 200 7470
+INFO 2024-12-07 17:23:54,108 basehttp 27880 30064 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+WARNING 2024-12-07 17:23:57,033 log 27880 23776 Not Found: /media/uploads/document/20241207_165602_999ec44a.pdf
+WARNING 2024-12-07 17:23:57,034 basehttp 27880 23776 "GET /media/uploads/document/20241207_165602_999ec44a.pdf HTTP/1.1" 404 2762
+WARNING 2024-12-07 17:23:58,215 log 27880 18356 Not Found: /media/uploads/image/20241207_165512_dcfc2ab0.png
+WARNING 2024-12-07 17:23:58,216 basehttp 27880 18356 "GET /media/uploads/image/20241207_165512_dcfc2ab0.png HTTP/1.1" 404 2753
+INFO 2024-12-07 17:24:01,850 basehttp 27880 30432 "GET /admin/myapp/fieldworkfile/ HTTP/1.1" 200 7243
+INFO 2024-12-07 17:24:01,896 basehttp 27880 30432 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-12-07 17:24:03,499 basehttp 27880 30432 "GET /admin/myapp/fieldworkfile/4/change/ HTTP/1.1" 200 13575
+INFO 2024-12-07 17:24:03,552 basehttp 27880 5116 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-12-07 17:24:03,589 basehttp 27880 5116 "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19634
+INFO 2024-12-07 17:24:03,589 basehttp 27880 472 "GET /static/admin/js/calendar.js HTTP/1.1" 200 8466
+INFO 2024-12-07 17:24:03,589 basehttp 27880 30432 "GET /static/admin/css/forms.css HTTP/1.1" 200 8804
+INFO 2024-12-07 17:24:03,593 basehttp 27880 472 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 492
+INFO 2024-12-07 17:24:03,628 basehttp 27880 472 "GET /static/admin/css/widgets.css HTTP/1.1" 200 11097
+INFO 2024-12-07 17:24:03,636 basehttp 27880 472 "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+INFO 2024-12-07 17:24:03,636 basehttp 27880 30432 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2024-12-07 17:24:03,740 basehttp 27880 472 "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+INFO 2024-12-07 17:24:03,744 basehttp 27880 30432 "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+INFO 2024-12-07 17:24:17,810 basehttp 27880 30432 "POST /admin/myapp/fieldworkfile/4/change/ HTTP/1.1" 302 0
+INFO 2024-12-07 17:24:17,852 basehttp 27880 30432 "GET /admin/myapp/fieldworkfile/ HTTP/1.1" 200 7455
+INFO 2024-12-07 17:24:17,906 basehttp 27880 30432 "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+INFO 2024-12-07 17:24:18,000 basehttp 27880 30432 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2024-12-07 17:24:48,346 basehttp 27880 30388 "GET /api/projects/3/files/ HTTP/1.1" 200 1098
+WARNING 2024-12-07 17:24:49,440 log 27880 23776 Not Found: /media/uploads/document/20241207_165602_999ec44a.pdf
+WARNING 2024-12-07 17:24:49,442 basehttp 27880 23776 "GET /media/uploads/document/20241207_165602_999ec44a.pdf HTTP/1.1" 404 2762
+WARNING 2024-12-07 17:24:50,102 log 27880 30388 Not Found: /media/uploads/image/20241207_165512_dcfc2ab0.png
+WARNING 2024-12-07 17:24:50,103 basehttp 27880 30388 "GET /media/uploads/image/20241207_165512_dcfc2ab0.png HTTP/1.1" 404 2753
+INFO 2024-12-07 17:25:01,060 basehttp 27880 12464 "GET /api/projects/?view_type=public&search=&file_type=&sort=newest HTTP/1.1" 200 1949
+INFO 2024-12-07 17:26:32,423 basehttp 27880 12464 "GET /api/projects/3/files/ HTTP/1.1" 200 1098
+WARNING 2024-12-07 17:26:33,326 log 27880 23776 Not Found: /media/uploads/document/20241207_165602_999ec44a.pdf
+WARNING 2024-12-07 17:26:33,327 basehttp 27880 23776 "GET /media/uploads/document/20241207_165602_999ec44a.pdf HTTP/1.1" 404 2762
+WARNING 2024-12-07 17:26:33,874 log 27880 12464 Not Found: /media/uploads/image/20241207_165512_dcfc2ab0.png
+WARNING 2024-12-07 17:26:33,875 basehttp 27880 12464 "GET /media/uploads/image/20241207_165512_dcfc2ab0.png HTTP/1.1" 404 2753
+WARNING 2024-12-07 17:26:34,662 log 27880 28760 Not Found: /media/uploads/audio/20241207_165749_5c2caac2.mp3
+WARNING 2024-12-07 17:26:34,662 basehttp 27880 28760 "GET /media/uploads/audio/20241207_165749_5c2caac2.mp3 HTTP/1.1" 404 2753
+WARNING 2024-12-07 17:26:35,297 log 27880 27776 Not Found: /media/uploads/image/20241207_165512_dcfc2ab0.png
+WARNING 2024-12-07 17:26:35,298 basehttp 27880 27776 "GET /media/uploads/image/20241207_165512_dcfc2ab0.png HTTP/1.1" 404 2753
+INFO 2024-12-07 17:27:46,194 basehttp 27880 15680 "GET /api/projects/?view_type=public&search=&file_type=&sort=newest HTTP/1.1" 200 1949
+INFO 2024-12-07 17:28:01,159 basehttp 27880 15680 "GET /api/projects/3/files/ HTTP/1.1" 200 1098
+WARNING 2024-12-07 17:28:02,363 log 27880 15680 Not Found: /media/uploads/image/20241207_165512_dcfc2ab0.png
+WARNING 2024-12-07 17:28:02,364 basehttp 27880 15680 "GET /media/uploads/image/20241207_165512_dcfc2ab0.png HTTP/1.1" 404 2753
+INFO 2024-12-07 17:29:00,642 basehttp 27880 25968 "GET /api/projects/?view_type=public&search=&file_type=&sort=newest HTTP/1.1" 200 1949
+INFO 2024-12-07 17:29:09,181 basehttp 27880 25968 "GET /api/projects/?view_type=public&search=&file_type=&sort=newest HTTP/1.1" 200 1949
+INFO 2024-12-07 17:29:13,836 basehttp 27880 25968 "GET /api/projects/?view_type=public&search=&file_type=&sort=newest HTTP/1.1" 200 1949
+INFO 2024-12-07 17:29:38,036 basehttp 27880 25968 "GET /api/projects/3/files/ HTTP/1.1" 200 1098
+WARNING 2024-12-07 17:29:39,468 log 27880 25968 Not Found: /media/uploads/image/20241207_165512_dcfc2ab0.png
+WARNING 2024-12-07 17:29:39,469 basehttp 27880 25968 "GET /media/uploads/image/20241207_165512_dcfc2ab0.png HTTP/1.1" 404 2753
+WARNING 2024-12-07 17:32:02,611 log 27880 9856 Not Found: /media/uploads/image/20241207_165512_dcfc2ab0.png
+WARNING 2024-12-07 17:32:02,612 basehttp 27880 9856 "GET /media/uploads/image/20241207_165512_dcfc2ab0.png HTTP/1.1" 404 2753
+WARNING 2024-12-07 17:32:05,285 log 27880 28336 Not Found: /media/uploads/document/20241207_165602_999ec44a.pdf
+WARNING 2024-12-07 17:32:05,286 basehttp 27880 28336 "GET /media/uploads/document/20241207_165602_999ec44a.pdf HTTP/1.1" 404 2762
+WARNING 2024-12-07 17:32:06,425 log 27880 26720 Not Found: /media/uploads/image/20241207_165512_dcfc2ab0.png
+WARNING 2024-12-07 17:32:06,426 basehttp 27880 26720 "GET /media/uploads/image/20241207_165512_dcfc2ab0.png HTTP/1.1" 404 2753
+WARNING 2024-12-07 17:33:18,001 log 27880 9856 Not Found: /media/uploads/image/20241207_165512_dcfc2ab0.png
+WARNING 2024-12-07 17:33:18,002 basehttp 27880 9856 "GET /media/uploads/image/20241207_165512_dcfc2ab0.png HTTP/1.1" 404 2753
+WARNING 2024-12-07 17:34:02,669 log 27880 9856 Not Found: /media/uploads/image/20241207_165512_dcfc2ab0.png
+WARNING 2024-12-07 17:34:02,670 basehttp 27880 9856 "GET /media/uploads/image/20241207_165512_dcfc2ab0.png HTTP/1.1" 404 2753
+WARNING 2024-12-07 17:34:03,324 log 27880 9856 Not Found: /media/uploads/image/20241207_165512_dcfc2ab0.png
+WARNING 2024-12-07 17:34:03,324 basehttp 27880 9856 "GET /media/uploads/image/20241207_165512_dcfc2ab0.png HTTP/1.1" 404 2753
+INFO 2024-12-07 17:34:32,456 autoreload 29152 29652 Watching for file changes with StatReloader
+WARNING 2024-12-07 17:34:38,995 log 29152 30260 Not Found: /media/uploads/document/20241207_165602_999ec44a.pdf
+WARNING 2024-12-07 17:34:38,996 basehttp 29152 30260 "GET /media/uploads/document/20241207_165602_999ec44a.pdf HTTP/1.1" 404 2762
+WARNING 2024-12-07 17:34:39,572 log 29152 27964 Not Found: /media/uploads/image/20241207_165512_dcfc2ab0.png
+WARNING 2024-12-07 17:34:39,572 basehttp 29152 27964 "GET /media/uploads/image/20241207_165512_dcfc2ab0.png HTTP/1.1" 404 2753
+INFO 2024-12-07 17:36:19,950 basehttp 29152 31772 "GET /api/projects/?view_type=public&search=&file_type=&sort=newest HTTP/1.1" 200 1949
+INFO 2024-12-07 17:36:20,594 basehttp 29152 31772 "GET /api/projects/?view_type=public&search=&file_type=&sort=newest HTTP/1.1" 200 1949
+WARNING 2024-12-07 17:36:39,860 log 29152 22104 Not Found: /media/uploads/image/20241207_165512_dcfc2ab0.png
+WARNING 2024-12-07 17:36:39,860 basehttp 29152 22104 "GET /media/uploads/image/20241207_165512_dcfc2ab0.png HTTP/1.1" 404 2753
+INFO 2024-12-07 17:36:42,424 basehttp 29152 31772 "GET /api/projects/3/files/ HTTP/1.1" 200 1098
+WARNING 2024-12-07 17:36:43,205 log 29152 30260 Not Found: /media/uploads/document/20241207_165602_999ec44a.pdf
+WARNING 2024-12-07 17:36:43,205 basehttp 29152 30260 "GET /media/uploads/document/20241207_165602_999ec44a.pdf HTTP/1.1" 404 2762
+WARNING 2024-12-07 17:36:44,233 log 29152 31772 Not Found: /media/uploads/image/20241207_165512_dcfc2ab0.png
+WARNING 2024-12-07 17:36:44,234 basehttp 29152 31772 "GET /media/uploads/image/20241207_165512_dcfc2ab0.png HTTP/1.1" 404 2753
+WARNING 2024-12-07 17:36:44,895 log 29152 30260 Not Found: /media/uploads/document/20241207_165602_999ec44a.pdf
+WARNING 2024-12-07 17:36:44,897 basehttp 29152 30260 "GET /media/uploads/document/20241207_165602_999ec44a.pdf HTTP/1.1" 404 2762
+WARNING 2024-12-07 17:36:45,760 log 29152 22104 Not Found: /media/uploads/document/20241207_165602_999ec44a.pdf
+WARNING 2024-12-07 17:36:45,761 basehttp 29152 22104 "GET /media/uploads/document/20241207_165602_999ec44a.pdf HTTP/1.1" 404 2762
+WARNING 2024-12-07 17:36:54,914 log 29152 32524 Not Found: /media/uploads/audio/20241207_165749_5c2caac2.mp3
+WARNING 2024-12-07 17:36:54,914 basehttp 29152 32524 "GET /media/uploads/audio/20241207_165749_5c2caac2.mp3 HTTP/1.1" 404 2753
+WARNING 2024-12-07 17:36:56,214 log 29152 30260 Not Found: /media/uploads/document/20241207_165602_999ec44a.pdf
+WARNING 2024-12-07 17:36:56,215 basehttp 29152 30260 "GET /media/uploads/document/20241207_165602_999ec44a.pdf HTTP/1.1" 404 2762
+WARNING 2024-12-07 17:36:56,560 log 29152 32492 Not Found: /media/uploads/image/20241207_165512_dcfc2ab0.png
+WARNING 2024-12-07 17:36:56,561 basehttp 29152 32492 "GET /media/uploads/image/20241207_165512_dcfc2ab0.png HTTP/1.1" 404 2753
+INFO 2024-12-07 17:38:15,305 basehttp 29152 20772 "GET /api/projects/?view_type=public&search=&file_type=&sort=newest HTTP/1.1" 200 1949
+INFO 2024-12-07 17:38:37,847 basehttp 29152 20772 "GET /api/projects/3/files/ HTTP/1.1" 200 1098
+WARNING 2024-12-07 17:38:38,616 log 29152 30260 Not Found: /media/uploads/document/20241207_165602_999ec44a.pdf
+WARNING 2024-12-07 17:38:38,618 basehttp 29152 30260 "GET /media/uploads/document/20241207_165602_999ec44a.pdf HTTP/1.1" 404 2762
+WARNING 2024-12-07 17:38:39,204 log 29152 20772 Not Found: /media/uploads/image/20241207_165512_dcfc2ab0.png
+WARNING 2024-12-07 17:38:39,205 basehttp 29152 20772 "GET /media/uploads/image/20241207_165512_dcfc2ab0.png HTTP/1.1" 404 2753
+WARNING 2024-12-07 17:38:40,706 log 29152 32620 Not Found: /media/uploads/image/20241207_165512_dcfc2ab0.png
+WARNING 2024-12-07 17:38:40,707 basehttp 29152 32620 "GET /media/uploads/image/20241207_165512_dcfc2ab0.png?t=1733564320700 HTTP/1.1" 404 2769
+WARNING 2024-12-07 17:38:41,623 log 29152 31112 Not Found: /media/uploads/image/20241207_165512_dcfc2ab0.png
+WARNING 2024-12-07 17:38:41,624 basehttp 29152 31112 "GET /media/uploads/image/20241207_165512_dcfc2ab0.png?t=1733564321615 HTTP/1.1" 404 2769
+WARNING 2024-12-07 17:38:42,009 log 29152 32472 Not Found: /media/uploads/image/20241207_165512_dcfc2ab0.png
+WARNING 2024-12-07 17:38:42,010 basehttp 29152 32472 "GET /media/uploads/image/20241207_165512_dcfc2ab0.png?t=1733564321998 HTTP/1.1" 404 2769
+WARNING 2024-12-07 17:38:42,151 log 29152 30244 Not Found: /media/uploads/image/20241207_165512_dcfc2ab0.png
+WARNING 2024-12-07 17:38:42,152 basehttp 29152 30244 "GET /media/uploads/image/20241207_165512_dcfc2ab0.png?t=1733564322141 HTTP/1.1" 404 2769
+WARNING 2024-12-07 17:38:42,290 log 29152 12456 Not Found: /media/uploads/image/20241207_165512_dcfc2ab0.png
+WARNING 2024-12-07 17:38:42,291 basehttp 29152 12456 "GET /media/uploads/image/20241207_165512_dcfc2ab0.png?t=1733564322282 HTTP/1.1" 404 2769
+WARNING 2024-12-07 17:39:17,834 log 29152 22104 Not Found: /media/uploads/image/20241207_165512_dcfc2ab0.png
+WARNING 2024-12-07 17:39:17,835 basehttp 29152 22104 "GET /media/uploads/image/20241207_165512_dcfc2ab0.png HTTP/1.1" 404 2753
+WARNING 2024-12-07 17:42:18,318 log 29152 22104 Not Found: /media/uploads/image/20241207_165512_dcfc2ab0.png
+WARNING 2024-12-07 17:42:18,320 basehttp 29152 22104 "GET /media/uploads/image/20241207_165512_dcfc2ab0.png HTTP/1.1" 404 2753
+INFO 2024-12-07 17:43:02,460 basehttp 29152 7112 "GET /api/projects/1/files/ HTTP/1.1" 200 2
+INFO 2024-12-07 17:43:26,248 autoreload 29152 29652 C:\Users\ASUS\Desktop\WWW\course_design\myapp\views.py changed, reloading.
+INFO 2024-12-07 17:43:26,990 autoreload 31028 30736 Watching for file changes with StatReloader
+INFO 2024-12-07 17:43:49,937 autoreload 31028 30736 C:\Users\ASUS\Desktop\WWW\course_design\myapp\urls.py changed, reloading.
+INFO 2024-12-07 17:43:50,631 autoreload 24108 30000 Watching for file changes with StatReloader
+INFO 2024-12-07 17:44:09,387 autoreload 24108 30000 C:\Users\ASUS\Desktop\WWW\course_design\myapp\serializers.py changed, reloading.
+INFO 2024-12-07 17:44:10,027 autoreload 9456 8996 Watching for file changes with StatReloader
+INFO 2024-12-07 17:44:52,002 basehttp 9456 31676 "GET /api/projects/3/files/ HTTP/1.1" 200 1110
+INFO 2024-12-07 17:44:53,257 basehttp 9456 31676 "GET /api/media/uploads/image/20241207_165512_dcfc2ab0.png HTTP/1.1" 200 1028391
+INFO 2024-12-07 17:44:54,870 basehttp 9456 3988 "GET /api/media/uploads/document/20241207_165602_999ec44a.pdf HTTP/1.1" 200 635186
+INFO 2024-12-07 17:44:55,679 basehttp 9456 31676 "GET /api/media/uploads/audio/20241207_165749_5c2caac2.mp3 HTTP/1.1" 200 69774
+INFO 2024-12-07 17:45:01,307 basehttp 9456 31676 "GET /api/media/uploads/audio/20241207_165749_5c2caac2.mp3 HTTP/1.1" 200 69774
+INFO 2024-12-07 17:45:01,673 basehttp 9456 3988 "GET /api/media/uploads/document/20241207_165602_999ec44a.pdf HTTP/1.1" 200 635186
+INFO 2024-12-07 17:45:02,438 basehttp 9456 3988 "GET /api/media/uploads/document/20241207_165602_999ec44a.pdf HTTP/1.1" 200 635186
+INFO 2024-12-07 17:45:02,757 basehttp 9456 31676 "GET /api/media/uploads/audio/20241207_165749_5c2caac2.mp3 HTTP/1.1" 200 69774
+INFO 2024-12-07 17:45:06,878 basehttp 9456 31676 "GET /api/projects/3/files/ HTTP/1.1" 200 1110
+INFO 2024-12-07 17:51:49,346 basehttp 9456 27668 "GET /api/projects/3/files/ HTTP/1.1" 200 1110
+INFO 2024-12-07 17:51:59,777 basehttp 9456 22172 "GET /api/media/uploads/document/20241207_165602_999ec44a.pdf HTTP/1.1" 200 635186
+INFO 2024-12-07 17:52:00,192 basehttp 9456 27668 "GET /api/media/uploads/audio/20241207_165749_5c2caac2.mp3 HTTP/1.1" 200 69774
+INFO 2024-12-07 18:02:26,132 basehttp 9456 27872 "GET /api/projects/3/files/ HTTP/1.1" 200 1110
+INFO 2024-12-07 18:04:59,576 basehttp 9456 3544 "GET /api/projects/1/files/ HTTP/1.1" 200 2
+INFO 2024-12-07 18:05:00,385 basehttp 9456 3544 "GET /api/projects/3/files/ HTTP/1.1" 200 1110
