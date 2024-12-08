@@ -1631,3 +1631,18 @@ INFO 2024-12-07 17:52:00,192 basehttp 9456 27668 "GET /api/media/uploads/audio/2
 INFO 2024-12-07 18:02:26,132 basehttp 9456 27872 "GET /api/projects/3/files/ HTTP/1.1" 200 1110
 INFO 2024-12-07 18:04:59,576 basehttp 9456 3544 "GET /api/projects/1/files/ HTTP/1.1" 200 2
 INFO 2024-12-07 18:05:00,385 basehttp 9456 3544 "GET /api/projects/3/files/ HTTP/1.1" 200 1110
+INFO 2024-12-08 13:51:27,468 autoreload 17632 56584 Watching for file changes with StatReloader
+WARNING 2024-12-08 13:54:16,736 log 17632 54240 Unauthorized: /api/auth/user-info/
+WARNING 2024-12-08 13:54:16,737 basehttp 17632 54240 "GET /api/auth/user-info/ HTTP/1.1" 401 21
+INFO 2024-12-08 13:54:24,479 auth 17632 54240 尝试登录用户: wangziyu
+INFO 2024-12-08 13:54:24,598 auth 17632 54240 用户登录成功: wangziyu, 响应数据: {'message': '登录成功', 'user': {'id': 1, 'username': 'wangziyu', 'display_name': 'wangziyu', 'user_type': 'admin'}}
+INFO 2024-12-08 13:54:24,612 basehttp 17632 54240 "POST /api/auth/login/ HTTP/1.1" 200 110
+INFO 2024-12-08 13:54:24,744 basehttp 17632 54240 "GET /api/projects/?view_type=public&search=&file_type=&sort=newest HTTP/1.1" 200 1961
+INFO 2024-12-08 13:54:25,889 basehttp 17632 54240 "GET /api/projects/?view_type=my HTTP/1.1" 200 2260
+INFO 2024-12-08 13:54:26,703 basehttp 17632 54240 "GET /api/projects/?view_type=my HTTP/1.1" 200 2260
+INFO 2024-12-08 13:54:27,487 basehttp 17632 54240 "GET /api/projects/?view_type=my HTTP/1.1" 200 2260
+INFO 2024-12-08 13:54:29,882 basehttp 17632 54240 "GET /api/projects/?view_type=public&search=&file_type=&sort=newest HTTP/1.1" 200 1961
+INFO 2024-12-08 13:54:34,581 basehttp 17632 54240 "GET /api/projects/3/files/ HTTP/1.1" 200 1110
+INFO 2024-12-08 13:54:35,251 basehttp 17632 54240 "GET /api/media/uploads/audio/20241207_165749_5c2caac2.mp3 HTTP/1.1" 200 69774
+INFO 2024-12-08 13:54:35,665 basehttp 17632 7548 "GET /api/media/uploads/document/20241207_165602_999ec44a.pdf HTTP/1.1" 200 635186
+INFO 2024-12-08 13:54:36,049 basehttp 17632 54240 "GET /api/media/uploads/image/20241207_165512_dcfc2ab0.png HTTP/1.1" 200 1028391
