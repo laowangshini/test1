@@ -1,30 +1,23 @@
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
-from .models import UserProfile, FieldworkProject, FieldworkFile
+from .models import UserProfile, Survey, MediaItem
 
-class CustomUserAdmin(UserAdmin):
-    list_display = ('username', 'display_name', 'user_type', 'is_staff', 'date_joined')
-    list_filter = ('user_type', 'is_staff', 'is_superuser', 'is_active')
-    search_fields = ('username', 'display_name')
-    ordering = ('-date_joined',)
-    
-    fieldsets = (
-        (None, {'fields': ('username', 'password')}),
-        ('个人信息', {'fields': ('display_name', 'user_type')}),
-        ('权限', {
-            'fields': ('is_active', 'is_staff', 'is_superuser', 'groups', 'user_permissions'),
-        }),
-        ('重要日期', {'fields': ('last_login', 'date_joined')}),
-    )
-    
-    add_fieldsets = (
-        (None, {
-            'classes': ('wide',),
-            'fields': ('username', 'display_name', 'password1', 'password2'),
-        }),
-    )
+class MediaItemInline(admin.TabularInline):
+    model = MediaItem
+    extra = 1
 
-# 注册模型
-admin.site.register(UserProfile, CustomUserAdmin)
-admin.site.register(FieldworkProject)
-admin.site.register(FieldworkFile)
+@admin.register(Survey)
+class SurveyAdmin(admin.ModelAdmin):
+    list_display = ('name', 'investigator', 'start_date', 'end_date')
+    list_filter = ('start_date', 'end_date')
+    search_fields = ('name', 'investigator__username')
+    inlines = [MediaItemInline]
+
+@admin.register(MediaItem)
+class MediaItemAdmin(admin.ModelAdmin):
+    list_display = ('title', 'survey', 'media_type', 'category', 'created_at')
+    list_filter = ('media_type', 'category')
+    search_fields = ('title', 'description', 'survey__name')
+
+# 使用Django默认的UserAdmin，但注册我们的UserProfile模型
+admin.site.register(UserProfile, UserAdmin)

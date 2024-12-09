@@ -72,8 +72,8 @@
     <!-- 分页 -->
     <div class="pagination">
       <el-pagination
-        v-model:current-page="currentPage"
-        v-model:page-size="pageSize"
+        v-model="currentPage"
+        :page-size="pageSize"
         :total="total"
         :page-sizes="[12, 24, 36]"
         layout="total, sizes, prev, pager, next"

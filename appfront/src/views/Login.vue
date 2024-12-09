@@ -60,11 +60,12 @@
 </template>
 
 <script setup>
-import { ref, reactive } from 'vue'
+import { ref, reactive, nextTick } from 'vue'
 import { useRouter } from 'vue-router'
 import { useStore } from 'vuex'
 import { ElMessage } from 'element-plus'
 import { User, Lock } from '@element-plus/icons-vue'
+import axios from 'axios'
 
 const router = useRouter()
 const store = useStore()
@@ -97,13 +98,19 @@ const handleLogin = async () => {
 
     loading.value = true;
     
-    // 使用 store 的 login action
-    await store.dispatch('login', form);
+    // 使用正确的API路径
+    const response = await axios.post('/api/auth/login/', form);
+    
+    // 保存token和用户信息
+    store.commit('SET_TOKEN', response.data.token);
+    store.commit('SET_USER', response.data.user);
     
     ElMessage.success('登录成功');
     
-    // 直接跳转到仪表盘
-    router.push('/dashboard');
+    // 添加延时确保状态更新
+    await nextTick();
+    // 使用 replace 而不是 push，防止用户点击返回回到登录页
+    await router.replace('/dashboard');
   } catch (error) {
     console.error('登录失败:', error);
     if (error.response?.data?.error) {

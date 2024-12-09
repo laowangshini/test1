@@ -49,12 +49,12 @@
             <h3>风土人情和文物照片</h3>
           </div>
           <el-upload
-            :action="'http://127.0.0.1:8000/api/files/upload/'"
+            :action="'/api/media-items/'"
             :headers="uploadHeaders"
             :data="{
-              project: createdProjectId,
-              file_type: 'image',
-              title: '风土人情和文物照片'
+              survey: createdProjectId,
+              media_type: 'IMAGE',
+              category: 'FOLKLORE'
             }"
             :accept="'.jpg,.jpeg,.png'"
             multiple
@@ -134,7 +134,9 @@ import { ref } from 'vue'
 import { ElMessage } from 'element-plus'
 import { Picture, Microphone, Document, Upload, Plus } from '@element-plus/icons-vue'
 import axios from 'axios'
+import { useStore } from 'vuex'
 
+const store = useStore()
 const currentStep = ref(0)
 const createdProjectId = ref(null)
 
@@ -158,7 +160,7 @@ const createProject = async () => {
 
   try {
     const projectData = {
-      title: projectForm.value.title,
+      name: projectForm.value.title,
       latitude: projectForm.value.latitude,
       longitude: projectForm.value.longitude,
       start_date: projectForm.value.dateRange[0].toISOString().split('T')[0],
@@ -167,24 +169,26 @@ const createProject = async () => {
     
     console.log('发送请求:', projectData);
     
-    const response = await axios.post(
-      'http://127.0.0.1:8000/api/projects/',
-      projectData,
-      {
-        headers: {
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
-        }
+    const response = await axios({
+      method: 'post',
+      url: '/api/surveys/',
+      data: projectData,
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Token ${store.state.token}`
       }
-    );
+    });
     
-    console.log('项目创建成功:', response.data);
+    console.log('调查创建成功:', response.data);
     createdProjectId.value = response.data.id;
     currentStep.value = 1;
-    ElMessage.success('项目创建成功，请上传资料');
+    ElMessage.success('调查创建成功，请上传资料');
   } catch (error) {
-    console.error('项目创建失败:', error);
-    ElMessage.error(error.response?.data?.detail || '创建项目失败');
+    console.error('调查创建失败:', error);
+    if (error.response) {
+      console.error('错误详情:', error.response.data);
+    }
+    ElMessage.error(error.response?.data?.detail || '创建调查失败');
   }
 }
 

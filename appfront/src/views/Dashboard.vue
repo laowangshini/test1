@@ -23,7 +23,7 @@
           </el-button>
         </div>
       </el-header>
-
+      
       <el-container class="main-container">
         <!-- 侧边栏 -->
         <el-aside width="260px">
@@ -249,7 +249,7 @@ onMounted(() => {
 .dashboard {
   min-height: 100vh;
   background-color: #f5f7fa;
-  
+
   .el-header {
     background-color: white;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
@@ -269,7 +269,7 @@ onMounted(() => {
           width: auto;
           object-fit: contain;
         }
-        
+
         .logo-text {
           font-size: 32px;
           font-weight: 600;
@@ -295,7 +295,7 @@ onMounted(() => {
           font-weight: 600;
           margin: 0 4px;
         }
-        
+
         .user-type-tag {
           margin-left: 8px;
         }

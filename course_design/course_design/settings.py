@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'corsheaders',  # 添加 CORS
     'drf_yasg',  # 添加 Swagger
     'myapp',  # 添加我们的应用
+    'rest_framework.authtoken',  # 添加这行
 ]
 
 MIDDLEWARE = [
@@ -141,14 +142,7 @@ CORS_ALLOWED_ORIGINS = [
     'http://localhost:8080',
     'http://127.0.0.1:8080',
 ]
-CORS_ALLOW_METHODS = [
-    'DELETE',
-    'GET',
-    'OPTIONS',
-    'PATCH',
-    'POST',
-    'PUT',
-]
+CORS_ALLOW_METHODS = ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS']
 CORS_ALLOW_HEADERS = [
     'accept',
     'accept-encoding',
@@ -165,11 +159,17 @@ CORS_EXPOSE_HEADERS = ['content-type', 'x-csrftoken']
 # REST Framework设置
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.TokenAuthentication',
         'rest_framework.authentication.SessionAuthentication',
     ],
     'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.AllowAny',  # 默认允许所有访问，在需要认证的视图中单独设置
+        'rest_framework.permissions.AllowAny',
     ],
+    'DEFAULT_PARSER_CLASSES': [
+        'rest_framework.parsers.JSONParser',
+        'rest_framework.parsers.FormParser',
+        'rest_framework.parsers.MultiPartParser',
+    ]
 }
 
 # 日志配置
@@ -208,6 +208,11 @@ LOGGING = {
             'level': 'INFO',
             'propagate': True,
         },
+        'django.request': {
+            'handlers': ['console'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
     },
 }
 
@@ -218,7 +223,7 @@ SESSION_COOKIE_NAME = 'sessionid'
 SESSION_COOKIE_HTTPONLY = True
 SESSION_SAVE_EVERY_REQUEST = True
 SESSION_COOKIE_SAMESITE = None  # 允许跨站请求
-SESSION_COOKIE_SECURE = False  # 开发环���设置为False
+SESSION_COOKIE_SECURE = False  # 开发环境设置为False
 
 # CSRF 设置
 CSRF_COOKIE_NAME = 'csrftoken'

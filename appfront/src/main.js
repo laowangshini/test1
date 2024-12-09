@@ -10,85 +10,47 @@ import * as echarts from 'echarts'
 import axios from 'axios'
 import { ElMessage } from 'element-plus'
 
-// 配置 axios 默认值
+// 确保baseURL配置正确
 axios.defaults.baseURL = 'http://127.0.0.1:8000'
 axios.defaults.timeout = 10000
-axios.defaults.withCredentials = true  // 允许跨域携带 cookie
+axios.defaults.withCredentials = true
 
-// 请求拦截器
+// 添加请求拦截器用于调试
 axios.interceptors.request.use(
   config => {
     console.log('发送请求:', {
       url: config.url,
       method: config.method,
-      headers: config.headers,
-      data: config.data
-    });
-    return config;
+      data: config.data,
+      headers: config.headers
+    })
+    return config
   },
   error => {
-    console.error('请求错误:', error);
-    return Promise.reject(error);
+    console.error('请求错误:', error)
+    return Promise.reject(error)
   }
-);
+)
 
-// 响应拦截器
+// 添加响应拦截器用于调试
 axios.interceptors.response.use(
   response => {
     console.log('收到响应:', {
       status: response.status,
-      headers: response.headers,
-      data: response.data
-    });
-    
-    // 如果响应中包含用户信息，更新到 store
-    if (response.data && response.data.user) {
-      store.commit('setUser', response.data.user);
-    }
-    
-    return response;
+      data: response.data,
+      headers: response.headers
+    })
+    return response
   },
   error => {
     console.error('响应错误:', {
-      message: error.message,
-      response: error.response,
-      request: error.request
-    });
-    
-    if (error.response) {
-      switch (error.response.status) {
-        case 401:
-          // 未授权，清除 token 并跳转到登录页面
-          store.commit('clearAuth');
-          router.push('/login');
-          ElMessage.error('登录已过期，请重新登录');
-          break;
-        case 403:
-          // 权限不足
-          ElMessage.error('权限不足');
-          break;
-        case 404:
-          // 请求的资源不存在
-          ElMessage.error('请求的资源不存在');
-          break;
-        case 500:
-          // 服务器错误
-          ElMessage.error('服务器错误，请稍后重试');
-          break;
-        default:
-          ElMessage.error(error.response.data?.message || '发生错误，请稍后重试');
-      }
-    } else if (error.request) {
-      // 请求发出但没有收到响应
-      ElMessage.error('无法连接到服务器，请检查网络连接');
-    } else {
-      // 请求配置出错
-      ElMessage.error('请求配置错误');
-    }
-    
-    return Promise.reject(error);
+      status: error.response?.status,
+      data: error.response?.data,
+      headers: error.response?.headers
+    })
+    return Promise.reject(error)
   }
-);
+)
 
 const app = createApp(App);
 

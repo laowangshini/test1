@@ -3,24 +3,21 @@ import store from '../store'
 
 const routes = [
   {
-    path: '/',
-    redirect: '/login'
-  },
-  {
     path: '/login',
     name: 'Login',
-    component: () => import('../views/Login.vue')
-  },
-  {
-    path: '/register',
-    name: 'Register',
-    component: () => import('../views/Register.vue')
+    component: () => import('../views/Login.vue'),
+    meta: { requiresAuth: false }
   },
   {
     path: '/dashboard',
     name: 'Dashboard',
     component: () => import('../views/Dashboard.vue'),
     meta: { requiresAuth: true }
+  },
+  // 添加一个重定向
+  {
+    path: '/',
+    redirect: '/dashboard'
   }
 ]
 
@@ -29,26 +26,18 @@ const router = createRouter({
   routes
 })
 
-// 导航守卫
+// 添加路由守卫
 router.beforeEach((to, from, next) => {
-  // 检查该路由是否需要登录权限
-  if (to.matched.some(record => record.meta.requiresAuth)) {
-    // 如果没有登录也不是游客模式，则跳转到登录页面
-    if (!store.getters.isAuthenticated) {
-      next({
-        path: '/login',
-        query: { redirect: to.fullPath }
-      })
-    } else {
-      next()
-    }
+  const isAuthenticated = store.state.token || store.state.isGuest
+  
+  if (to.meta.requiresAuth && !isAuthenticated) {
+    // 需要认证但未登录，重定向到登录页
+    next('/login')
+  } else if (to.path === '/login' && isAuthenticated) {
+    // 已登录但访问登录页，重定向到首页
+    next('/dashboard')
   } else {
-    // 如果已经登录且要去登录页，重定向到仪表盘
-    if (store.getters.isAuthenticated && to.path === '/login') {
-      next('/dashboard')
-    } else {
-      next()
-    }
+    next()
   }
 })
 
